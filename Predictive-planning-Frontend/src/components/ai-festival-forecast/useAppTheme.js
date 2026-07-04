@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 
 export default function useAppTheme() {
   const [theme, setTheme] = useState(
-    () => document.body.getAttribute("data-theme") || "dark"
+    () => document.body.getAttribute("data-theme") || "light"
   );
 
   useEffect(() => {
     const observer = new MutationObserver(() => {
-      setTheme(document.body.getAttribute("data-theme") || "dark");
+      setTheme(document.body.getAttribute("data-theme") || "light");
     });
 
     observer.observe(document.body, {

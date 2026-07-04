@@ -4,7 +4,13 @@ import useAuth from "../hooks/useAuth";
 
 function useTheme() {
   const [theme, setTheme] = useState(
-    () => localStorage.getItem("theme") || "dark"
+    () => {
+      const saved = localStorage.getItem("theme");
+      if (!saved || saved === "dark") {
+        return "light";
+      }
+      return saved;
+    }
   );
 
   useEffect(() => {

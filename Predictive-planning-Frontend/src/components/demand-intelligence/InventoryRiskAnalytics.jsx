@@ -1,27 +1,26 @@
-// import {
-//   BarChart,
-//   Bar,
-//   XAxis,
-//   YAxis,
-//   CartesianGrid,
-//   Tooltip,
-//   ResponsiveContainer,
-//   PieChart,
-//   Pie,
-//   Cell,
-//   Legend,
-// } from "recharts";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  PieChart,
+  Pie,
+  Cell,
+  Legend,
+} from "recharts";
 import {
   ShieldAlert,
   Clock,
   Egg,
-  // TrendingUp,
-  // Boxes,
+  TrendingUp,
+  Boxes,
 } from "lucide-react";
-// import useAppTheme, { getChartTheme } from "../ai-festival-forecast/useAppTheme";
-// import { SectionCard } from "./SectionCard";
-import { card, /* surfaceMuted, */ textHeading, textMuted /* , textAccent */ } from "./themeClasses";
-// import { formatNumber, spikeHighlightClass } from "./utils";
+import useAppTheme, { getChartTheme } from "../ai-festival-forecast/useAppTheme";
+import { SectionCard } from "./SectionCard";
+import { card, textHeading, textMuted } from "./themeClasses";
 
 
 // Generator helper for Inventory Planning items (if missing from raw API response)
@@ -108,10 +107,10 @@ function generateInventoryPlan(product, type) {
 }
 
 export default function InventoryRiskAnalytics({ data = {} }) {
-  // const theme = useAppTheme();
-  // const chartTheme = getChartTheme(theme);
-  // const axisTick = { fill: chartTheme.tick, fontSize: 11 };
-  // const gridStroke = chartTheme.grid;
+  const theme = useAppTheme();
+  const chartTheme = getChartTheme(theme);
+  const axisTick = { fill: chartTheme.tick, fontSize: 11 };
+  const gridStroke = chartTheme.grid;
 
   // ── 1. Gather all plan items (with generator fallback) ─────────────────────
   const validated = data.historical_validation_layer?.historically_validated_products || data.historically_validated_products || [];
@@ -158,106 +157,200 @@ export default function InventoryRiskAnalytics({ data = {} }) {
   const lowRiskCount = totalPlan.filter(p => p.risk_level === "Low").length;
 
   // ── 3. Chart Data ──────────────────────────────────────────────────────────
-  // const procurementTimelineData = [
-  //   { name: "Immediate", count: immediateCount, fill: "#ef4444" },
-  //   { name: "Medium-Term", count: mediumTermCount, fill: "#eab308" },
-  //   { name: "Near Festival", count: nearFestivalCount, fill: "#10b981" },
-  // ];
+  const procurementTimelineData = [
+    { name: "Immediate", count: immediateCount, fill: "#ef4444" },
+    { name: "Medium-Term", count: mediumTermCount, fill: "#eab308" },
+    { name: "Near Festival", count: nearFestivalCount, fill: "#10b981" },
+  ];
 
-  // const inventoryTypeData = [
-  //   { name: "Perishable", value: perishableCount, fill: "#ef4444" },
-  //   { name: "Semi-Perishable", value: semiPerishableCount, fill: "#f97316" },
-  //   { name: "Non-Perishable", value: nonPerishableCount, fill: "#10b981" },
-  // ];
+  const inventoryTypeData = [
+    { name: "Perishable", value: perishableCount, fill: "#ef4444" },
+    { name: "Semi-Perishable", value: semiPerishableCount, fill: "#f97316" },
+    { name: "Non-Perishable", value: nonPerishableCount, fill: "#10b981" },
+  ];
 
-  // const riskDistributionData = [
-  //   { name: "High", value: highRiskCount, fill: "#ef4444" },
-  //   { name: "Medium", value: mediumRiskCount, fill: "#f97316" },
-  //   { name: "Low", value: lowRiskCount, fill: "#10b981" },
-  // ];
+  const riskDistributionData = [
+    { name: "High", value: highRiskCount, fill: "#ef4444" },
+    { name: "Medium", value: mediumRiskCount, fill: "#f97316" },
+    { name: "Low", value: lowRiskCount, fill: "#10b981" },
+  ];
 
-  // const spikeData = validated
-  //   .slice()
-  //   .sort((a, b) => b.spike_percentage - a.spike_percentage)
-  //   .map((p) => ({
-  //     name: p.product_name.length > 18 ? `${p.product_name.slice(0, 16)}…` : p.product_name,
-  //     fullName: p.product_name,
-  //     spike_percentage: p.spike_percentage,
-  //   }));
+  const spikeData = validated
+    .slice()
+    .sort((a, b) => b.spike_percentage - a.spike_percentage)
+    .map((p) => {
+      const name = p.product_name || p.sku_name || "Unknown Product";
+      return {
+        name: name.length > 18 ? `${name.slice(0, 16)}…` : name,
+        fullName: name,
+        spike_percentage: p.spike_percentage || 0,
+      };
+    });
+
+  const totalCount = Math.max(totalPlan.length, 1);
+  const immediatePct = (immediateCount / totalCount) * 100;
+  const mediumTermPct = (mediumTermCount / totalCount) * 100;
+  const nearFestivalPct = (nearFestivalCount / totalCount) * 100;
+
+  const perishablePct = (perishableCount / totalCount) * 100;
+  const semiPerishablePct = (semiPerishableCount / totalCount) * 100;
+  const nonPerishablePct = (nonPerishableCount / totalCount) * 100;
+
+  const highRiskPct = (highRiskCount / totalCount) * 100;
+  const mediumRiskPct = (mediumRiskCount / totalCount) * 100;
+  const lowRiskPct = (lowRiskCount / totalCount) * 100;
 
   return (
     <div className="space-y-6">
       {/* 1. Visual Info Cards Section */}
       <div className="grid gap-6 md:grid-cols-3">
         {/* Timeline Group */}
-        <div className={`${card} p-5 space-y-4`}>
-          <div className="flex items-center gap-2 border-b border-slate-200 pb-3 dark:border-slate-800">
+        <div className={`${card} p-5 space-y-4 hover:scale-[1.01] hover:shadow-md transition-all duration-300`}>
+          <div className="flex items-center gap-2 border-b border-slate-100 pb-3 dark:border-slate-800">
             <Clock className="h-5 w-5 text-red-500" />
             <h3 className={`text-sm font-bold ${textHeading}`}>Procurement Timeline</h3>
           </div>
-          <div className="space-y-3">
-            <div className="flex justify-between items-center text-xs">
-              <span className={`font-medium ${textMuted}`}>Immediate Procurement</span>
-              <span className="font-bold text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950/30 px-2 py-0.5 rounded">{immediateCount} SKUs</span>
+          <div className="space-y-4">
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-center text-xs">
+                <span className={`font-semibold flex items-center gap-1.5 ${textMuted}`}>
+                  <span className="w-2.5 h-2.5 rounded-full bg-red-500 shrink-0" />
+                  Immediate Procurement
+                </span>
+                <span className="font-bold text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950/30 px-2 py-0.5 rounded text-[11px]">{immediateCount} SKUs</span>
+              </div>
+              <div className="w-full bg-slate-100 dark:bg-[#0f2344] h-2 rounded-full overflow-hidden">
+                <div className="bg-red-500 h-full rounded-full" style={{ width: `${immediatePct}%` }} />
+              </div>
             </div>
-            <div className="flex justify-between items-center text-xs">
-              <span className={`font-medium ${textMuted}`}>Medium-Term Procurement</span>
-              <span className="font-bold text-yellow-600 dark:text-yellow-400 bg-yellow-50 dark:bg-yellow-950/30 px-2 py-0.5 rounded">{mediumTermCount} SKUs</span>
+
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-center text-xs">
+                <span className={`font-semibold flex items-center gap-1.5 ${textMuted}`}>
+                  <span className="w-2.5 h-2.5 rounded-full bg-yellow-500 shrink-0" />
+                  Medium-Term Procurement
+                </span>
+                <span className="font-bold text-yellow-600 dark:text-yellow-400 bg-yellow-50 dark:bg-yellow-950/30 px-2 py-0.5 rounded text-[11px]">{mediumTermCount} SKUs</span>
+              </div>
+              <div className="w-full bg-slate-100 dark:bg-[#0f2344] h-2 rounded-full overflow-hidden">
+                <div className="bg-yellow-500 h-full rounded-full" style={{ width: `${mediumTermPct}%` }} />
+              </div>
             </div>
-            <div className="flex justify-between items-center text-xs">
-              <span className={`font-medium ${textMuted}`}>Near Festival Procurement</span>
-              <span className="font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/30 px-2 py-0.5 rounded">{nearFestivalCount} SKUs</span>
+
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-center text-xs">
+                <span className={`font-semibold flex items-center gap-1.5 ${textMuted}`}>
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0" />
+                  Near Festival Procurement
+                </span>
+                <span className="font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/30 px-2 py-0.5 rounded text-[11px]">{nearFestivalCount} SKUs</span>
+              </div>
+              <div className="w-full bg-slate-100 dark:bg-[#0f2344] h-2 rounded-full overflow-hidden">
+                <div className="bg-emerald-500 h-full rounded-full" style={{ width: `${nearFestivalPct}%` }} />
+              </div>
             </div>
           </div>
         </div>
 
         {/* Perishability Group */}
-        <div className={`${card} p-5 space-y-4`}>
-          <div className="flex items-center gap-2 border-b border-slate-200 pb-3 dark:border-slate-800">
+        <div className={`${card} p-5 space-y-4 hover:scale-[1.01] hover:shadow-md transition-all duration-300`}>
+          <div className="flex items-center gap-2 border-b border-slate-100 pb-3 dark:border-slate-800">
             <Egg className="h-5 w-5 text-indigo-500" />
             <h3 className={`text-sm font-bold ${textHeading}`}>Perishability Classification</h3>
           </div>
-          <div className="space-y-3">
-            <div className="flex justify-between items-center text-xs">
-              <span className={`font-medium ${textMuted}`}>Perishable Products</span>
-              <span className="font-bold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-[#0f2344] px-2 py-0.5 rounded">{perishableCount} SKUs</span>
+          <div className="space-y-4">
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-center text-xs">
+                <span className={`font-semibold flex items-center gap-1.5 ${textMuted}`}>
+                  <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 shrink-0" />
+                  Perishable Products
+                </span>
+                <span className="font-bold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-[#0f2344] px-2 py-0.5 rounded text-[11px]">{perishableCount} SKUs</span>
+              </div>
+              <div className="w-full bg-slate-100 dark:bg-[#0f2344] h-2 rounded-full overflow-hidden">
+                <div className="bg-indigo-500 h-full rounded-full" style={{ width: `${perishablePct}%` }} />
+              </div>
             </div>
-            <div className="flex justify-between items-center text-xs">
-              <span className={`font-medium ${textMuted}`}>Semi-Perishable Products</span>
-              <span className="font-bold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-[#0f2344] px-2 py-0.5 rounded">{semiPerishableCount} SKUs</span>
+
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-center text-xs">
+                <span className={`font-semibold flex items-center gap-1.5 ${textMuted}`}>
+                  <span className="w-2.5 h-2.5 rounded-full bg-orange-500 shrink-0" />
+                  Semi-Perishable Products
+                </span>
+                <span className="font-bold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-[#0f2344] px-2 py-0.5 rounded text-[11px]">{semiPerishableCount} SKUs</span>
+              </div>
+              <div className="w-full bg-slate-100 dark:bg-[#0f2344] h-2 rounded-full overflow-hidden">
+                <div className="bg-orange-500 h-full rounded-full" style={{ width: `${semiPerishablePct}%` }} />
+              </div>
             </div>
-            <div className="flex justify-between items-center text-xs">
-              <span className={`font-medium ${textMuted}`}>Non-Perishable Products</span>
-              <span className="font-bold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-[#0f2344] px-2 py-0.5 rounded">{nonPerishableCount} SKUs</span>
+
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-center text-xs">
+                <span className={`font-semibold flex items-center gap-1.5 ${textMuted}`}>
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0" />
+                  Non-Perishable Products
+                </span>
+                <span className="font-bold text-slate-800 dark:text-slate-200 bg-slate-100 dark:bg-[#0f2344] px-2 py-0.5 rounded text-[11px]">{nonPerishableCount} SKUs</span>
+              </div>
+              <div className="w-full bg-slate-100 dark:bg-[#0f2344] h-2 rounded-full overflow-hidden">
+                <div className="bg-emerald-500 h-full rounded-full" style={{ width: `${nonPerishablePct}%` }} />
+              </div>
             </div>
           </div>
         </div>
 
         {/* Risk Group */}
-        <div className={`${card} p-5 space-y-4`}>
-          <div className="flex items-center gap-2 border-b border-slate-200 pb-3 dark:border-slate-800">
+        <div className={`${card} p-5 space-y-4 hover:scale-[1.01] hover:shadow-md transition-all duration-300`}>
+          <div className="flex items-center gap-2 border-b border-slate-100 pb-3 dark:border-slate-800">
             <ShieldAlert className="h-5 w-5 text-orange-500" />
             <h3 className={`text-sm font-bold ${textHeading}`}>Risk Exposure</h3>
           </div>
-          <div className="space-y-3">
-            <div className="flex justify-between items-center text-xs">
-              <span className={`font-medium ${textMuted}`}>High Risk Products</span>
-              <span className="font-bold text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950/30 px-2 py-0.5 rounded">{highRiskCount} SKUs</span>
+          <div className="space-y-4">
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-center text-xs">
+                <span className={`font-semibold flex items-center gap-1.5 ${textMuted}`}>
+                  <span className="w-2.5 h-2.5 rounded-full bg-red-500 shrink-0" />
+                  High Risk Products
+                </span>
+                <span className="font-bold text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-950/30 px-2 py-0.5 rounded text-[11px]">{highRiskCount} SKUs</span>
+              </div>
+              <div className="w-full bg-slate-100 dark:bg-[#0f2344] h-2 rounded-full overflow-hidden">
+                <div className="bg-red-500 h-full rounded-full" style={{ width: `${highRiskPct}%` }} />
+              </div>
             </div>
-            <div className="flex justify-between items-center text-xs">
-              <span className={`font-medium ${textMuted}`}>Medium Risk Products</span>
-              <span className="font-bold text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-950/30 px-2 py-0.5 rounded">{mediumRiskCount} SKUs</span>
+
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-center text-xs">
+                <span className={`font-semibold flex items-center gap-1.5 ${textMuted}`}>
+                  <span className="w-2.5 h-2.5 rounded-full bg-orange-500 shrink-0" />
+                  Medium Risk Products
+                </span>
+                <span className="font-bold text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-950/30 px-2 py-0.5 rounded text-[11px]">{mediumRiskCount} SKUs</span>
+              </div>
+              <div className="w-full bg-slate-100 dark:bg-[#0f2344] h-2 rounded-full overflow-hidden">
+                <div className="bg-orange-500 h-full rounded-full" style={{ width: `${mediumRiskPct}%` }} />
+              </div>
             </div>
-            <div className="flex justify-between items-center text-xs">
-              <span className={`font-medium ${textMuted}`}>Low Risk Products</span>
-              <span className="font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/30 px-2 py-0.5 rounded">{lowRiskCount} SKUs</span>
+
+            <div className="space-y-1.5">
+              <div className="flex justify-between items-center text-xs">
+                <span className={`font-semibold flex items-center gap-1.5 ${textMuted}`}>
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 shrink-0" />
+                  Low Risk Products
+                </span>
+                <span className="font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/30 px-2 py-0.5 rounded text-[11px]">{lowRiskCount} SKUs</span>
+              </div>
+              <div className="w-full bg-slate-100 dark:bg-[#0f2344] h-2 rounded-full overflow-hidden">
+                <div className="bg-emerald-500 h-full rounded-full" style={{ width: `${lowRiskPct}%` }} />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* 2. Visual Charts Grid */}
-      {/* <div className="grid gap-6 lg:grid-cols-2">
+      <div className="grid gap-6 lg:grid-cols-2">
         <SectionCard
           title="Procurement Timeline Chart"
           subtitle="Count of products matching stocking windows"
@@ -480,7 +573,7 @@ export default function InventoryRiskAnalytics({ data = {} }) {
             )}
           </div>
         </SectionCard>
-      </div> */}
+      </div>
     </div>
   );
 }

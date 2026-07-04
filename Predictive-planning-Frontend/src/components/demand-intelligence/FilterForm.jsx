@@ -115,11 +115,11 @@ export default function FilterForm({
     <div className="flex min-h-[calc(100vh-4rem)] items-center justify-center px-4 py-10">
       <div className="w-full max-w-xl">
         <div className="rounded-2xl border border-slate-200 bg-white shadow-xl shadow-slate-200/60 dark:border-[#19345f] dark:bg-[#0c1a33] dark:shadow-black/40 overflow-visible relative">
-          <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-violet-800 px-6 py-8 sm:px-8 sm:py-10 text-slate-900 rounded-t-2xl">
-            <h1 className="text-2xl font-bold tracking-tight sm:text-3xl text-slate-900">
+          <div className="bg-white px-6 py-8 sm:px-8 sm:py-10 text-slate-300 rounded-t-2xl border-b border-slate-150/80 dark:bg-[#0c1a33] dark:border-[#19345f]/40 relative overflow-hidden">
+            <h1 className="text-2xl font-bold tracking-tight sm:text-3xl text-slate-900 dark:text-white">
               Demand Forecast Engine
             </h1>
-            <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-600">
+            <p className="mt-3 max-w-md text-sm leading-relaxed text-slate-500 dark:text-slate-400">
               Generate executive-grade demand intelligence with product
               classification, historical validation, and actionable retail
               insights.
@@ -235,7 +235,7 @@ export default function FilterForm({
                       <button
                         type="button"
                         onClick={handlePrevMonth}
-                        className="p-1.5 rounded-lg border border-slate-200 bg-transparent hover:bg-slate-50 text-slate-600 dark:border-[#19345f] dark:hover:bg-[#152a4d] dark:text-[#eef5ff] transition duration-150 outline-none focus:outline-none cursor-pointer flex items-center justify-center"
+                        className="w-8 h-8 p-0 rounded-lg border border-slate-200 bg-transparent hover:bg-slate-50 text-slate-600 dark:border-[#19345f] dark:hover:bg-[#152a4d] dark:text-[#eef5ff] transition duration-150 outline-none focus:outline-none cursor-pointer flex items-center justify-center"
                       >
                         <ChevronLeft className="h-4 w-4" />
                       </button>
@@ -266,7 +266,7 @@ export default function FilterForm({
                       <button
                         type="button"
                         onClick={handleNextMonth}
-                        className="p-1.5 rounded-lg border border-slate-200 bg-transparent hover:bg-slate-50 text-slate-600 dark:border-[#19345f] dark:hover:bg-[#152a4d] dark:text-[#eef5ff] transition duration-150 outline-none focus:outline-none cursor-pointer flex items-center justify-center"
+                        className="w-8 h-8 p-0 rounded-lg border border-slate-200 bg-transparent hover:bg-slate-50 text-slate-600 dark:border-[#19345f] dark:hover:bg-[#152a4d] dark:text-[#eef5ff] transition duration-150 outline-none focus:outline-none cursor-pointer flex items-center justify-center"
                       >
                         <ChevronRight className="h-4 w-4" />
                       </button>

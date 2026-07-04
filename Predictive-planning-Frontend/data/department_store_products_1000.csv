@@ -1,0 +1,1001 @@
+_id,sku_id,sku_name,department,category,subcategory,brand,usual_monthly_sales,current_stock,safety_stock,reorder_point,warehouse,lead_time_days,unit,unit_price,currency,is_active
+OID00000001,SKU00001,Fresh Farm Beans Family Pack,Fresh Produce,Vegetables,Vegetables,Fresh Farm,2306,3759,679,988,WH-CBE-S01,10,kg,128,INR,False
+OID00000002,SKU00002,Fresh Farm Carrot Family Pack,Fresh Produce,Vegetables,Vegetables,Fresh Farm,4439,3707,1644,2893,WH-CHE-S04,4,kg,134,INR,True
+OID00000003,SKU00003,Fresh Farm Papaya 250ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,3087,5403,943,1483,WH-CBE-S01,2,kg,234,INR,True
+OID00000004,SKU00004,Balaji Mixture 200g,Snacks,Chips,Packaged Snacks,Balaji,6911,5023,1787,2827,WH-CHE-S04,2,packet,292,INR,True
+OID00000005,SKU00005,Surf Excel Fabric Conditioner 1kg,Home Care,Cleaning,Household,Surf Excel,1875,3633,732,925,WH-HYD-S03,2,bottle,298,INR,True
+OID00000006,SKU00006,Daawat Idli Rice 250ml,Rice & Staples,Rice,Staples,Daawat,5507,4244,2295,2728,WH-BLR-S02,5,kg,224,INR,True
+OID00000007,SKU00007,FarmPick Onion 500ml,Fresh Produce,Vegetables,Vegetables,FarmPick,4675,4177,1850,2284,WH-HYD-S03,9,kg,76,INR,True
+OID00000008,SKU00008,Fresh Farm Apple 1kg,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,6894,3077,2158,2806,WH-MUM-S05,6,kg,148,INR,True
+OID00000009,SKU00009,Aashirvaad Idli Rice Family Pack,Rice & Staples,Rice,Staples,Aashirvaad,1470,4101,445,1050,WH-MUM-S05,5,kg,236,INR,True
+OID00000010,SKU00010,Ariel Dishwash Liquid 1L,Home Care,Cleaning,Household,Ariel,2096,3412,942,1325,WH-CBE-S01,1,bottle,172,INR,True
+OID00000011,SKU00011,Milky Mist Cream Family Pack,Dairy,Milk,Fresh Milk,Milky Mist,820,3505,268,1588,WH-HYD-S03,9,packet,41,INR,True
+OID00000012,SKU00012,FarmPick Okra 200g,Fresh Produce,Vegetables,Vegetables,FarmPick,6451,4762,1957,3369,WH-HYD-S03,7,kg,60,INR,True
+OID00000013,SKU00013,Sprite Tea Powder Family Pack,Beverages,Soft Drinks,Cold Beverages,Sprite,1171,4654,496,1207,WH-MUM-S05,4,bottle,98,INR,True
+OID00000014,SKU00014,Aavin Cream 250ml,Dairy,Milk,Fresh Milk,Aavin,2955,5161,1027,1356,WH-HYD-S03,4,packet,89,INR,True
+OID00000015,SKU00015,Lizol Floor Cleaner Family Pack,Home Care,Cleaning,Household,Lizol,6295,5541,2185,2426,WH-BLR-S02,3,bottle,546,INR,True
+OID00000016,SKU00016,Heritage Lassi Family Pack,Dairy,Milk,Fresh Milk,Heritage,5269,6100,1763,2296,WH-BLR-S02,5,packet,438,INR,True
+OID00000017,SKU00017,Parle Namkeen 250ml,Snacks,Chips,Packaged Snacks,Parle,3998,1918,1096,1656,WH-CBE-S01,10,packet,293,INR,True
+OID00000018,SKU00018,Britannia White Bread 100g,Bakery,Bread,Bakery,Britannia,6098,3138,2294,2862,WH-HYD-S03,2,packet,288,INR,True
+OID00000019,SKU00019,Aashirvaad Masoor Dal 1L,Pulses,Dal,Staples,Aashirvaad,1383,4174,545,1814,WH-BLR-S02,8,kg,164,INR,True
+OID00000020,SKU00020,FarmPick Cauliflower 100g,Fresh Produce,Vegetables,Vegetables,FarmPick,3202,5665,1071,2127,WH-CBE-S01,1,kg,123,INR,True
+OID00000021,SKU00021,Fresh Farm Carrot 500g,Fresh Produce,Vegetables,Vegetables,Fresh Farm,1858,2778,663,1050,WH-HYD-S03,8,kg,83,INR,True
+OID00000022,SKU00022,Green Basket Okra 100g,Fresh Produce,Vegetables,Vegetables,Green Basket,1102,4917,286,1493,WH-CBE-S01,4,kg,62,INR,True
+OID00000023,SKU00023,Aashirvaad Chana Dal 2kg,Pulses,Dal,Staples,Aashirvaad,780,1923,220,324,WH-CHE-S04,5,kg,168,INR,True
+OID00000024,SKU00024,Himalaya Face Cream 100g,Personal Care,Bath & Body,Personal Care,Himalaya,1568,4963,451,996,WH-MUM-S05,9,piece,92,INR,True
+OID00000025,SKU00025,Fresh Farm Kiwi 100g,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,4205,3305,1474,2661,WH-MUM-S05,2,kg,135,INR,True
+OID00000026,SKU00026,FarmPick Carrot Premium,Fresh Produce,Vegetables,Vegetables,FarmPick,3607,3262,988,2254,WH-MUM-S05,1,kg,178,INR,True
+OID00000027,SKU00027,Vim Fabric Conditioner 250ml,Home Care,Cleaning,Household,Vim,2891,4524,1263,1781,WH-BLR-S02,5,bottle,465,INR,True
+OID00000028,SKU00028,Tata Tea Iced Tea Premium,Beverages,Soft Drinks,Cold Beverages,Tata Tea,6459,4819,2823,2942,WH-MUM-S05,2,bottle,57,INR,True
+OID00000029,SKU00029,Pears Face Wash 2kg,Personal Care,Bath & Body,Personal Care,Pears,3159,3459,1346,1946,WH-BLR-S02,8,piece,586,INR,True
+OID00000030,SKU00030,Vim Floor Cleaner 200g,Home Care,Cleaning,Household,Vim,5771,6914,2385,3098,WH-BLR-S02,5,bottle,178,INR,True
+OID00000031,SKU00031,Lux Body Lotion 2kg,Personal Care,Bath & Body,Personal Care,Lux,2608,2602,967,1769,WH-MUM-S05,8,piece,287,INR,True
+OID00000032,SKU00032,Fresh Farm Papaya 500g,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,2566,4605,664,1447,WH-HYD-S03,3,kg,266,INR,True
+OID00000033,SKU00033,Aashirvaad Basmati Rice 100g,Rice & Staples,Rice,Staples,Aashirvaad,1216,2961,322,727,WH-HYD-S03,10,kg,186,INR,True
+OID00000034,SKU00034,Aavin Cheese 250ml,Dairy,Milk,Fresh Milk,Aavin,3287,5274,1412,1593,WH-BLR-S02,4,packet,135,INR,True
+OID00000035,SKU00035,Mamaearth Sanitary Pads 500g,Personal Care,Bath & Body,Personal Care,Mamaearth,5384,6278,2153,2737,WH-BLR-S02,7,piece,55,INR,True
+OID00000036,SKU00036,Parle Murukku 100g,Snacks,Chips,Packaged Snacks,Parle,2485,2587,700,1021,WH-CHE-S04,4,packet,112,INR,True
+OID00000037,SKU00037,24 Mantra Urad Dal 1kg,Pulses,Dal,Staples,24 Mantra,6815,3543,2891,3447,WH-CHE-S04,6,kg,131,INR,True
+OID00000038,SKU00038,Bru Tea Powder 100g,Beverages,Soft Drinks,Cold Beverages,Bru,3574,3933,1379,2577,WH-CBE-S01,5,bottle,111,INR,True
+OID00000039,SKU00039,Coca-Cola Orange Soda Premium,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,5187,4276,1747,2489,WH-MUM-S05,2,bottle,217,INR,True
+OID00000040,SKU00040,Modern Brown Bread Family Pack,Bakery,Bread,Bakery,Modern,6106,7014,2059,3223,WH-BLR-S02,6,packet,245,INR,True
+OID00000041,SKU00041,Balaji Cookies 2kg,Snacks,Chips,Packaged Snacks,Balaji,5734,5198,2406,3121,WH-CHE-S04,6,packet,216,INR,True
+OID00000042,SKU00042,Lux Toothpaste 500g,Personal Care,Bath & Body,Personal Care,Lux,3744,5083,1433,2309,WH-MUM-S05,10,piece,338,INR,True
+OID00000043,SKU00043,FarmPick Grapes 250ml,Fresh Produce,Fruits,Fresh Fruits,FarmPick,2021,4450,679,1966,WH-CHE-S04,8,kg,266,INR,True
+OID00000044,SKU00044,Colgate Face Wash Premium,Personal Care,Bath & Body,Personal Care,Colgate,5697,5394,1520,2675,WH-HYD-S03,2,piece,270,INR,True
+OID00000045,SKU00045,Britannia Buns 200g,Bakery,Bread,Bakery,Britannia,500,3705,129,1202,WH-CHE-S04,7,packet,124,INR,True
+OID00000046,SKU00046,Daawat Idli Rice 200g,Rice & Staples,Rice,Staples,Daawat,2298,4409,642,753,WH-CHE-S04,4,kg,90,INR,True
+OID00000047,SKU00047,Colgate Bath Soap 500g,Personal Care,Bath & Body,Personal Care,Colgate,4866,3676,1459,1807,WH-CHE-S04,9,piece,602,INR,True
+OID00000048,SKU00048,Organic Tattva Masoor Dal 500g,Pulses,Dal,Staples,Organic Tattva,3795,4627,1579,2801,WH-CHE-S04,8,kg,126,INR,True
+OID00000049,SKU00049,Tata Tea Energy Drink 2kg,Beverages,Soft Drinks,Cold Beverages,Tata Tea,2549,2506,861,1546,WH-HYD-S03,6,bottle,296,INR,True
+OID00000050,SKU00050,Amul Ghee 500ml,Dairy,Milk,Fresh Milk,Amul,5984,2479,1678,2216,WH-CHE-S04,6,packet,585,INR,True
+OID00000051,SKU00051,Fresh Farm Papaya 100g,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,3490,6675,1504,2800,WH-MUM-S05,7,kg,284,INR,False
+OID00000052,SKU00052,Haldiram Biscuits Premium,Snacks,Chips,Packaged Snacks,Haldiram,3732,5828,1334,2552,WH-BLR-S02,8,packet,122,INR,True
+OID00000053,SKU00053,Aashirvaad Chana Dal 500g,Pulses,Dal,Staples,Aashirvaad,3053,5065,1171,2099,WH-CHE-S04,3,kg,219,INR,True
+OID00000054,SKU00054,Aashirvaad Jeera Rice 500g,Rice & Staples,Rice,Staples,Aashirvaad,5731,4634,1463,2879,WH-CHE-S04,3,kg,57,INR,True
+OID00000055,SKU00055,Bingo Popcorn 500ml,Snacks,Chips,Packaged Snacks,Bingo,2977,2960,945,1821,WH-HYD-S03,2,packet,250,INR,False
+OID00000056,SKU00056,Dove Hand Wash 100g,Personal Care,Bath & Body,Personal Care,Dove,2136,2409,811,2245,WH-BLR-S02,4,piece,50,INR,True
+OID00000057,SKU00057,Britannia Garlic Bread 2kg,Bakery,Bread,Bakery,Britannia,5784,4028,1578,2124,WH-HYD-S03,3,packet,83,INR,True
+OID00000058,SKU00058,Heritage Curd 500ml,Dairy,Milk,Fresh Milk,Heritage,5040,4381,1285,2023,WH-CHE-S04,4,packet,107,INR,True
+OID00000059,SKU00059,Britannia Rusk Premium,Bakery,Bread,Bakery,Britannia,5905,5793,2185,2532,WH-CBE-S01,6,packet,297,INR,True
+OID00000060,SKU00060,Lays Namkeen 1L,Snacks,Chips,Packaged Snacks,Lays,5604,6111,1783,2743,WH-CBE-S01,7,packet,195,INR,True
+OID00000061,SKU00061,Organic Tattva Moong Dal 2kg,Pulses,Dal,Staples,Organic Tattva,3867,6224,1102,2270,WH-MUM-S05,9,kg,183,INR,True
+OID00000062,SKU00062,Surf Excel Dishwash Liquid 1L,Home Care,Cleaning,Household,Surf Excel,2311,2380,961,1238,WH-BLR-S02,8,bottle,643,INR,True
+OID00000063,SKU00063,Daawat Basmati Rice 1kg,Rice & Staples,Rice,Staples,Daawat,4349,4296,1827,2299,WH-HYD-S03,5,kg,132,INR,True
+OID00000064,SKU00064,Surf Excel Fabric Conditioner 1kg,Home Care,Cleaning,Household,Surf Excel,383,976,135,626,WH-CHE-S04,8,bottle,628,INR,True
+OID00000065,SKU00065,Organic Tattva Chana Dal 1kg,Pulses,Dal,Staples,Organic Tattva,3971,3117,1622,1912,WH-CHE-S04,4,kg,138,INR,True
+OID00000066,SKU00066,Parle Namkeen 250ml,Snacks,Chips,Packaged Snacks,Parle,4649,4062,1481,2708,WH-CHE-S04,5,packet,166,INR,True
+OID00000067,SKU00067,FarmPick Carrot 500g,Fresh Produce,Vegetables,Vegetables,FarmPick,2884,5880,789,1986,WH-BLR-S02,4,kg,143,INR,True
+OID00000068,SKU00068,Vim Fabric Conditioner 1kg,Home Care,Cleaning,Household,Vim,2618,2877,1167,1664,WH-HYD-S03,3,bottle,369,INR,False
+OID00000069,SKU00069,Lux Body Lotion 500g,Personal Care,Bath & Body,Personal Care,Lux,672,2727,298,1531,WH-CHE-S04,2,piece,42,INR,True
+OID00000070,SKU00070,24 Mantra Chana Dal 1L,Pulses,Dal,Staples,24 Mantra,3091,2125,886,1091,WH-CBE-S01,2,kg,162,INR,True
+OID00000071,SKU00071,Lizol Toilet Cleaner 1kg,Home Care,Cleaning,Household,Lizol,1522,1697,627,1349,WH-CBE-S01,9,bottle,486,INR,True
+OID00000072,SKU00072,Harpic Fabric Conditioner Premium,Home Care,Cleaning,Household,Harpic,3416,3384,1161,2167,WH-CHE-S04,5,bottle,642,INR,True
+OID00000073,SKU00073,Lizol Toilet Cleaner 500g,Home Care,Cleaning,Household,Lizol,5424,3368,1584,3036,WH-BLR-S02,3,bottle,625,INR,True
+OID00000074,SKU00074,FarmPick Guava 1kg,Fresh Produce,Fruits,Fresh Fruits,FarmPick,5947,3022,2193,2889,WH-HYD-S03,5,kg,272,INR,True
+OID00000075,SKU00075,Modern Croissant 500g,Bakery,Bread,Bakery,Modern,3782,4244,1032,1592,WH-HYD-S03,3,packet,61,INR,True
+OID00000076,SKU00076,Paper Boat Green Tea 500ml,Beverages,Soft Drinks,Cold Beverages,Paper Boat,1318,4041,453,1175,WH-HYD-S03,9,bottle,296,INR,True
+OID00000077,SKU00077,FarmPick Tomato 100g,Fresh Produce,Vegetables,Vegetables,FarmPick,3839,3884,1523,2859,WH-CBE-S01,4,kg,167,INR,True
+OID00000078,SKU00078,Nature Fresh Grapes Family Pack,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,5020,3680,1295,1753,WH-CHE-S04,5,kg,132,INR,True
+OID00000079,SKU00079,Aashirvaad Idli Rice 250ml,Rice & Staples,Rice,Staples,Aashirvaad,1047,2661,360,1296,WH-CBE-S01,3,kg,129,INR,True
+OID00000080,SKU00080,24 Mantra Chana Dal 200g,Pulses,Dal,Staples,24 Mantra,6964,4837,2800,2975,WH-HYD-S03,5,kg,142,INR,True
+OID00000081,SKU00081,Aashirvaad Basmati Rice 100g,Rice & Staples,Rice,Staples,Aashirvaad,5687,5148,2410,3456,WH-BLR-S02,9,kg,137,INR,True
+OID00000082,SKU00082,Organic Tattva Chana Dal 500g,Pulses,Dal,Staples,Organic Tattva,6525,4593,1698,2344,WH-HYD-S03,8,kg,238,INR,True
+OID00000083,SKU00083,Nature Fresh Kiwi Family Pack,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,6847,3735,2039,2463,WH-CBE-S01,9,kg,248,INR,True
+OID00000084,SKU00084,Green Basket Potato 2kg,Fresh Produce,Vegetables,Vegetables,Green Basket,5606,7274,2334,3454,WH-MUM-S05,5,kg,126,INR,True
+OID00000085,SKU00085,Aashirvaad Chana Dal Premium,Pulses,Dal,Staples,Aashirvaad,4815,5608,1343,1833,WH-MUM-S05,3,kg,77,INR,True
+OID00000086,SKU00086,Daawat Jeera Rice 2kg,Rice & Staples,Rice,Staples,Daawat,2488,4682,1030,1709,WH-MUM-S05,10,kg,213,INR,True
+OID00000087,SKU00087,Milky Mist Lassi Family Pack,Dairy,Milk,Fresh Milk,Milky Mist,4267,5715,1361,2591,WH-CHE-S04,8,packet,359,INR,True
+OID00000088,SKU00088,Harvest Muffin 250ml,Bakery,Bread,Bakery,Harvest,2213,2051,932,1873,WH-CHE-S04,7,packet,222,INR,True
+OID00000089,SKU00089,Milky Mist Milk 200g,Dairy,Milk,Fresh Milk,Milky Mist,1334,3134,467,1775,WH-CHE-S04,2,packet,568,INR,True
+OID00000090,SKU00090,Nature Fresh Orange 1L,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,3658,2273,1551,1967,WH-HYD-S03,6,kg,243,INR,True
+OID00000091,SKU00091,Balaji Biscuits Family Pack,Snacks,Chips,Packaged Snacks,Balaji,2894,5758,1086,2185,WH-CBE-S01,10,packet,45,INR,True
+OID00000092,SKU00092,Real Orange Soda 200g,Beverages,Soft Drinks,Cold Beverages,Real,3855,5998,1718,3115,WH-CHE-S04,3,bottle,375,INR,True
+OID00000093,SKU00093,Fresh Farm Pomegranate 500ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,6822,4151,1782,2616,WH-BLR-S02,4,kg,311,INR,True
+OID00000094,SKU00094,Amul Paneer 1kg,Dairy,Milk,Fresh Milk,Amul,946,3772,351,1234,WH-CHE-S04,10,packet,176,INR,True
+OID00000095,SKU00095,Tata Tea Fruit Juice 2kg,Beverages,Soft Drinks,Cold Beverages,Tata Tea,5762,6194,1451,2503,WH-MUM-S05,3,bottle,57,INR,True
+OID00000096,SKU00096,Balaji Mixture 2kg,Snacks,Chips,Packaged Snacks,Balaji,5534,4931,2448,3060,WH-BLR-S02,7,packet,257,INR,True
+OID00000097,SKU00097,Aashirvaad Sona Masoori 500ml,Rice & Staples,Rice,Staples,Aashirvaad,5008,2341,1548,2252,WH-HYD-S03,1,kg,189,INR,True
+OID00000098,SKU00098,Nature Fresh Guava 250ml,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,2644,4128,1071,1642,WH-BLR-S02,4,kg,168,INR,True
+OID00000099,SKU00099,Aavin Milk 250ml,Dairy,Milk,Fresh Milk,Aavin,2830,3694,1153,1321,WH-BLR-S02,2,packet,332,INR,True
+OID00000100,SKU00100,India Gate Ponni Rice Family Pack,Rice & Staples,Rice,Staples,India Gate,1382,3585,562,1411,WH-HYD-S03,3,kg,110,INR,True
+OID00000101,SKU00101,24 Mantra Urad Dal 1kg,Pulses,Dal,Staples,24 Mantra,6888,2710,1880,2134,WH-CHE-S04,9,kg,153,INR,True
+OID00000102,SKU00102,India Gate Sona Masoori 2kg,Rice & Staples,Rice,Staples,India Gate,4695,4898,1289,2143,WH-MUM-S05,7,kg,208,INR,True
+OID00000103,SKU00103,FarmPick Carrot Premium,Fresh Produce,Vegetables,Vegetables,FarmPick,4162,3653,1061,2310,WH-BLR-S02,2,kg,138,INR,True
+OID00000104,SKU00104,Nescafe Orange Soda 1L,Beverages,Soft Drinks,Cold Beverages,Nescafe,1445,1796,374,550,WH-CBE-S01,2,bottle,140,INR,True
+OID00000105,SKU00105,Milky Mist Buttermilk Premium,Dairy,Milk,Fresh Milk,Milky Mist,3339,4204,1282,2488,WH-BLR-S02,7,packet,131,INR,True
+OID00000106,SKU00106,Ariel Dishwash Liquid 1L,Home Care,Cleaning,Household,Ariel,568,2580,220,764,WH-BLR-S02,6,bottle,161,INR,True
+OID00000107,SKU00107,Balaji Cookies 200g,Snacks,Chips,Packaged Snacks,Balaji,796,4715,262,750,WH-CHE-S04,2,packet,349,INR,True
+OID00000108,SKU00108,Lizol Floor Cleaner Premium,Home Care,Cleaning,Household,Lizol,6745,5716,2136,2493,WH-BLR-S02,2,bottle,627,INR,True
+OID00000109,SKU00109,Britannia Cake 2kg,Bakery,Bread,Bakery,Britannia,6643,3187,1856,3176,WH-BLR-S02,3,packet,153,INR,True
+OID00000110,SKU00110,FarmPick Tomato 250ml,Fresh Produce,Vegetables,Vegetables,FarmPick,1379,3346,348,935,WH-CBE-S01,3,kg,87,INR,True
+OID00000111,SKU00111,Aashirvaad Basmati Rice 250ml,Rice & Staples,Rice,Staples,Aashirvaad,6408,5887,1683,2701,WH-MUM-S05,10,kg,72,INR,True
+OID00000112,SKU00112,Harvest Brown Bread 2kg,Bakery,Bread,Bakery,Harvest,6257,6128,2544,3993,WH-CHE-S04,1,packet,56,INR,True
+OID00000113,SKU00113,Daawat Raw Rice 200g,Rice & Staples,Rice,Staples,Daawat,1184,1721,412,1420,WH-HYD-S03,10,kg,82,INR,True
+OID00000114,SKU00114,Bru Coffee Premium,Beverages,Soft Drinks,Cold Beverages,Bru,5193,4948,1849,2878,WH-CHE-S04,2,bottle,426,INR,True
+OID00000115,SKU00115,Himalaya Toothpaste 250ml,Personal Care,Bath & Body,Personal Care,Himalaya,3823,3562,1301,1868,WH-CHE-S04,7,piece,455,INR,True
+OID00000116,SKU00116,Parle Cookies 1L,Snacks,Chips,Packaged Snacks,Parle,5748,4955,1730,2142,WH-CBE-S01,2,packet,53,INR,True
+OID00000117,SKU00117,FarmPick Cabbage Family Pack,Fresh Produce,Vegetables,Vegetables,FarmPick,6950,4542,1918,2140,WH-MUM-S05,6,kg,51,INR,True
+OID00000118,SKU00118,Aashirvaad Basmati Rice Premium,Rice & Staples,Rice,Staples,Aashirvaad,2656,2226,982,1802,WH-MUM-S05,4,kg,84,INR,True
+OID00000119,SKU00119,Britannia Cake 1kg,Bakery,Bread,Bakery,Britannia,4856,4591,1570,2240,WH-CHE-S04,9,packet,38,INR,True
+OID00000120,SKU00120,Coca-Cola Lemon Soda 250ml,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,2538,5497,991,1723,WH-HYD-S03,1,bottle,112,INR,True
+OID00000121,SKU00121,Ariel Floor Cleaner Family Pack,Home Care,Cleaning,Household,Ariel,1462,1119,582,744,WH-BLR-S02,7,bottle,489,INR,True
+OID00000122,SKU00122,Heritage Cheese 200g,Dairy,Milk,Fresh Milk,Heritage,6211,5659,1955,3217,WH-CBE-S01,3,packet,191,INR,True
+OID00000123,SKU00123,Nature Fresh Banana Premium,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,2529,3813,856,1824,WH-CHE-S04,7,kg,179,INR,True
+OID00000124,SKU00124,Dove Hand Wash Premium,Personal Care,Bath & Body,Personal Care,Dove,3821,5306,1039,2527,WH-CHE-S04,9,piece,345,INR,False
+OID00000125,SKU00125,Aashirvaad Basmati Rice 500g,Rice & Staples,Rice,Staples,Aashirvaad,362,3780,105,637,WH-HYD-S03,5,kg,128,INR,True
+OID00000126,SKU00126,Organic Tattva Chana Dal 1kg,Pulses,Dal,Staples,Organic Tattva,1739,4551,479,1669,WH-MUM-S05,9,kg,231,INR,True
+OID00000127,SKU00127,Green Basket Tomato 250ml,Fresh Produce,Vegetables,Vegetables,Green Basket,3873,4772,982,1241,WH-MUM-S05,7,kg,166,INR,True
+OID00000128,SKU00128,Daawat Basmati Rice Premium,Rice & Staples,Rice,Staples,Daawat,3618,2387,919,1684,WH-CHE-S04,6,kg,67,INR,True
+OID00000129,SKU00129,Fresh Farm Cauliflower 2kg,Fresh Produce,Vegetables,Vegetables,Fresh Farm,5124,3573,1691,1952,WH-HYD-S03,4,kg,105,INR,True
+OID00000130,SKU00130,FarmPick Potato 500g,Fresh Produce,Vegetables,Vegetables,FarmPick,4646,3888,1635,2450,WH-BLR-S02,2,kg,57,INR,True
+OID00000131,SKU00131,Amul Curd 1L,Dairy,Milk,Fresh Milk,Amul,1751,4179,770,2156,WH-MUM-S05,10,packet,489,INR,True
+OID00000132,SKU00132,Vim Dishwash Liquid 1L,Home Care,Cleaning,Household,Vim,5438,2982,1703,2703,WH-CHE-S04,5,bottle,341,INR,True
+OID00000133,SKU00133,Balaji Banana Chips 250ml,Snacks,Chips,Packaged Snacks,Balaji,2842,1382,972,1149,WH-HYD-S03,2,packet,340,INR,True
+OID00000134,SKU00134,FarmPick Spinach 100g,Fresh Produce,Vegetables,Vegetables,FarmPick,4453,5013,1455,2743,WH-CHE-S04,10,kg,68,INR,True
+OID00000135,SKU00135,Organic Tattva Moong Dal 200g,Pulses,Dal,Staples,Organic Tattva,806,4002,274,1077,WH-MUM-S05,3,kg,70,INR,True
+OID00000136,SKU00136,24 Mantra Masoor Dal 2kg,Pulses,Dal,Staples,24 Mantra,4582,4076,1704,2549,WH-CHE-S04,7,kg,146,INR,True
+OID00000137,SKU00137,Nature Fresh Pomegranate 500ml,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,839,4285,265,1507,WH-HYD-S03,5,kg,348,INR,True
+OID00000138,SKU00138,Lays Protein Bar 500ml,Snacks,Chips,Packaged Snacks,Lays,5736,3682,1596,2412,WH-BLR-S02,10,packet,53,INR,True
+OID00000139,SKU00139,Aashirvaad Sona Masoori 500ml,Rice & Staples,Rice,Staples,Aashirvaad,6961,3478,1918,3096,WH-MUM-S05,6,kg,49,INR,True
+OID00000140,SKU00140,Amul Yogurt 500g,Dairy,Milk,Fresh Milk,Amul,6576,3409,2283,2846,WH-CBE-S01,5,packet,133,INR,True
+OID00000141,SKU00141,Mamaearth Bath Soap Premium,Personal Care,Bath & Body,Personal Care,Mamaearth,5722,3716,1815,3180,WH-CHE-S04,3,piece,196,INR,True
+OID00000142,SKU00142,Harpic Air Freshener 1kg,Home Care,Cleaning,Household,Harpic,3885,4621,1005,1851,WH-CHE-S04,10,bottle,351,INR,True
+OID00000143,SKU00143,Aashirvaad Masoor Dal 1kg,Pulses,Dal,Staples,Aashirvaad,2259,5466,704,1764,WH-HYD-S03,10,kg,172,INR,True
+OID00000144,SKU00144,Nescafe Tea Powder 1kg,Beverages,Soft Drinks,Cold Beverages,Nescafe,4620,5317,1541,1972,WH-MUM-S05,3,bottle,148,INR,True
+OID00000145,SKU00145,24 Mantra Masoor Dal 200g,Pulses,Dal,Staples,24 Mantra,1140,5089,447,1603,WH-HYD-S03,2,kg,101,INR,True
+OID00000146,SKU00146,Lux Sanitary Pads 1L,Personal Care,Bath & Body,Personal Care,Lux,1051,4360,461,1015,WH-HYD-S03,1,piece,454,INR,True
+OID00000147,SKU00147,Pears Toothpaste 100g,Personal Care,Bath & Body,Personal Care,Pears,3463,3340,1554,2421,WH-HYD-S03,2,piece,373,INR,True
+OID00000148,SKU00148,Aavin Cheese 1L,Dairy,Milk,Fresh Milk,Aavin,4170,5115,1623,2007,WH-CHE-S04,10,packet,35,INR,True
+OID00000149,SKU00149,FarmPick Mango 500ml,Fresh Produce,Fruits,Fresh Fruits,FarmPick,1524,4055,548,1894,WH-CBE-S01,5,kg,161,INR,True
+OID00000150,SKU00150,Fresh Farm Papaya 200g,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,5534,3555,2262,3298,WH-CHE-S04,10,kg,314,INR,False
+OID00000151,SKU00151,Closeup Toothpaste Premium,Personal Care,Bath & Body,Personal Care,Closeup,6186,2709,1724,2703,WH-HYD-S03,4,piece,614,INR,True
+OID00000152,SKU00152,FarmPick Cabbage Family Pack,Fresh Produce,Vegetables,Vegetables,FarmPick,854,3668,376,1590,WH-MUM-S05,1,kg,119,INR,True
+OID00000153,SKU00153,Nature Fresh Papaya 200g,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,3358,2604,1009,1142,WH-HYD-S03,4,kg,93,INR,True
+OID00000154,SKU00154,Bingo Potato Chips 1L,Snacks,Chips,Packaged Snacks,Bingo,3186,3277,1144,2560,WH-CHE-S04,3,packet,79,INR,True
+OID00000155,SKU00155,Aashirvaad Urad Dal 100g,Pulses,Dal,Staples,Aashirvaad,1951,4640,504,1012,WH-HYD-S03,5,kg,191,INR,True
+OID00000156,SKU00156,Colgate Body Lotion 250ml,Personal Care,Bath & Body,Personal Care,Colgate,599,1901,239,730,WH-CBE-S01,6,piece,309,INR,True
+OID00000157,SKU00157,Parle Biscuits 500g,Snacks,Chips,Packaged Snacks,Parle,6389,4438,2159,3050,WH-CHE-S04,8,packet,198,INR,True
+OID00000158,SKU00158,Pears Shampoo 500g,Personal Care,Bath & Body,Personal Care,Pears,6256,5543,2095,3076,WH-MUM-S05,5,piece,358,INR,True
+OID00000159,SKU00159,Haldiram Mixture 1L,Snacks,Chips,Packaged Snacks,Haldiram,3952,3118,1464,2436,WH-HYD-S03,8,packet,31,INR,True
+OID00000160,SKU00160,Balaji Biscuits 500ml,Snacks,Chips,Packaged Snacks,Balaji,2549,1487,963,1180,WH-HYD-S03,9,packet,91,INR,True
+OID00000161,SKU00161,Milky Mist Milk 250ml,Dairy,Milk,Fresh Milk,Milky Mist,1334,3272,351,1772,WH-CHE-S04,10,packet,63,INR,True
+OID00000162,SKU00162,24 Mantra Urad Dal Family Pack,Pulses,Dal,Staples,24 Mantra,3936,3422,1584,2859,WH-HYD-S03,7,kg,140,INR,True
+OID00000163,SKU00163,Britannia Brown Bread Family Pack,Bakery,Bread,Bakery,Britannia,6326,4561,1816,2976,WH-CBE-S01,5,packet,158,INR,True
+OID00000164,SKU00164,Harvest Rusk 200g,Bakery,Bread,Bakery,Harvest,5985,4517,2593,3698,WH-BLR-S02,2,packet,256,INR,True
+OID00000165,SKU00165,Aashirvaad Urad Dal Family Pack,Pulses,Dal,Staples,Aashirvaad,5770,4327,1843,2075,WH-HYD-S03,5,kg,100,INR,True
+OID00000166,SKU00166,Heritage Lassi 500g,Dairy,Milk,Fresh Milk,Heritage,2136,4340,585,1096,WH-BLR-S02,8,packet,56,INR,True
+OID00000167,SKU00167,Surf Excel Detergent 200g,Home Care,Cleaning,Household,Surf Excel,6883,5944,3073,3438,WH-CBE-S01,5,bottle,467,INR,True
+OID00000168,SKU00168,Organic Tattva Chana Dal 500g,Pulses,Dal,Staples,Organic Tattva,6600,3769,2190,3467,WH-HYD-S03,2,kg,175,INR,True
+OID00000169,SKU00169,Pears Face Wash 500g,Personal Care,Bath & Body,Personal Care,Pears,6691,4458,2410,3713,WH-CHE-S04,9,piece,86,INR,True
+OID00000170,SKU00170,Lux Body Lotion Family Pack,Personal Care,Bath & Body,Personal Care,Lux,1648,2443,465,1026,WH-HYD-S03,2,piece,286,INR,True
+OID00000171,SKU00171,Pears Face Wash Family Pack,Personal Care,Bath & Body,Personal Care,Pears,5420,3257,1683,2875,WH-BLR-S02,10,piece,624,INR,True
+OID00000172,SKU00172,Vim Dishwash Liquid 100g,Home Care,Cleaning,Household,Vim,4917,1759,1269,1427,WH-MUM-S05,5,bottle,275,INR,True
+OID00000173,SKU00173,Aashirvaad Raw Rice 2kg,Rice & Staples,Rice,Staples,Aashirvaad,548,3809,191,1575,WH-HYD-S03,8,kg,107,INR,True
+OID00000174,SKU00174,Daawat Idli Rice 500ml,Rice & Staples,Rice,Staples,Daawat,897,2570,347,770,WH-CHE-S04,8,kg,97,INR,True
+OID00000175,SKU00175,Heritage Yogurt 500ml,Dairy,Milk,Fresh Milk,Heritage,6314,7628,2826,3633,WH-BLR-S02,6,packet,557,INR,True
+OID00000176,SKU00176,Bingo Popcorn 200g,Snacks,Chips,Packaged Snacks,Bingo,1303,1579,395,1002,WH-CBE-S01,5,packet,206,INR,True
+OID00000177,SKU00177,India Gate Ponni Rice 250ml,Rice & Staples,Rice,Staples,India Gate,6964,6433,2197,3480,WH-BLR-S02,3,kg,172,INR,True
+OID00000178,SKU00178,24 Mantra Urad Dal 1L,Pulses,Dal,Staples,24 Mantra,4374,4088,1113,2018,WH-BLR-S02,4,kg,209,INR,True
+OID00000179,SKU00179,FarmPick Guava 1L,Fresh Produce,Fruits,Fresh Fruits,FarmPick,5194,6408,2215,3654,WH-HYD-S03,9,kg,44,INR,True
+OID00000180,SKU00180,India Gate Sona Masoori 100g,Rice & Staples,Rice,Staples,India Gate,6259,4445,2022,2947,WH-CHE-S04,1,kg,190,INR,True
+OID00000181,SKU00181,Balaji Mixture Family Pack,Snacks,Chips,Packaged Snacks,Balaji,902,4447,295,1317,WH-HYD-S03,10,packet,322,INR,True
+OID00000182,SKU00182,Green Basket Cabbage 250ml,Fresh Produce,Vegetables,Vegetables,Green Basket,6811,8133,3046,4288,WH-BLR-S02,4,kg,174,INR,True
+OID00000183,SKU00183,Dove Bath Soap 1L,Personal Care,Bath & Body,Personal Care,Dove,618,4246,171,953,WH-MUM-S05,8,piece,182,INR,True
+OID00000184,SKU00184,Lux Hand Wash 2kg,Personal Care,Bath & Body,Personal Care,Lux,5322,5098,1669,2573,WH-MUM-S05,6,piece,549,INR,True
+OID00000185,SKU00185,Colgate Body Lotion 200g,Personal Care,Bath & Body,Personal Care,Colgate,4190,3941,1731,2585,WH-CHE-S04,10,piece,345,INR,True
+OID00000186,SKU00186,Nature Fresh Guava 1kg,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,2475,4746,1097,2381,WH-CBE-S01,10,kg,285,INR,True
+OID00000187,SKU00187,Ariel Toilet Cleaner 200g,Home Care,Cleaning,Household,Ariel,5876,6908,1753,3025,WH-BLR-S02,1,bottle,511,INR,True
+OID00000188,SKU00188,Milky Mist Butter 1L,Dairy,Milk,Fresh Milk,Milky Mist,3661,6404,1282,2634,WH-CBE-S01,3,packet,561,INR,True
+OID00000189,SKU00189,Parle Namkeen Family Pack,Snacks,Chips,Packaged Snacks,Parle,3386,3394,1058,1512,WH-HYD-S03,9,packet,191,INR,True
+OID00000190,SKU00190,Tata Tea Energy Drink 2kg,Beverages,Soft Drinks,Cold Beverages,Tata Tea,2319,2341,709,1420,WH-HYD-S03,4,bottle,373,INR,True
+OID00000191,SKU00191,Parle Cookies 200g,Snacks,Chips,Packaged Snacks,Parle,4891,3974,2136,2796,WH-MUM-S05,9,packet,204,INR,True
+OID00000192,SKU00192,Daawat Ponni Rice 1L,Rice & Staples,Rice,Staples,Daawat,2679,2371,692,953,WH-HYD-S03,8,kg,99,INR,True
+OID00000193,SKU00193,Pears Body Lotion 1kg,Personal Care,Bath & Body,Personal Care,Pears,1424,2668,387,1688,WH-CBE-S01,9,piece,261,INR,True
+OID00000194,SKU00194,Fresh Farm Papaya 500g,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,3005,4277,1182,1487,WH-CBE-S01,9,kg,120,INR,True
+OID00000195,SKU00195,24 Mantra Moong Dal 100g,Pulses,Dal,Staples,24 Mantra,6492,4800,2874,3631,WH-CBE-S01,10,kg,119,INR,True
+OID00000196,SKU00196,Fresh Farm Papaya 500ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,1740,4359,760,934,WH-CHE-S04,3,kg,188,INR,True
+OID00000197,SKU00197,FarmPick Kiwi 1L,Fresh Produce,Fruits,Fresh Fruits,FarmPick,5237,3372,1421,2207,WH-MUM-S05,9,kg,292,INR,True
+OID00000198,SKU00198,Milky Mist Cheese 1L,Dairy,Milk,Fresh Milk,Milky Mist,1879,2215,773,1550,WH-HYD-S03,3,packet,44,INR,True
+OID00000199,SKU00199,Real Lemon Soda 500ml,Beverages,Soft Drinks,Cold Beverages,Real,5304,6551,2234,3164,WH-MUM-S05,6,bottle,64,INR,True
+OID00000200,SKU00200,Fresh Farm Onion 2kg,Fresh Produce,Vegetables,Vegetables,Fresh Farm,4211,1960,1325,1933,WH-CHE-S04,4,kg,134,INR,True
+OID00000201,SKU00201,Haldiram Protein Bar 250ml,Snacks,Chips,Packaged Snacks,Haldiram,6221,5580,2268,2903,WH-BLR-S02,1,packet,70,INR,True
+OID00000202,SKU00202,Milky Mist Lassi 2kg,Dairy,Milk,Fresh Milk,Milky Mist,6063,5405,2449,2789,WH-HYD-S03,10,packet,256,INR,True
+OID00000203,SKU00203,Milky Mist Paneer 500ml,Dairy,Milk,Fresh Milk,Milky Mist,4027,4478,1608,2948,WH-MUM-S05,8,packet,580,INR,True
+OID00000204,SKU00204,Britannia White Bread Premium,Bakery,Bread,Bakery,Britannia,4604,2721,1562,2402,WH-CBE-S01,1,packet,283,INR,True
+OID00000205,SKU00205,Lux Face Wash 1kg,Personal Care,Bath & Body,Personal Care,Lux,2987,2737,1257,2261,WH-MUM-S05,8,piece,123,INR,True
+OID00000206,SKU00206,Aashirvaad Chana Dal 100g,Pulses,Dal,Staples,Aashirvaad,1380,3830,486,1521,WH-MUM-S05,8,kg,232,INR,True
+OID00000207,SKU00207,FarmPick Grapes 200g,Fresh Produce,Fruits,Fresh Fruits,FarmPick,6988,4665,1751,2297,WH-CBE-S01,7,kg,216,INR,True
+OID00000208,SKU00208,Dove Shampoo 500g,Personal Care,Bath & Body,Personal Care,Dove,4167,2742,1068,2005,WH-CHE-S04,6,piece,421,INR,True
+OID00000209,SKU00209,Daawat Basmati Rice 250ml,Rice & Staples,Rice,Staples,Daawat,5892,4357,2609,3813,WH-CBE-S01,3,kg,182,INR,True
+OID00000210,SKU00210,Amul Milk Family Pack,Dairy,Milk,Fresh Milk,Amul,6494,4260,1653,2364,WH-CHE-S04,9,packet,418,INR,True
+OID00000211,SKU00211,Modern Cake 500ml,Bakery,Bread,Bakery,Modern,1570,941,479,810,WH-MUM-S05,1,packet,148,INR,True
+OID00000212,SKU00212,FarmPick Tomato 100g,Fresh Produce,Vegetables,Vegetables,FarmPick,3957,2663,1462,1661,WH-CHE-S04,8,kg,79,INR,True
+OID00000213,SKU00213,Fresh Farm Watermelon Premium,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,2669,3377,792,2071,WH-MUM-S05,6,kg,161,INR,True
+OID00000214,SKU00214,Amul Ghee Premium,Dairy,Milk,Fresh Milk,Amul,2761,5967,842,2082,WH-BLR-S02,7,packet,599,INR,True
+OID00000215,SKU00215,Parle Namkeen 2kg,Snacks,Chips,Packaged Snacks,Parle,2911,2680,1133,2069,WH-CHE-S04,3,packet,285,INR,True
+OID00000216,SKU00216,Modern Buns 500ml,Bakery,Bread,Bakery,Modern,6900,4884,2363,2581,WH-CHE-S04,9,packet,296,INR,True
+OID00000217,SKU00217,Modern Croissant 250ml,Bakery,Bread,Bakery,Modern,3005,5629,1139,2160,WH-CBE-S01,9,packet,122,INR,True
+OID00000218,SKU00218,Aashirvaad Jeera Rice Premium,Rice & Staples,Rice,Staples,Aashirvaad,5239,2370,1351,1600,WH-MUM-S05,4,kg,167,INR,True
+OID00000219,SKU00219,Haldiram Potato Chips 1L,Snacks,Chips,Packaged Snacks,Haldiram,2035,4289,890,1230,WH-BLR-S02,10,packet,114,INR,True
+OID00000220,SKU00220,Harvest Cake 250ml,Bakery,Bread,Bakery,Harvest,6653,5278,2039,3093,WH-HYD-S03,5,packet,209,INR,True
+OID00000221,SKU00221,24 Mantra Toor Dal 250ml,Pulses,Dal,Staples,24 Mantra,6876,7248,3068,4129,WH-BLR-S02,6,kg,140,INR,True
+OID00000222,SKU00222,Harpic Air Freshener Premium,Home Care,Cleaning,Household,Harpic,1495,5439,378,1611,WH-MUM-S05,7,bottle,362,INR,True
+OID00000223,SKU00223,Bingo Biscuits 250ml,Snacks,Chips,Packaged Snacks,Bingo,4967,5446,2069,3191,WH-HYD-S03,8,packet,338,INR,True
+OID00000224,SKU00224,Aashirvaad Urad Dal 500g,Pulses,Dal,Staples,Aashirvaad,1686,3687,468,1687,WH-MUM-S05,1,kg,194,INR,False
+OID00000225,SKU00225,FarmPick Tomato 1kg,Fresh Produce,Vegetables,Vegetables,FarmPick,6561,5480,1648,2029,WH-CBE-S01,3,kg,22,INR,True
+OID00000226,SKU00226,24 Mantra Toor Dal 1L,Pulses,Dal,Staples,24 Mantra,5361,7124,2024,3386,WH-CHE-S04,1,kg,61,INR,True
+OID00000227,SKU00227,India Gate Basmati Rice 100g,Rice & Staples,Rice,Staples,India Gate,4636,4199,1828,3025,WH-MUM-S05,7,kg,90,INR,True
+OID00000228,SKU00228,FarmPick Onion 250ml,Fresh Produce,Vegetables,Vegetables,FarmPick,2274,2866,655,1833,WH-HYD-S03,7,kg,40,INR,True
+OID00000229,SKU00229,Daawat Jeera Rice 200g,Rice & Staples,Rice,Staples,Daawat,2292,2816,1026,1588,WH-CBE-S01,2,kg,148,INR,True
+OID00000230,SKU00230,Colgate Bath Soap 1L,Personal Care,Bath & Body,Personal Care,Colgate,5516,2177,1389,1839,WH-CHE-S04,6,piece,609,INR,True
+OID00000231,SKU00231,FarmPick Tomato 2kg,Fresh Produce,Vegetables,Vegetables,FarmPick,2182,3844,637,1897,WH-CBE-S01,2,kg,91,INR,True
+OID00000232,SKU00232,Lizol Toilet Cleaner 500g,Home Care,Cleaning,Household,Lizol,2876,3656,728,1252,WH-CHE-S04,2,bottle,366,INR,True
+OID00000233,SKU00233,Harvest Muffin 500g,Bakery,Bread,Bakery,Harvest,5846,4860,2509,3288,WH-CBE-S01,9,packet,202,INR,True
+OID00000234,SKU00234,India Gate Basmati Rice Premium,Rice & Staples,Rice,Staples,India Gate,3090,6414,1146,2503,WH-CHE-S04,6,kg,52,INR,True
+OID00000235,SKU00235,24 Mantra Moong Dal 500g,Pulses,Dal,Staples,24 Mantra,3214,3794,1158,2026,WH-MUM-S05,7,kg,81,INR,True
+OID00000236,SKU00236,Real Orange Soda 500g,Beverages,Soft Drinks,Cold Beverages,Real,972,4088,295,1173,WH-CHE-S04,6,bottle,204,INR,True
+OID00000237,SKU00237,FarmPick Guava 200g,Fresh Produce,Fruits,Fresh Fruits,FarmPick,3248,2157,1306,1615,WH-BLR-S02,7,kg,269,INR,True
+OID00000238,SKU00238,Colgate Shampoo Premium,Personal Care,Bath & Body,Personal Care,Colgate,515,1753,137,1372,WH-MUM-S05,6,piece,424,INR,False
+OID00000239,SKU00239,Daawat Basmati Rice Family Pack,Rice & Staples,Rice,Staples,Daawat,6237,5622,2683,3280,WH-BLR-S02,7,kg,88,INR,True
+OID00000240,SKU00240,Paper Boat Green Tea 500ml,Beverages,Soft Drinks,Cold Beverages,Paper Boat,1495,2512,392,1382,WH-HYD-S03,8,bottle,420,INR,True
+OID00000241,SKU00241,Real Green Tea 500g,Beverages,Soft Drinks,Cold Beverages,Real,5164,3402,1927,2964,WH-HYD-S03,1,bottle,222,INR,True
+OID00000242,SKU00242,Ariel Dishwash Liquid Premium,Home Care,Cleaning,Household,Ariel,3906,6660,1237,2670,WH-BLR-S02,5,bottle,388,INR,True
+OID00000243,SKU00243,Modern Cake 1L,Bakery,Bread,Bakery,Modern,1755,2723,777,1530,WH-MUM-S05,4,packet,191,INR,True
+OID00000244,SKU00244,Daawat Basmati Rice Family Pack,Rice & Staples,Rice,Staples,Daawat,4919,3379,1426,2643,WH-CBE-S01,8,kg,226,INR,True
+OID00000245,SKU00245,Pepsi Coffee 1kg,Beverages,Soft Drinks,Cold Beverages,Pepsi,5813,4670,2033,3430,WH-HYD-S03,3,bottle,386,INR,True
+OID00000246,SKU00246,India Gate Idli Rice Family Pack,Rice & Staples,Rice,Staples,India Gate,5198,4905,1797,2717,WH-CHE-S04,9,kg,54,INR,True
+OID00000247,SKU00247,Balaji Protein Bar 1kg,Snacks,Chips,Packaged Snacks,Balaji,5527,5864,2392,2715,WH-HYD-S03,3,packet,341,INR,True
+OID00000248,SKU00248,Ariel Dishwash Liquid 2kg,Home Care,Cleaning,Household,Ariel,6822,2816,2292,2413,WH-BLR-S02,9,bottle,591,INR,True
+OID00000249,SKU00249,Harpic Detergent Family Pack,Home Care,Cleaning,Household,Harpic,3364,5005,1104,2595,WH-BLR-S02,6,bottle,85,INR,True
+OID00000250,SKU00250,Nescafe Orange Soda 2kg,Beverages,Soft Drinks,Cold Beverages,Nescafe,1250,2336,520,910,WH-HYD-S03,8,bottle,421,INR,True
+OID00000251,SKU00251,24 Mantra Chana Dal 200g,Pulses,Dal,Staples,24 Mantra,1099,2703,371,1397,WH-HYD-S03,1,kg,89,INR,False
+OID00000252,SKU00252,Lays Nachos 500g,Snacks,Chips,Packaged Snacks,Lays,6366,4619,1902,2359,WH-HYD-S03,9,packet,228,INR,True
+OID00000253,SKU00253,Modern Buns 100g,Bakery,Bread,Bakery,Modern,1826,3295,690,1675,WH-MUM-S05,4,packet,255,INR,True
+OID00000254,SKU00254,India Gate Raw Rice 200g,Rice & Staples,Rice,Staples,India Gate,2059,3191,599,827,WH-MUM-S05,3,kg,138,INR,True
+OID00000255,SKU00255,Aashirvaad Urad Dal 250ml,Pulses,Dal,Staples,Aashirvaad,5794,7584,2448,3628,WH-MUM-S05,7,kg,216,INR,True
+OID00000256,SKU00256,Green Basket Cabbage 2kg,Fresh Produce,Vegetables,Vegetables,Green Basket,4050,5882,1512,2991,WH-MUM-S05,10,kg,41,INR,True
+OID00000257,SKU00257,Lays Murukku 500g,Snacks,Chips,Packaged Snacks,Lays,2801,4469,765,1629,WH-MUM-S05,7,packet,224,INR,True
+OID00000258,SKU00258,Ariel Detergent 500g,Home Care,Cleaning,Household,Ariel,1821,4672,632,1832,WH-MUM-S05,3,bottle,561,INR,True
+OID00000259,SKU00259,Heritage Buttermilk 100g,Dairy,Milk,Fresh Milk,Heritage,5374,6134,1401,2236,WH-CHE-S04,3,packet,229,INR,True
+OID00000260,SKU00260,Closeup Face Cream 1L,Personal Care,Bath & Body,Personal Care,Closeup,3651,5271,1412,2363,WH-CHE-S04,3,piece,114,INR,True
+OID00000261,SKU00261,Modern Brown Bread 1L,Bakery,Bread,Bakery,Modern,2551,2131,752,1443,WH-MUM-S05,8,packet,286,INR,True
+OID00000262,SKU00262,Green Basket Okra 1L,Fresh Produce,Vegetables,Vegetables,Green Basket,3305,4481,1184,1369,WH-MUM-S05,4,kg,128,INR,True
+OID00000263,SKU00263,Modern Brown Bread 200g,Bakery,Bread,Bakery,Modern,3984,3281,1205,1483,WH-BLR-S02,4,packet,204,INR,True
+OID00000264,SKU00264,Ariel Toilet Cleaner 1kg,Home Care,Cleaning,Household,Ariel,5347,5340,1485,2008,WH-CBE-S01,10,bottle,419,INR,True
+OID00000265,SKU00265,Vim Toilet Cleaner Premium,Home Care,Cleaning,Household,Vim,2951,3199,1315,2014,WH-HYD-S03,9,bottle,157,INR,True
+OID00000266,SKU00266,India Gate Sona Masoori 500g,Rice & Staples,Rice,Staples,India Gate,5673,2955,1562,1933,WH-HYD-S03,4,kg,239,INR,True
+OID00000267,SKU00267,Daawat Ponni Rice 500ml,Rice & Staples,Rice,Staples,Daawat,5030,4974,1893,3278,WH-CHE-S04,2,kg,207,INR,True
+OID00000268,SKU00268,Green Basket Okra 1L,Fresh Produce,Vegetables,Vegetables,Green Basket,6442,4685,1968,2823,WH-HYD-S03,10,kg,20,INR,True
+OID00000269,SKU00269,FarmPick Brinjal 200g,Fresh Produce,Vegetables,Vegetables,FarmPick,5500,6420,2105,2938,WH-MUM-S05,7,kg,75,INR,True
+OID00000270,SKU00270,Modern Rusk Premium,Bakery,Bread,Bakery,Modern,2944,4255,1223,2014,WH-BLR-S02,10,packet,273,INR,True
+OID00000271,SKU00271,Fresh Farm Banana 200g,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,5429,3315,2208,3249,WH-BLR-S02,8,kg,273,INR,False
+OID00000272,SKU00272,India Gate Raw Rice 2kg,Rice & Staples,Rice,Staples,India Gate,1380,1957,588,1306,WH-CBE-S01,6,kg,109,INR,True
+OID00000273,SKU00273,Aavin Ghee 200g,Dairy,Milk,Fresh Milk,Aavin,5424,4024,1687,2266,WH-CBE-S01,1,packet,248,INR,True
+OID00000274,SKU00274,Amul Lassi 250ml,Dairy,Milk,Fresh Milk,Amul,5870,4955,1990,2106,WH-CBE-S01,7,packet,165,INR,True
+OID00000275,SKU00275,Modern White Bread 250ml,Bakery,Bread,Bakery,Modern,6286,4178,2584,2895,WH-HYD-S03,3,packet,220,INR,True
+OID00000276,SKU00276,Amul Curd 500g,Dairy,Milk,Fresh Milk,Amul,4645,5695,1684,3033,WH-CHE-S04,6,packet,248,INR,True
+OID00000277,SKU00277,Milky Mist Cream 200g,Dairy,Milk,Fresh Milk,Milky Mist,5924,2904,2005,2549,WH-BLR-S02,2,packet,633,INR,True
+OID00000278,SKU00278,Parle Cookies 200g,Snacks,Chips,Packaged Snacks,Parle,6780,5191,1884,2551,WH-BLR-S02,9,packet,317,INR,True
+OID00000279,SKU00279,Surf Excel Air Freshener 2kg,Home Care,Cleaning,Household,Surf Excel,519,5252,217,1665,WH-BLR-S02,9,bottle,681,INR,True
+OID00000280,SKU00280,Daawat Raw Rice 500ml,Rice & Staples,Rice,Staples,Daawat,747,2920,303,893,WH-CBE-S01,4,kg,172,INR,True
+OID00000281,SKU00281,FarmPick Tomato Premium,Fresh Produce,Vegetables,Vegetables,FarmPick,3258,3377,1423,1793,WH-CHE-S04,6,kg,159,INR,True
+OID00000282,SKU00282,Aashirvaad Toor Dal 100g,Pulses,Dal,Staples,Aashirvaad,5111,2865,1346,1982,WH-CBE-S01,7,kg,189,INR,True
+OID00000283,SKU00283,Mamaearth Sanitary Pads Family Pack,Personal Care,Bath & Body,Personal Care,Mamaearth,3769,4362,1471,1739,WH-MUM-S05,10,piece,186,INR,True
+OID00000284,SKU00284,Pepsi Tea Powder 250ml,Beverages,Soft Drinks,Cold Beverages,Pepsi,1964,3488,873,1291,WH-CHE-S04,10,bottle,344,INR,True
+OID00000285,SKU00285,Green Basket Cauliflower 1kg,Fresh Produce,Vegetables,Vegetables,Green Basket,6279,3592,2767,3355,WH-CBE-S01,7,kg,49,INR,True
+OID00000286,SKU00286,Lizol Dishwash Liquid 100g,Home Care,Cleaning,Household,Lizol,5756,3240,2292,2751,WH-BLR-S02,1,bottle,227,INR,True
+OID00000287,SKU00287,Balaji Namkeen 250ml,Snacks,Chips,Packaged Snacks,Balaji,6714,4095,2782,3412,WH-BLR-S02,5,packet,70,INR,True
+OID00000288,SKU00288,FarmPick Papaya Premium,Fresh Produce,Fruits,Fresh Fruits,FarmPick,2528,4451,896,1534,WH-CBE-S01,8,kg,273,INR,True
+OID00000289,SKU00289,FarmPick Kiwi 200g,Fresh Produce,Fruits,Fresh Fruits,FarmPick,1667,4328,539,1161,WH-MUM-S05,2,kg,156,INR,True
+OID00000290,SKU00290,Fresh Farm Apple 500g,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,2303,3009,596,1441,WH-BLR-S02,1,kg,323,INR,True
+OID00000291,SKU00291,India Gate Sona Masoori 200g,Rice & Staples,Rice,Staples,India Gate,2333,2643,777,1532,WH-MUM-S05,6,kg,75,INR,True
+OID00000292,SKU00292,Fresh Farm Mango 500ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,6889,6533,2432,2626,WH-CBE-S01,8,kg,184,INR,True
+OID00000293,SKU00293,Bru Orange Soda 2kg,Beverages,Soft Drinks,Cold Beverages,Bru,4830,3324,1648,2503,WH-MUM-S05,5,bottle,398,INR,True
+OID00000294,SKU00294,24 Mantra Masoor Dal Family Pack,Pulses,Dal,Staples,24 Mantra,4341,5451,1951,2451,WH-BLR-S02,3,kg,61,INR,True
+OID00000295,SKU00295,Fresh Farm Watermelon 250ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,3137,5197,1183,1302,WH-CBE-S01,7,kg,197,INR,True
+OID00000296,SKU00296,Lux Sanitary Pads 2kg,Personal Care,Bath & Body,Personal Care,Lux,4330,5219,1914,2305,WH-CBE-S01,1,piece,267,INR,True
+OID00000297,SKU00297,Colgate Hand Wash 200g,Personal Care,Bath & Body,Personal Care,Colgate,4055,4455,1804,2077,WH-MUM-S05,3,piece,433,INR,True
+OID00000298,SKU00298,Lizol Detergent 2kg,Home Care,Cleaning,Household,Lizol,5726,4313,2535,3119,WH-HYD-S03,7,bottle,394,INR,True
+OID00000299,SKU00299,Real Orange Soda 500g,Beverages,Soft Drinks,Cold Beverages,Real,1960,2286,543,1840,WH-CBE-S01,3,bottle,250,INR,True
+OID00000300,SKU00300,India Gate Jeera Rice 2kg,Rice & Staples,Rice,Staples,India Gate,3235,3808,1432,1957,WH-CHE-S04,5,kg,75,INR,True
+OID00000301,SKU00301,Coca-Cola Energy Drink 250ml,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,2985,5408,834,1442,WH-CHE-S04,9,bottle,45,INR,True
+OID00000302,SKU00302,Sprite Cola Family Pack,Beverages,Soft Drinks,Cold Beverages,Sprite,3612,5822,1520,2758,WH-BLR-S02,2,bottle,256,INR,True
+OID00000303,SKU00303,Aavin Milk 1kg,Dairy,Milk,Fresh Milk,Aavin,805,1424,334,889,WH-CHE-S04,6,packet,116,INR,True
+OID00000304,SKU00304,Pepsi Cola 500g,Beverages,Soft Drinks,Cold Beverages,Pepsi,828,3477,239,1661,WH-CBE-S01,6,bottle,82,INR,False
+OID00000305,SKU00305,Aashirvaad Moong Dal 100g,Pulses,Dal,Staples,Aashirvaad,5001,4623,1683,2591,WH-CHE-S04,7,kg,104,INR,True
+OID00000306,SKU00306,Heritage Cheese Premium,Dairy,Milk,Fresh Milk,Heritage,3953,4371,1686,1856,WH-MUM-S05,4,packet,332,INR,True
+OID00000307,SKU00307,Colgate Bath Soap 1kg,Personal Care,Bath & Body,Personal Care,Colgate,1018,2409,311,692,WH-MUM-S05,4,piece,586,INR,True
+OID00000308,SKU00308,Aashirvaad Sona Masoori Premium,Rice & Staples,Rice,Staples,Aashirvaad,4229,4018,1517,2609,WH-MUM-S05,6,kg,144,INR,True
+OID00000309,SKU00309,FarmPick Kiwi 1L,Fresh Produce,Fruits,Fresh Fruits,FarmPick,2094,1449,535,1210,WH-MUM-S05,6,kg,339,INR,True
+OID00000310,SKU00310,Aavin Butter 100g,Dairy,Milk,Fresh Milk,Aavin,5681,6229,1694,2886,WH-BLR-S02,10,packet,427,INR,True
+OID00000311,SKU00311,Amul Butter Premium,Dairy,Milk,Fresh Milk,Amul,5153,6192,1615,2449,WH-CBE-S01,6,packet,611,INR,True
+OID00000312,SKU00312,Harpic Detergent 200g,Home Care,Cleaning,Household,Harpic,4741,2737,1478,2582,WH-CBE-S01,4,bottle,676,INR,True
+OID00000313,SKU00313,Colgate Bath Soap 500g,Personal Care,Bath & Body,Personal Care,Colgate,3017,5123,1308,1820,WH-HYD-S03,3,piece,361,INR,True
+OID00000314,SKU00314,Amul Curd 500ml,Dairy,Milk,Fresh Milk,Amul,4611,3724,1946,2194,WH-MUM-S05,2,packet,374,INR,True
+OID00000315,SKU00315,Amul Ghee 250ml,Dairy,Milk,Fresh Milk,Amul,6786,6320,2564,3661,WH-BLR-S02,9,packet,395,INR,True
+OID00000316,SKU00316,Harpic Detergent 500g,Home Care,Cleaning,Household,Harpic,2813,2340,1116,1819,WH-CBE-S01,10,bottle,460,INR,True
+OID00000317,SKU00317,Lizol Toilet Cleaner Premium,Home Care,Cleaning,Household,Lizol,5234,3897,1641,2993,WH-CBE-S01,8,bottle,204,INR,True
+OID00000318,SKU00318,Fresh Farm Cabbage 250ml,Fresh Produce,Vegetables,Vegetables,Fresh Farm,2917,4473,827,1108,WH-CHE-S04,1,kg,87,INR,True
+OID00000319,SKU00319,Green Basket Beans 500ml,Fresh Produce,Vegetables,Vegetables,Green Basket,6747,2131,1832,1934,WH-CHE-S04,7,kg,62,INR,True
+OID00000320,SKU00320,24 Mantra Urad Dal Premium,Pulses,Dal,Staples,24 Mantra,4773,5862,1551,2632,WH-BLR-S02,3,kg,175,INR,True
+OID00000321,SKU00321,FarmPick Apple 250ml,Fresh Produce,Fruits,Fresh Fruits,FarmPick,2910,1496,879,1193,WH-BLR-S02,7,kg,122,INR,True
+OID00000322,SKU00322,Dove Hand Wash 100g,Personal Care,Bath & Body,Personal Care,Dove,5166,6282,2309,3397,WH-CHE-S04,3,piece,474,INR,True
+OID00000323,SKU00323,Green Basket Carrot Family Pack,Fresh Produce,Vegetables,Vegetables,Green Basket,1856,4806,615,1849,WH-HYD-S03,5,kg,96,INR,True
+OID00000324,SKU00324,FarmPick Kiwi 250ml,Fresh Produce,Fruits,Fresh Fruits,FarmPick,4802,2644,2007,2421,WH-CBE-S01,7,kg,84,INR,True
+OID00000325,SKU00325,Ariel Toilet Cleaner 2kg,Home Care,Cleaning,Household,Ariel,1094,3342,279,728,WH-CBE-S01,8,bottle,178,INR,True
+OID00000326,SKU00326,Daawat Idli Rice 500ml,Rice & Staples,Rice,Staples,Daawat,5715,5373,1731,3145,WH-BLR-S02,6,kg,142,INR,True
+OID00000327,SKU00327,Aashirvaad Urad Dal 2kg,Pulses,Dal,Staples,Aashirvaad,3902,5329,1338,1901,WH-MUM-S05,1,kg,98,INR,True
+OID00000328,SKU00328,Fresh Farm Cabbage Family Pack,Fresh Produce,Vegetables,Vegetables,Fresh Farm,6920,4717,2479,3786,WH-CBE-S01,7,kg,153,INR,True
+OID00000329,SKU00329,Himalaya Face Cream 200g,Personal Care,Bath & Body,Personal Care,Himalaya,4991,4426,2127,3202,WH-CHE-S04,1,piece,544,INR,True
+OID00000330,SKU00330,Mamaearth Face Wash 500g,Personal Care,Bath & Body,Personal Care,Mamaearth,1285,2292,565,1584,WH-BLR-S02,4,piece,159,INR,False
+OID00000331,SKU00331,FarmPick Cauliflower Premium,Fresh Produce,Vegetables,Vegetables,FarmPick,1954,2867,878,2262,WH-HYD-S03,6,kg,37,INR,True
+OID00000332,SKU00332,Colgate Hand Wash Premium,Personal Care,Bath & Body,Personal Care,Colgate,2562,4252,906,1031,WH-MUM-S05,9,piece,459,INR,True
+OID00000333,SKU00333,Amul Cream 200g,Dairy,Milk,Fresh Milk,Amul,5116,5968,1875,2180,WH-MUM-S05,2,packet,322,INR,True
+OID00000334,SKU00334,Parle Mixture 1L,Snacks,Chips,Packaged Snacks,Parle,3437,5074,1309,2580,WH-CBE-S01,3,packet,151,INR,True
+OID00000335,SKU00335,Vim Air Freshener 250ml,Home Care,Cleaning,Household,Vim,5982,6529,1976,2886,WH-BLR-S02,1,bottle,546,INR,True
+OID00000336,SKU00336,Lays Cookies 1L,Snacks,Chips,Packaged Snacks,Lays,6996,4743,2859,3595,WH-CBE-S01,4,packet,78,INR,True
+OID00000337,SKU00337,24 Mantra Urad Dal 1kg,Pulses,Dal,Staples,24 Mantra,6270,3877,2090,3512,WH-CHE-S04,4,kg,164,INR,True
+OID00000338,SKU00338,Mamaearth Hand Wash 2kg,Personal Care,Bath & Body,Personal Care,Mamaearth,760,961,268,693,WH-MUM-S05,7,piece,168,INR,True
+OID00000339,SKU00339,Closeup Bath Soap 100g,Personal Care,Bath & Body,Personal Care,Closeup,1723,4436,497,1008,WH-BLR-S02,1,piece,497,INR,True
+OID00000340,SKU00340,Bingo Mixture 200g,Snacks,Chips,Packaged Snacks,Bingo,3317,4134,1375,2509,WH-CBE-S01,4,packet,200,INR,True
+OID00000341,SKU00341,Aashirvaad Chana Dal 2kg,Pulses,Dal,Staples,Aashirvaad,5107,3313,1839,2644,WH-CBE-S01,5,kg,67,INR,True
+OID00000342,SKU00342,Amul Butter 500ml,Dairy,Milk,Fresh Milk,Amul,5603,3278,1653,2176,WH-MUM-S05,1,packet,39,INR,True
+OID00000343,SKU00343,Amul Cream 2kg,Dairy,Milk,Fresh Milk,Amul,6860,4833,1726,2342,WH-HYD-S03,7,packet,415,INR,True
+OID00000344,SKU00344,24 Mantra Moong Dal Premium,Pulses,Dal,Staples,24 Mantra,4123,5821,1279,2445,WH-CHE-S04,10,kg,86,INR,False
+OID00000345,SKU00345,Balaji Protein Bar 200g,Snacks,Chips,Packaged Snacks,Balaji,5289,3915,1621,1942,WH-HYD-S03,5,packet,337,INR,True
+OID00000346,SKU00346,Paper Boat Fruit Juice 100g,Beverages,Soft Drinks,Cold Beverages,Paper Boat,1843,4793,516,1108,WH-MUM-S05,7,bottle,358,INR,True
+OID00000347,SKU00347,Aavin Buttermilk 500ml,Dairy,Milk,Fresh Milk,Aavin,2721,3435,821,1778,WH-CBE-S01,10,packet,615,INR,True
+OID00000348,SKU00348,Bingo Namkeen Family Pack,Snacks,Chips,Packaged Snacks,Bingo,5529,5193,2250,3725,WH-HYD-S03,3,packet,346,INR,True
+OID00000349,SKU00349,Heritage Curd Family Pack,Dairy,Milk,Fresh Milk,Heritage,4156,4744,1145,1774,WH-BLR-S02,6,packet,121,INR,True
+OID00000350,SKU00350,Harvest Rusk 2kg,Bakery,Bread,Bakery,Harvest,3744,3826,1526,2304,WH-MUM-S05,5,packet,262,INR,True
+OID00000351,SKU00351,Aashirvaad Masoor Dal 1kg,Pulses,Dal,Staples,Aashirvaad,5053,4396,2217,2462,WH-MUM-S05,2,kg,234,INR,True
+OID00000352,SKU00352,Nescafe Cola 500ml,Beverages,Soft Drinks,Cold Beverages,Nescafe,1535,2338,425,935,WH-MUM-S05,8,bottle,93,INR,True
+OID00000353,SKU00353,Aavin Buttermilk 100g,Dairy,Milk,Fresh Milk,Aavin,3024,2882,1137,1599,WH-CBE-S01,8,packet,310,INR,True
+OID00000354,SKU00354,Amul Buttermilk Premium,Dairy,Milk,Fresh Milk,Amul,6732,3521,2711,2991,WH-CHE-S04,7,packet,443,INR,True
+OID00000355,SKU00355,24 Mantra Toor Dal 100g,Pulses,Dal,Staples,24 Mantra,609,4972,217,1081,WH-HYD-S03,9,kg,108,INR,False
+OID00000356,SKU00356,Nature Fresh Mango 500g,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,2153,2919,836,1641,WH-CBE-S01,7,kg,297,INR,True
+OID00000357,SKU00357,Aavin Milk Family Pack,Dairy,Milk,Fresh Milk,Aavin,2742,5219,1205,2238,WH-MUM-S05,9,packet,375,INR,True
+OID00000358,SKU00358,Heritage Buttermilk 500ml,Dairy,Milk,Fresh Milk,Heritage,3242,5616,1296,1733,WH-CBE-S01,4,packet,259,INR,True
+OID00000359,SKU00359,Amul Milk 100g,Dairy,Milk,Fresh Milk,Amul,5130,3653,1800,2152,WH-CHE-S04,5,packet,577,INR,True
+OID00000360,SKU00360,Lizol Air Freshener 200g,Home Care,Cleaning,Household,Lizol,1185,788,451,591,WH-CHE-S04,8,bottle,449,INR,True
+OID00000361,SKU00361,Tata Tea Lemon Soda 2kg,Beverages,Soft Drinks,Cold Beverages,Tata Tea,1983,2199,771,2161,WH-CHE-S04,2,bottle,359,INR,True
+OID00000362,SKU00362,Vim Air Freshener Premium,Home Care,Cleaning,Household,Vim,1423,2883,474,788,WH-CBE-S01,5,bottle,176,INR,True
+OID00000363,SKU00363,Aashirvaad Masoor Dal 1kg,Pulses,Dal,Staples,Aashirvaad,1936,5941,785,1956,WH-HYD-S03,7,kg,135,INR,True
+OID00000364,SKU00364,Colgate Toothpaste 100g,Personal Care,Bath & Body,Personal Care,Colgate,5937,4329,2592,3369,WH-CBE-S01,2,piece,143,INR,True
+OID00000365,SKU00365,Aashirvaad Toor Dal 2kg,Pulses,Dal,Staples,Aashirvaad,6685,6367,2355,2662,WH-BLR-S02,8,kg,135,INR,True
+OID00000366,SKU00366,Fresh Farm Orange 250ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,623,4381,261,1098,WH-CHE-S04,2,kg,88,INR,True
+OID00000367,SKU00367,Fresh Farm Orange 1L,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,5734,4412,2175,2948,WH-MUM-S05,5,kg,87,INR,True
+OID00000368,SKU00368,Bingo Banana Chips 500ml,Snacks,Chips,Packaged Snacks,Bingo,3583,3329,1182,2216,WH-CHE-S04,7,packet,342,INR,True
+OID00000369,SKU00369,Aavin Paneer 500ml,Dairy,Milk,Fresh Milk,Aavin,6003,3222,2372,2798,WH-MUM-S05,8,packet,612,INR,True
+OID00000370,SKU00370,Milky Mist Yogurt 1L,Dairy,Milk,Fresh Milk,Milky Mist,5308,3702,1357,1724,WH-CBE-S01,7,packet,481,INR,False
+OID00000371,SKU00371,Bru Cola Premium,Beverages,Soft Drinks,Cold Beverages,Bru,6071,6889,2572,3746,WH-MUM-S05,4,bottle,362,INR,True
+OID00000372,SKU00372,Closeup Shampoo 250ml,Personal Care,Bath & Body,Personal Care,Closeup,3845,4052,1470,2079,WH-CHE-S04,3,piece,601,INR,True
+OID00000373,SKU00373,Lizol Floor Cleaner 1L,Home Care,Cleaning,Household,Lizol,5570,7044,2433,3568,WH-CHE-S04,3,bottle,136,INR,True
+OID00000374,SKU00374,Bingo Cookies 500ml,Snacks,Chips,Packaged Snacks,Bingo,2578,3480,670,1226,WH-CHE-S04,4,packet,50,INR,True
+OID00000375,SKU00375,Ariel Floor Cleaner 100g,Home Care,Cleaning,Household,Ariel,4383,3867,1487,1830,WH-CBE-S01,7,bottle,482,INR,False
+OID00000376,SKU00376,Dove Shampoo 2kg,Personal Care,Bath & Body,Personal Care,Dove,6786,6494,2516,3883,WH-MUM-S05,9,piece,241,INR,True
+OID00000377,SKU00377,24 Mantra Urad Dal Family Pack,Pulses,Dal,Staples,24 Mantra,744,2696,307,1337,WH-MUM-S05,10,kg,181,INR,True
+OID00000378,SKU00378,Parle Banana Chips 250ml,Snacks,Chips,Packaged Snacks,Parle,1098,1003,441,995,WH-HYD-S03,5,packet,290,INR,True
+OID00000379,SKU00379,Fresh Farm Onion 2kg,Fresh Produce,Vegetables,Vegetables,Fresh Farm,4333,2580,1204,2142,WH-MUM-S05,4,kg,68,INR,True
+OID00000380,SKU00380,India Gate Idli Rice 500ml,Rice & Staples,Rice,Staples,India Gate,6701,3163,1930,2722,WH-CBE-S01,10,kg,76,INR,True
+OID00000381,SKU00381,24 Mantra Masoor Dal Family Pack,Pulses,Dal,Staples,24 Mantra,4430,2364,1226,2347,WH-CBE-S01,9,kg,170,INR,True
+OID00000382,SKU00382,Organic Tattva Moong Dal 500ml,Pulses,Dal,Staples,Organic Tattva,5967,2968,2182,2544,WH-MUM-S05,10,kg,142,INR,True
+OID00000383,SKU00383,Daawat Jeera Rice 250ml,Rice & Staples,Rice,Staples,Daawat,5973,4692,2403,3063,WH-HYD-S03,8,kg,79,INR,True
+OID00000384,SKU00384,Vim Dishwash Liquid Family Pack,Home Care,Cleaning,Household,Vim,6046,5830,2173,2915,WH-BLR-S02,4,bottle,274,INR,True
+OID00000385,SKU00385,Bru Lemon Soda Family Pack,Beverages,Soft Drinks,Cold Beverages,Bru,6119,4852,2325,2789,WH-HYD-S03,2,bottle,409,INR,True
+OID00000386,SKU00386,Organic Tattva Masoor Dal Family Pack,Pulses,Dal,Staples,Organic Tattva,5765,6803,2260,3740,WH-HYD-S03,7,kg,63,INR,True
+OID00000387,SKU00387,FarmPick Orange 500g,Fresh Produce,Fruits,Fresh Fruits,FarmPick,734,1883,281,790,WH-HYD-S03,5,kg,114,INR,True
+OID00000388,SKU00388,Real Tea Powder Premium,Beverages,Soft Drinks,Cold Beverages,Real,564,1626,181,1207,WH-MUM-S05,4,bottle,400,INR,True
+OID00000389,SKU00389,India Gate Jeera Rice 100g,Rice & Staples,Rice,Staples,India Gate,6725,6279,2752,3441,WH-CHE-S04,7,kg,151,INR,True
+OID00000390,SKU00390,Balaji Potato Chips 1L,Snacks,Chips,Packaged Snacks,Balaji,406,3217,161,676,WH-BLR-S02,6,packet,311,INR,True
+OID00000391,SKU00391,Harpic Air Freshener 200g,Home Care,Cleaning,Household,Harpic,1885,3841,582,1045,WH-BLR-S02,3,bottle,586,INR,True
+OID00000392,SKU00392,FarmPick Grapes 2kg,Fresh Produce,Fruits,Fresh Fruits,FarmPick,4859,4292,1471,1900,WH-CBE-S01,6,kg,278,INR,True
+OID00000393,SKU00393,Aavin Paneer 2kg,Dairy,Milk,Fresh Milk,Aavin,2942,4987,1086,2466,WH-CHE-S04,10,packet,593,INR,True
+OID00000394,SKU00394,Balaji Murukku 500ml,Snacks,Chips,Packaged Snacks,Balaji,1806,2425,639,1773,WH-MUM-S05,9,packet,216,INR,True
+OID00000395,SKU00395,Britannia Cake Premium,Bakery,Bread,Bakery,Britannia,3012,5409,970,1517,WH-MUM-S05,8,packet,29,INR,True
+OID00000396,SKU00396,Parle Murukku 100g,Snacks,Chips,Packaged Snacks,Parle,5561,4442,2072,3444,WH-HYD-S03,7,packet,68,INR,True
+OID00000397,SKU00397,Himalaya Body Lotion Family Pack,Personal Care,Bath & Body,Personal Care,Himalaya,502,3189,216,1083,WH-CHE-S04,8,piece,74,INR,True
+OID00000398,SKU00398,Modern White Bread 100g,Bakery,Bread,Bakery,Modern,1086,3692,307,1508,WH-CBE-S01,4,packet,134,INR,True
+OID00000399,SKU00399,India Gate Ponni Rice 200g,Rice & Staples,Rice,Staples,India Gate,4705,5595,1956,2947,WH-BLR-S02,1,kg,162,INR,True
+OID00000400,SKU00400,Fresh Farm Banana 200g,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,744,3112,212,827,WH-MUM-S05,4,kg,172,INR,True
+OID00000401,SKU00401,Organic Tattva Chana Dal 200g,Pulses,Dal,Staples,Organic Tattva,3847,4859,1205,2102,WH-MUM-S05,1,kg,224,INR,True
+OID00000402,SKU00402,FarmPick Spinach Family Pack,Fresh Produce,Vegetables,Vegetables,FarmPick,672,1975,262,510,WH-CBE-S01,5,kg,97,INR,True
+OID00000403,SKU00403,Tata Tea Coffee 500g,Beverages,Soft Drinks,Cold Beverages,Tata Tea,3536,3569,1465,1628,WH-MUM-S05,4,bottle,89,INR,True
+OID00000404,SKU00404,Pears Face Wash 100g,Personal Care,Bath & Body,Personal Care,Pears,2741,4010,1056,2482,WH-MUM-S05,9,piece,174,INR,True
+OID00000405,SKU00405,Nature Fresh Kiwi 1kg,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,3528,2783,1261,1535,WH-HYD-S03,4,kg,251,INR,True
+OID00000406,SKU00406,Lux Face Wash 200g,Personal Care,Bath & Body,Personal Care,Lux,1807,1943,531,1148,WH-BLR-S02,10,piece,85,INR,True
+OID00000407,SKU00407,Colgate Shampoo 1kg,Personal Care,Bath & Body,Personal Care,Colgate,2681,2045,1030,1643,WH-MUM-S05,8,piece,368,INR,True
+OID00000408,SKU00408,Britannia Rusk 1L,Bakery,Bread,Bakery,Britannia,5375,3215,1418,1914,WH-CHE-S04,6,packet,181,INR,True
+OID00000409,SKU00409,Heritage Yogurt 1kg,Dairy,Milk,Fresh Milk,Heritage,3808,2829,1080,1821,WH-CHE-S04,5,packet,398,INR,True
+OID00000410,SKU00410,Parle Popcorn Family Pack,Snacks,Chips,Packaged Snacks,Parle,3948,3989,1270,1995,WH-CBE-S01,3,packet,340,INR,True
+OID00000411,SKU00411,Sprite Tea Powder 200g,Beverages,Soft Drinks,Cold Beverages,Sprite,1909,2273,577,1960,WH-CBE-S01,9,bottle,343,INR,False
+OID00000412,SKU00412,Vim Detergent 2kg,Home Care,Cleaning,Household,Vim,6601,4863,2429,2604,WH-MUM-S05,9,bottle,543,INR,True
+OID00000413,SKU00413,Heritage Ghee 2kg,Dairy,Milk,Fresh Milk,Heritage,2129,5221,911,2218,WH-BLR-S02,8,packet,543,INR,True
+OID00000414,SKU00414,Daawat Jeera Rice 500g,Rice & Staples,Rice,Staples,Daawat,386,4306,147,1504,WH-MUM-S05,3,kg,159,INR,True
+OID00000415,SKU00415,Vim Air Freshener 250ml,Home Care,Cleaning,Household,Vim,1497,5530,594,1684,WH-CBE-S01,4,bottle,559,INR,True
+OID00000416,SKU00416,Bru Energy Drink 250ml,Beverages,Soft Drinks,Cold Beverages,Bru,650,5127,249,1409,WH-CHE-S04,8,bottle,252,INR,True
+OID00000417,SKU00417,Nature Fresh Pomegranate 2kg,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,1145,4209,447,1614,WH-HYD-S03,10,kg,318,INR,True
+OID00000418,SKU00418,Aashirvaad Idli Rice 2kg,Rice & Staples,Rice,Staples,Aashirvaad,3292,3584,1209,1468,WH-CHE-S04,4,kg,177,INR,True
+OID00000419,SKU00419,Parle Popcorn 500g,Snacks,Chips,Packaged Snacks,Parle,5249,3504,1319,1703,WH-BLR-S02,2,packet,273,INR,True
+OID00000420,SKU00420,Britannia Buns 1kg,Bakery,Bread,Bakery,Britannia,1589,3561,512,854,WH-CHE-S04,6,packet,83,INR,True
+OID00000421,SKU00421,24 Mantra Moong Dal 1kg,Pulses,Dal,Staples,24 Mantra,5139,2482,1450,2391,WH-CBE-S01,3,kg,206,INR,True
+OID00000422,SKU00422,Aavin Cream 500g,Dairy,Milk,Fresh Milk,Aavin,1503,4798,392,1020,WH-MUM-S05,7,packet,643,INR,True
+OID00000423,SKU00423,Nature Fresh Grapes 1L,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,1002,3565,293,1635,WH-BLR-S02,4,kg,250,INR,True
+OID00000424,SKU00424,Harpic Fabric Conditioner 250ml,Home Care,Cleaning,Household,Harpic,5703,5417,2008,2451,WH-CHE-S04,10,bottle,664,INR,True
+OID00000425,SKU00425,Daawat Ponni Rice Family Pack,Rice & Staples,Rice,Staples,Daawat,1189,4991,301,1471,WH-CHE-S04,3,kg,200,INR,True
+OID00000426,SKU00426,Organic Tattva Masoor Dal 200g,Pulses,Dal,Staples,Organic Tattva,619,3512,263,1451,WH-CBE-S01,8,kg,228,INR,True
+OID00000427,SKU00427,Vim Floor Cleaner 500ml,Home Care,Cleaning,Household,Vim,6647,5684,2563,3546,WH-HYD-S03,1,bottle,602,INR,True
+OID00000428,SKU00428,24 Mantra Urad Dal 500ml,Pulses,Dal,Staples,24 Mantra,5125,3784,2105,3384,WH-BLR-S02,5,kg,182,INR,True
+OID00000429,SKU00429,Green Basket Spinach 100g,Fresh Produce,Vegetables,Vegetables,Green Basket,4754,2086,1577,2064,WH-MUM-S05,9,kg,50,INR,True
+OID00000430,SKU00430,Aashirvaad Ponni Rice 200g,Rice & Staples,Rice,Staples,Aashirvaad,5934,4858,2438,3375,WH-BLR-S02,7,kg,211,INR,True
+OID00000431,SKU00431,Nescafe Mango Drink 1kg,Beverages,Soft Drinks,Cold Beverages,Nescafe,3295,4346,1226,2719,WH-CHE-S04,9,bottle,421,INR,True
+OID00000432,SKU00432,Heritage Lassi 250ml,Dairy,Milk,Fresh Milk,Heritage,4845,4774,1680,2408,WH-CHE-S04,3,packet,151,INR,True
+OID00000433,SKU00433,Organic Tattva Moong Dal 250ml,Pulses,Dal,Staples,Organic Tattva,1121,4467,328,1248,WH-MUM-S05,10,kg,238,INR,True
+OID00000434,SKU00434,Fresh Farm Papaya 500g,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,5509,5041,1383,1669,WH-CHE-S04,10,kg,262,INR,True
+OID00000435,SKU00435,Real Iced Tea 500ml,Beverages,Soft Drinks,Cold Beverages,Real,955,5054,355,1242,WH-MUM-S05,9,bottle,166,INR,True
+OID00000436,SKU00436,Lizol Toilet Cleaner Family Pack,Home Care,Cleaning,Household,Lizol,5545,2881,1934,2055,WH-HYD-S03,4,bottle,94,INR,True
+OID00000437,SKU00437,Closeup Toothpaste 1kg,Personal Care,Bath & Body,Personal Care,Closeup,5339,3161,1515,1688,WH-CBE-S01,3,piece,118,INR,True
+OID00000438,SKU00438,Daawat Raw Rice 100g,Rice & Staples,Rice,Staples,Daawat,3537,3801,1171,1681,WH-CBE-S01,2,kg,185,INR,True
+OID00000439,SKU00439,Closeup Hand Wash Premium,Personal Care,Bath & Body,Personal Care,Closeup,3146,2984,1392,2058,WH-BLR-S02,8,piece,443,INR,True
+OID00000440,SKU00440,Sprite Coffee 2kg,Beverages,Soft Drinks,Cold Beverages,Sprite,4447,3514,1206,1454,WH-HYD-S03,2,bottle,431,INR,True
+OID00000441,SKU00441,Paper Boat Green Tea 250ml,Beverages,Soft Drinks,Cold Beverages,Paper Boat,3389,4928,1228,1826,WH-CHE-S04,8,bottle,320,INR,True
+OID00000442,SKU00442,Aashirvaad Urad Dal 1kg,Pulses,Dal,Staples,Aashirvaad,853,3601,278,829,WH-HYD-S03,7,kg,150,INR,True
+OID00000443,SKU00443,Nature Fresh Grapes 250ml,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,2333,4393,717,1634,WH-CBE-S01,9,kg,131,INR,True
+OID00000444,SKU00444,Bingo Protein Bar 1kg,Snacks,Chips,Packaged Snacks,Bingo,2504,6026,717,2216,WH-CHE-S04,4,packet,130,INR,True
+OID00000445,SKU00445,Real Energy Drink 500g,Beverages,Soft Drinks,Cold Beverages,Real,1961,3641,817,2183,WH-CBE-S01,2,bottle,60,INR,True
+OID00000446,SKU00446,Organic Tattva Toor Dal 1L,Pulses,Dal,Staples,Organic Tattva,6560,6423,2764,2950,WH-HYD-S03,10,kg,140,INR,True
+OID00000447,SKU00447,Surf Excel Detergent 500ml,Home Care,Cleaning,Household,Surf Excel,1798,3096,803,1949,WH-BLR-S02,10,bottle,191,INR,True
+OID00000448,SKU00448,Daawat Jeera Rice 500g,Rice & Staples,Rice,Staples,Daawat,566,4628,198,1104,WH-CHE-S04,2,kg,223,INR,True
+OID00000449,SKU00449,Lays Potato Chips 250ml,Snacks,Chips,Packaged Snacks,Lays,5822,3401,1700,2989,WH-HYD-S03,10,packet,142,INR,True
+OID00000450,SKU00450,Real Fruit Juice 500g,Beverages,Soft Drinks,Cold Beverages,Real,4161,4137,1837,2639,WH-CHE-S04,7,bottle,127,INR,True
+OID00000451,SKU00451,Haldiram Biscuits Premium,Snacks,Chips,Packaged Snacks,Haldiram,2590,2687,880,2150,WH-BLR-S02,2,packet,148,INR,True
+OID00000452,SKU00452,Colgate Sanitary Pads 100g,Personal Care,Bath & Body,Personal Care,Colgate,1906,2875,532,938,WH-BLR-S02,7,piece,541,INR,True
+OID00000453,SKU00453,Closeup Hand Wash Premium,Personal Care,Bath & Body,Personal Care,Closeup,6733,5253,2338,2951,WH-CBE-S01,7,piece,131,INR,True
+OID00000454,SKU00454,Fresh Farm Grapes 250ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,4203,3894,1755,2052,WH-HYD-S03,6,kg,224,INR,True
+OID00000455,SKU00455,Bru Cola Premium,Beverages,Soft Drinks,Cold Beverages,Bru,3673,6442,1007,2498,WH-BLR-S02,10,bottle,314,INR,True
+OID00000456,SKU00456,Lux Body Lotion 1L,Personal Care,Bath & Body,Personal Care,Lux,3209,4151,1010,2155,WH-CBE-S01,7,piece,323,INR,True
+OID00000457,SKU00457,Amul Yogurt 200g,Dairy,Milk,Fresh Milk,Amul,3755,4339,1412,2682,WH-CBE-S01,3,packet,381,INR,True
+OID00000458,SKU00458,Haldiram Mixture 1L,Snacks,Chips,Packaged Snacks,Haldiram,5259,6282,1992,2647,WH-HYD-S03,10,packet,276,INR,True
+OID00000459,SKU00459,India Gate Ponni Rice 2kg,Rice & Staples,Rice,Staples,India Gate,489,3425,134,714,WH-CBE-S01,4,kg,87,INR,True
+OID00000460,SKU00460,Fresh Farm Brinjal 200g,Fresh Produce,Vegetables,Vegetables,Fresh Farm,4792,4308,1249,2162,WH-CBE-S01,5,kg,178,INR,True
+OID00000461,SKU00461,Daawat Ponni Rice 500g,Rice & Staples,Rice,Staples,Daawat,2326,4497,924,1931,WH-BLR-S02,9,kg,88,INR,False
+OID00000462,SKU00462,Haldiram Popcorn 2kg,Snacks,Chips,Packaged Snacks,Haldiram,4127,6872,1836,3043,WH-MUM-S05,8,packet,79,INR,True
+OID00000463,SKU00463,Lux Face Cream Family Pack,Personal Care,Bath & Body,Personal Care,Lux,5469,5222,2186,3441,WH-MUM-S05,5,piece,385,INR,True
+OID00000464,SKU00464,Britannia Garlic Bread 2kg,Bakery,Bread,Bakery,Britannia,2822,2180,911,1543,WH-CBE-S01,1,packet,292,INR,True
+OID00000465,SKU00465,Heritage Cheese 1L,Dairy,Milk,Fresh Milk,Heritage,4143,6464,1479,2586,WH-HYD-S03,1,packet,470,INR,True
+OID00000466,SKU00466,Harpic Floor Cleaner Family Pack,Home Care,Cleaning,Household,Harpic,4790,6111,1555,2498,WH-CHE-S04,7,bottle,315,INR,True
+OID00000467,SKU00467,Daawat Ponni Rice Family Pack,Rice & Staples,Rice,Staples,Daawat,2454,3013,652,2032,WH-MUM-S05,5,kg,117,INR,True
+OID00000468,SKU00468,Mamaearth Body Lotion 500g,Personal Care,Bath & Body,Personal Care,Mamaearth,3682,2045,1058,1298,WH-HYD-S03,2,piece,496,INR,True
+OID00000469,SKU00469,Tata Tea Energy Drink Family Pack,Beverages,Soft Drinks,Cold Beverages,Tata Tea,2926,4914,742,943,WH-CBE-S01,3,bottle,72,INR,True
+OID00000470,SKU00470,Milky Mist Milk 1kg,Dairy,Milk,Fresh Milk,Milky Mist,2207,2742,591,721,WH-HYD-S03,7,packet,349,INR,True
+OID00000471,SKU00471,24 Mantra Chana Dal 500g,Pulses,Dal,Staples,24 Mantra,6009,3557,2453,3229,WH-CBE-S01,5,kg,160,INR,True
+OID00000472,SKU00472,Aashirvaad Moong Dal 1kg,Pulses,Dal,Staples,Aashirvaad,2348,1594,970,1095,WH-CHE-S04,8,kg,123,INR,True
+OID00000473,SKU00473,Fresh Farm Guava 1kg,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,6323,6449,2555,3722,WH-CHE-S04,7,kg,199,INR,True
+OID00000474,SKU00474,Aavin Lassi 2kg,Dairy,Milk,Fresh Milk,Aavin,4567,4953,1253,2338,WH-BLR-S02,6,packet,83,INR,True
+OID00000475,SKU00475,Britannia Croissant 2kg,Bakery,Bread,Bakery,Britannia,5484,2662,1847,1977,WH-MUM-S05,2,packet,227,INR,True
+OID00000476,SKU00476,Fresh Farm Kiwi 250ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,6718,4562,2607,3928,WH-CBE-S01,4,kg,120,INR,True
+OID00000477,SKU00477,Surf Excel Air Freshener Family Pack,Home Care,Cleaning,Household,Surf Excel,791,2257,207,1627,WH-CBE-S01,3,bottle,559,INR,True
+OID00000478,SKU00478,Mamaearth Hand Wash 500ml,Personal Care,Bath & Body,Personal Care,Mamaearth,6898,3536,2954,3449,WH-HYD-S03,3,piece,286,INR,True
+OID00000479,SKU00479,Organic Tattva Chana Dal Premium,Pulses,Dal,Staples,Organic Tattva,4879,3387,1507,2610,WH-BLR-S02,9,kg,149,INR,True
+OID00000480,SKU00480,24 Mantra Masoor Dal 1L,Pulses,Dal,Staples,24 Mantra,4842,3186,1365,2552,WH-HYD-S03,5,kg,198,INR,True
+OID00000481,SKU00481,Nature Fresh Watermelon 250ml,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,3405,4026,1350,1488,WH-MUM-S05,4,kg,204,INR,True
+OID00000482,SKU00482,Mamaearth Sanitary Pads Family Pack,Personal Care,Bath & Body,Personal Care,Mamaearth,1855,4912,658,1776,WH-BLR-S02,10,piece,319,INR,True
+OID00000483,SKU00483,Lays Banana Chips 500g,Snacks,Chips,Packaged Snacks,Lays,4586,5359,1750,1939,WH-BLR-S02,1,packet,113,INR,True
+OID00000484,SKU00484,Britannia Brown Bread 1L,Bakery,Bread,Bakery,Britannia,4977,5472,1883,2778,WH-MUM-S05,10,packet,156,INR,False
+OID00000485,SKU00485,Harvest White Bread 1L,Bakery,Bread,Bakery,Harvest,407,3389,177,704,WH-CBE-S01,8,packet,56,INR,True
+OID00000486,SKU00486,Daawat Raw Rice 100g,Rice & Staples,Rice,Staples,Daawat,777,3132,322,966,WH-CBE-S01,5,kg,64,INR,True
+OID00000487,SKU00487,Dove Shampoo 1kg,Personal Care,Bath & Body,Personal Care,Dove,6240,3513,1848,2737,WH-MUM-S05,4,piece,613,INR,True
+OID00000488,SKU00488,Milky Mist Curd 1L,Dairy,Milk,Fresh Milk,Milky Mist,6577,6079,2484,3317,WH-CHE-S04,2,packet,200,INR,True
+OID00000489,SKU00489,Colgate Hand Wash 250ml,Personal Care,Bath & Body,Personal Care,Colgate,5686,4743,1601,2929,WH-HYD-S03,9,piece,362,INR,True
+OID00000490,SKU00490,Aashirvaad Idli Rice Family Pack,Rice & Staples,Rice,Staples,Aashirvaad,6246,4863,1965,2557,WH-BLR-S02,7,kg,241,INR,True
+OID00000491,SKU00491,Bru Green Tea 100g,Beverages,Soft Drinks,Cold Beverages,Bru,3965,4826,1752,1852,WH-HYD-S03,10,bottle,28,INR,True
+OID00000492,SKU00492,Coca-Cola Fruit Juice 2kg,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,2117,1452,620,1364,WH-MUM-S05,9,bottle,304,INR,True
+OID00000493,SKU00493,Harpic Floor Cleaner 2kg,Home Care,Cleaning,Household,Harpic,609,1193,208,627,WH-HYD-S03,10,bottle,315,INR,True
+OID00000494,SKU00494,Pepsi Mango Drink 200g,Beverages,Soft Drinks,Cold Beverages,Pepsi,3575,4852,1300,1845,WH-HYD-S03,8,bottle,108,INR,True
+OID00000495,SKU00495,Lizol Fabric Conditioner 200g,Home Care,Cleaning,Household,Lizol,5561,4566,1724,3004,WH-CBE-S01,6,bottle,416,INR,True
+OID00000496,SKU00496,Daawat Basmati Rice Premium,Rice & Staples,Rice,Staples,Daawat,6611,6867,1952,3388,WH-CBE-S01,7,kg,58,INR,True
+OID00000497,SKU00497,FarmPick Watermelon 1kg,Fresh Produce,Fruits,Fresh Fruits,FarmPick,4927,5365,1379,2507,WH-BLR-S02,1,kg,241,INR,True
+OID00000498,SKU00498,Vim Fabric Conditioner 500ml,Home Care,Cleaning,Household,Vim,1037,4218,305,998,WH-BLR-S02,3,bottle,404,INR,True
+OID00000499,SKU00499,Lizol Fabric Conditioner 500ml,Home Care,Cleaning,Household,Lizol,3570,4050,1079,1995,WH-BLR-S02,3,bottle,552,INR,True
+OID00000500,SKU00500,24 Mantra Masoor Dal 1kg,Pulses,Dal,Staples,24 Mantra,1906,2871,690,1863,WH-CBE-S01,5,kg,170,INR,True
+OID00000501,SKU00501,Lizol Floor Cleaner 1kg,Home Care,Cleaning,Household,Lizol,5802,4204,1930,2778,WH-HYD-S03,6,bottle,668,INR,True
+OID00000502,SKU00502,Sprite Iced Tea 500g,Beverages,Soft Drinks,Cold Beverages,Sprite,5348,5772,2215,3220,WH-CHE-S04,1,bottle,438,INR,True
+OID00000503,SKU00503,Bingo Banana Chips Premium,Snacks,Chips,Packaged Snacks,Bingo,1220,4968,485,1082,WH-BLR-S02,5,packet,17,INR,True
+OID00000504,SKU00504,Green Basket Brinjal Family Pack,Fresh Produce,Vegetables,Vegetables,Green Basket,4159,4617,1058,1586,WH-BLR-S02,4,kg,159,INR,True
+OID00000505,SKU00505,Tata Tea Mango Drink 500ml,Beverages,Soft Drinks,Cold Beverages,Tata Tea,6279,4358,2815,4283,WH-MUM-S05,9,bottle,42,INR,True
+OID00000506,SKU00506,FarmPick Mango 1L,Fresh Produce,Fruits,Fresh Fruits,FarmPick,6765,3505,2633,3288,WH-CBE-S01,2,kg,238,INR,True
+OID00000507,SKU00507,Lays Potato Chips 1kg,Snacks,Chips,Packaged Snacks,Lays,2696,4153,1141,2570,WH-CHE-S04,9,packet,60,INR,True
+OID00000508,SKU00508,Organic Tattva Masoor Dal 1L,Pulses,Dal,Staples,Organic Tattva,1021,5377,293,1418,WH-MUM-S05,1,kg,70,INR,True
+OID00000509,SKU00509,Pears Hand Wash 250ml,Personal Care,Bath & Body,Personal Care,Pears,4313,1913,1417,1838,WH-HYD-S03,6,piece,339,INR,True
+OID00000510,SKU00510,Pears Bath Soap 100g,Personal Care,Bath & Body,Personal Care,Pears,5426,6175,1636,2528,WH-MUM-S05,5,piece,260,INR,True
+OID00000511,SKU00511,Aashirvaad Ponni Rice Premium,Rice & Staples,Rice,Staples,Aashirvaad,1019,5503,403,1569,WH-BLR-S02,7,kg,106,INR,True
+OID00000512,SKU00512,Daawat Jeera Rice 500g,Rice & Staples,Rice,Staples,Daawat,2997,2233,1018,1387,WH-MUM-S05,9,kg,220,INR,True
+OID00000513,SKU00513,Heritage Lassi Premium,Dairy,Milk,Fresh Milk,Heritage,1407,3556,472,869,WH-BLR-S02,6,packet,99,INR,True
+OID00000514,SKU00514,Fresh Farm Cabbage 500ml,Fresh Produce,Vegetables,Vegetables,Fresh Farm,1492,4946,589,1341,WH-CHE-S04,5,kg,133,INR,True
+OID00000515,SKU00515,Sprite Energy Drink Premium,Beverages,Soft Drinks,Cold Beverages,Sprite,1174,3599,324,477,WH-MUM-S05,5,bottle,330,INR,True
+OID00000516,SKU00516,Harvest Croissant 1L,Bakery,Bread,Bakery,Harvest,2191,2008,848,1683,WH-BLR-S02,9,packet,265,INR,True
+OID00000517,SKU00517,Bingo Biscuits 1kg,Snacks,Chips,Packaged Snacks,Bingo,4325,2717,1491,1926,WH-CBE-S01,7,packet,17,INR,True
+OID00000518,SKU00518,India Gate Raw Rice 500g,Rice & Staples,Rice,Staples,India Gate,5799,3383,2595,3113,WH-CHE-S04,10,kg,170,INR,True
+OID00000519,SKU00519,Aashirvaad Chana Dal 500ml,Pulses,Dal,Staples,Aashirvaad,3616,5821,1465,2810,WH-HYD-S03,7,kg,216,INR,True
+OID00000520,SKU00520,Vim Fabric Conditioner 200g,Home Care,Cleaning,Household,Vim,4602,4050,1740,1918,WH-CHE-S04,8,bottle,103,INR,True
+OID00000521,SKU00521,Harvest Muffin 100g,Bakery,Bread,Bakery,Harvest,6322,4637,1630,2523,WH-BLR-S02,5,packet,250,INR,True
+OID00000522,SKU00522,Paper Boat Green Tea 100g,Beverages,Soft Drinks,Cold Beverages,Paper Boat,1663,5675,556,1911,WH-MUM-S05,3,bottle,257,INR,True
+OID00000523,SKU00523,Aashirvaad Masoor Dal Family Pack,Pulses,Dal,Staples,Aashirvaad,1227,5489,350,1648,WH-BLR-S02,7,kg,165,INR,True
+OID00000524,SKU00524,Fresh Farm Guava 1L,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,5135,6331,2204,2717,WH-CBE-S01,5,kg,205,INR,True
+OID00000525,SKU00525,Aavin Curd 200g,Dairy,Milk,Fresh Milk,Aavin,1235,3367,483,1881,WH-MUM-S05,7,packet,553,INR,True
+OID00000526,SKU00526,Milky Mist Lassi 250ml,Dairy,Milk,Fresh Milk,Milky Mist,3417,5069,884,1333,WH-MUM-S05,3,packet,196,INR,True
+OID00000527,SKU00527,Aavin Ghee 500g,Dairy,Milk,Fresh Milk,Aavin,2823,3075,880,1893,WH-CBE-S01,3,packet,237,INR,False
+OID00000528,SKU00528,Coca-Cola Green Tea 100g,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,4376,6362,1842,3055,WH-MUM-S05,8,bottle,141,INR,True
+OID00000529,SKU00529,24 Mantra Chana Dal 1kg,Pulses,Dal,Staples,24 Mantra,3919,2396,1041,2370,WH-MUM-S05,5,kg,218,INR,True
+OID00000530,SKU00530,Britannia Buns 500g,Bakery,Bread,Bakery,Britannia,1514,1359,395,1209,WH-CBE-S01,10,packet,177,INR,True
+OID00000531,SKU00531,Fresh Farm Potato 2kg,Fresh Produce,Vegetables,Vegetables,Fresh Farm,3715,4849,1667,2097,WH-MUM-S05,10,kg,166,INR,True
+OID00000532,SKU00532,Milky Mist Cream 2kg,Dairy,Milk,Fresh Milk,Milky Mist,3250,4854,1417,1707,WH-HYD-S03,6,packet,418,INR,True
+OID00000533,SKU00533,Aashirvaad Basmati Rice 2kg,Rice & Staples,Rice,Staples,Aashirvaad,2698,4122,928,1277,WH-HYD-S03,9,kg,150,INR,True
+OID00000534,SKU00534,Harvest Brown Bread 200g,Bakery,Bread,Bakery,Harvest,1195,3989,435,1823,WH-CHE-S04,10,packet,172,INR,True
+OID00000535,SKU00535,Haldiram Namkeen 500g,Snacks,Chips,Packaged Snacks,Haldiram,5011,6870,2249,3073,WH-MUM-S05,10,packet,264,INR,True
+OID00000536,SKU00536,24 Mantra Moong Dal 100g,Pulses,Dal,Staples,24 Mantra,5292,3055,1569,2263,WH-CBE-S01,1,kg,179,INR,True
+OID00000537,SKU00537,FarmPick Carrot 100g,Fresh Produce,Vegetables,Vegetables,FarmPick,6850,5199,2555,3504,WH-HYD-S03,6,kg,163,INR,True
+OID00000538,SKU00538,Britannia Croissant 2kg,Bakery,Bread,Bakery,Britannia,5952,3321,1823,2061,WH-MUM-S05,9,packet,190,INR,True
+OID00000539,SKU00539,FarmPick Cabbage 100g,Fresh Produce,Vegetables,Vegetables,FarmPick,3096,4807,1019,2284,WH-BLR-S02,4,kg,104,INR,True
+OID00000540,SKU00540,24 Mantra Toor Dal 1L,Pulses,Dal,Staples,24 Mantra,5589,4535,1548,1966,WH-MUM-S05,6,kg,178,INR,True
+OID00000541,SKU00541,Aashirvaad Basmati Rice Family Pack,Rice & Staples,Rice,Staples,Aashirvaad,4568,4195,1415,2903,WH-MUM-S05,1,kg,98,INR,True
+OID00000542,SKU00542,Haldiram Banana Chips 500ml,Snacks,Chips,Packaged Snacks,Haldiram,1523,2018,466,629,WH-MUM-S05,3,packet,302,INR,True
+OID00000543,SKU00543,Aavin Cheese 500ml,Dairy,Milk,Fresh Milk,Aavin,6077,3837,2561,2725,WH-CBE-S01,8,packet,273,INR,True
+OID00000544,SKU00544,Real Tea Powder 100g,Beverages,Soft Drinks,Cold Beverages,Real,2776,4872,791,1657,WH-BLR-S02,2,bottle,247,INR,True
+OID00000545,SKU00545,Organic Tattva Moong Dal Family Pack,Pulses,Dal,Staples,Organic Tattva,1858,4680,590,1680,WH-HYD-S03,6,kg,96,INR,True
+OID00000546,SKU00546,FarmPick Onion Family Pack,Fresh Produce,Vegetables,Vegetables,FarmPick,1980,3408,781,1821,WH-CBE-S01,1,kg,99,INR,True
+OID00000547,SKU00547,Lizol Dishwash Liquid 2kg,Home Care,Cleaning,Household,Lizol,4124,4207,1764,2075,WH-CBE-S01,10,bottle,379,INR,True
+OID00000548,SKU00548,Modern Croissant 1L,Bakery,Bread,Bakery,Modern,1877,3073,576,1766,WH-CBE-S01,5,packet,101,INR,True
+OID00000549,SKU00549,Fresh Farm Spinach 250ml,Fresh Produce,Vegetables,Vegetables,Fresh Farm,4884,4468,1723,2246,WH-MUM-S05,6,kg,89,INR,True
+OID00000550,SKU00550,Real Lemon Soda 1L,Beverages,Soft Drinks,Cold Beverages,Real,883,3282,275,1068,WH-CBE-S01,3,bottle,34,INR,True
+OID00000551,SKU00551,Fresh Farm Papaya Premium,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,740,1832,197,1099,WH-MUM-S05,8,kg,222,INR,True
+OID00000552,SKU00552,Harvest White Bread 200g,Bakery,Bread,Bakery,Harvest,6491,4416,2615,3877,WH-CHE-S04,2,packet,258,INR,True
+OID00000553,SKU00553,24 Mantra Moong Dal 250ml,Pulses,Dal,Staples,24 Mantra,2133,3013,594,1957,WH-CHE-S04,3,kg,239,INR,True
+OID00000554,SKU00554,Haldiram Popcorn 250ml,Snacks,Chips,Packaged Snacks,Haldiram,4293,2634,1099,2172,WH-CHE-S04,8,packet,97,INR,True
+OID00000555,SKU00555,Balaji Protein Bar 200g,Snacks,Chips,Packaged Snacks,Balaji,1343,4750,472,1402,WH-HYD-S03,9,packet,342,INR,True
+OID00000556,SKU00556,Tata Tea Coffee Family Pack,Beverages,Soft Drinks,Cold Beverages,Tata Tea,5137,4078,1709,3080,WH-BLR-S02,8,bottle,216,INR,True
+OID00000557,SKU00557,Harvest Muffin 250ml,Bakery,Bread,Bakery,Harvest,6725,7484,2999,4260,WH-MUM-S05,4,packet,113,INR,True
+OID00000558,SKU00558,FarmPick Spinach 250ml,Fresh Produce,Vegetables,Vegetables,FarmPick,4286,4385,1169,2489,WH-MUM-S05,2,kg,133,INR,True
+OID00000559,SKU00559,India Gate Jeera Rice 500ml,Rice & Staples,Rice,Staples,India Gate,1190,4940,460,1781,WH-HYD-S03,8,kg,210,INR,True
+OID00000560,SKU00560,Fresh Farm Onion 100g,Fresh Produce,Vegetables,Vegetables,Fresh Farm,5057,6896,2177,3579,WH-BLR-S02,3,kg,135,INR,True
+OID00000561,SKU00561,Aashirvaad Jeera Rice 250ml,Rice & Staples,Rice,Staples,Aashirvaad,3963,6233,1145,2640,WH-HYD-S03,10,kg,248,INR,True
+OID00000562,SKU00562,Nescafe Iced Tea 500ml,Beverages,Soft Drinks,Cold Beverages,Nescafe,1031,3819,377,1729,WH-BLR-S02,5,bottle,51,INR,True
+OID00000563,SKU00563,Dove Bath Soap 2kg,Personal Care,Bath & Body,Personal Care,Dove,6061,3478,2194,3029,WH-CBE-S01,4,piece,472,INR,True
+OID00000564,SKU00564,Aashirvaad Sona Masoori Family Pack,Rice & Staples,Rice,Staples,Aashirvaad,6130,4664,2001,2882,WH-BLR-S02,3,kg,166,INR,True
+OID00000565,SKU00565,Colgate Hand Wash 500g,Personal Care,Bath & Body,Personal Care,Colgate,3717,3029,1043,2515,WH-CBE-S01,2,piece,46,INR,True
+OID00000566,SKU00566,Organic Tattva Chana Dal 500ml,Pulses,Dal,Staples,Organic Tattva,1412,5092,376,1791,WH-CHE-S04,10,kg,168,INR,True
+OID00000567,SKU00567,Organic Tattva Chana Dal 1kg,Pulses,Dal,Staples,Organic Tattva,4822,4338,1996,2883,WH-BLR-S02,7,kg,214,INR,False
+OID00000568,SKU00568,Organic Tattva Moong Dal Family Pack,Pulses,Dal,Staples,Organic Tattva,6133,6884,2148,3089,WH-MUM-S05,6,kg,68,INR,True
+OID00000569,SKU00569,Ariel Air Freshener 200g,Home Care,Cleaning,Household,Ariel,3319,5929,904,1990,WH-BLR-S02,9,bottle,346,INR,True
+OID00000570,SKU00570,FarmPick Spinach 200g,Fresh Produce,Vegetables,Vegetables,FarmPick,1024,4734,306,1697,WH-MUM-S05,10,kg,99,INR,True
+OID00000571,SKU00571,Balaji Potato Chips 250ml,Snacks,Chips,Packaged Snacks,Balaji,4140,4820,1410,2470,WH-CHE-S04,6,packet,160,INR,True
+OID00000572,SKU00572,Nature Fresh Kiwi 100g,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,6439,4321,2001,3255,WH-CHE-S04,10,kg,126,INR,True
+OID00000573,SKU00573,Coca-Cola Fruit Juice 2kg,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,4271,2587,1138,2273,WH-HYD-S03,3,bottle,335,INR,True
+OID00000574,SKU00574,Coca-Cola Orange Soda 500g,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,5246,5831,1494,2805,WH-CHE-S04,6,bottle,433,INR,True
+OID00000575,SKU00575,Modern Buns 200g,Bakery,Bread,Bakery,Modern,6848,4005,2434,2601,WH-BLR-S02,10,packet,103,INR,True
+OID00000576,SKU00576,Daawat Ponni Rice 1kg,Rice & Staples,Rice,Staples,Daawat,5712,4020,1930,3335,WH-MUM-S05,6,kg,58,INR,True
+OID00000577,SKU00577,Fresh Farm Onion Family Pack,Fresh Produce,Vegetables,Vegetables,Fresh Farm,4101,4019,1352,2069,WH-BLR-S02,7,kg,119,INR,True
+OID00000578,SKU00578,Milky Mist Milk 250ml,Dairy,Milk,Fresh Milk,Milky Mist,2665,3743,1160,2179,WH-MUM-S05,1,packet,129,INR,True
+OID00000579,SKU00579,Parle Protein Bar 2kg,Snacks,Chips,Packaged Snacks,Parle,5641,4271,2378,3164,WH-CBE-S01,5,packet,345,INR,True
+OID00000580,SKU00580,Organic Tattva Moong Dal 250ml,Pulses,Dal,Staples,Organic Tattva,6315,5055,2427,2926,WH-BLR-S02,6,kg,200,INR,False
+OID00000581,SKU00581,Fresh Farm Apple 1L,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,3668,4107,988,1300,WH-HYD-S03,4,kg,185,INR,True
+OID00000582,SKU00582,Fresh Farm Kiwi 1kg,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,1053,4280,275,1591,WH-MUM-S05,2,kg,101,INR,True
+OID00000583,SKU00583,Harpic Detergent 500g,Home Care,Cleaning,Household,Harpic,5677,6030,2286,3712,WH-CBE-S01,3,bottle,319,INR,True
+OID00000584,SKU00584,FarmPick Brinjal 250ml,Fresh Produce,Vegetables,Vegetables,FarmPick,2564,5655,1035,2502,WH-HYD-S03,3,kg,38,INR,True
+OID00000585,SKU00585,FarmPick Papaya 2kg,Fresh Produce,Fruits,Fresh Fruits,FarmPick,3025,5900,1358,1986,WH-BLR-S02,8,kg,75,INR,True
+OID00000586,SKU00586,Harvest Muffin Family Pack,Bakery,Bread,Bakery,Harvest,1761,1578,667,989,WH-CHE-S04,4,packet,79,INR,True
+OID00000587,SKU00587,Pepsi Cola 1L,Beverages,Soft Drinks,Cold Beverages,Pepsi,897,4032,236,849,WH-CBE-S01,8,bottle,96,INR,True
+OID00000588,SKU00588,Fresh Farm Papaya 500ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,2482,5175,695,1470,WH-MUM-S05,1,kg,303,INR,True
+OID00000589,SKU00589,24 Mantra Chana Dal 1kg,Pulses,Dal,Staples,24 Mantra,3608,3966,1511,1754,WH-CBE-S01,7,kg,236,INR,True
+OID00000590,SKU00590,Aashirvaad Masoor Dal 2kg,Pulses,Dal,Staples,Aashirvaad,4685,4247,2047,2882,WH-CHE-S04,1,kg,221,INR,True
+OID00000591,SKU00591,Green Basket Okra 2kg,Fresh Produce,Vegetables,Vegetables,Green Basket,3085,4975,820,1861,WH-BLR-S02,3,kg,161,INR,False
+OID00000592,SKU00592,Aashirvaad Ponni Rice 250ml,Rice & Staples,Rice,Staples,Aashirvaad,2748,3970,1069,1387,WH-CHE-S04,2,kg,206,INR,True
+OID00000593,SKU00593,Britannia Brown Bread 1L,Bakery,Bread,Bakery,Britannia,1881,2769,479,1793,WH-CHE-S04,2,packet,182,INR,True
+OID00000594,SKU00594,Aashirvaad Toor Dal 200g,Pulses,Dal,Staples,Aashirvaad,3079,2651,804,991,WH-BLR-S02,9,kg,177,INR,True
+OID00000595,SKU00595,Lux Toothpaste 100g,Personal Care,Bath & Body,Personal Care,Lux,890,2620,229,618,WH-CHE-S04,10,piece,76,INR,True
+OID00000596,SKU00596,Aavin Paneer 200g,Dairy,Milk,Fresh Milk,Aavin,5482,5515,1425,2154,WH-CHE-S04,10,packet,204,INR,True
+OID00000597,SKU00597,Fresh Farm Potato 200g,Fresh Produce,Vegetables,Vegetables,Fresh Farm,4372,3876,1613,2973,WH-BLR-S02,7,kg,106,INR,True
+OID00000598,SKU00598,Daawat Basmati Rice 1kg,Rice & Staples,Rice,Staples,Daawat,5904,3854,2156,2537,WH-CBE-S01,10,kg,89,INR,True
+OID00000599,SKU00599,Green Basket Onion 500g,Fresh Produce,Vegetables,Vegetables,Green Basket,6505,5289,2166,3023,WH-CHE-S04,4,kg,168,INR,False
+OID00000600,SKU00600,FarmPick Spinach 1L,Fresh Produce,Vegetables,Vegetables,FarmPick,3381,5105,1371,1503,WH-CBE-S01,1,kg,21,INR,True
+OID00000601,SKU00601,FarmPick Spinach 500g,Fresh Produce,Vegetables,Vegetables,FarmPick,2624,4783,874,1948,WH-BLR-S02,3,kg,89,INR,True
+OID00000602,SKU00602,India Gate Ponni Rice 1L,Rice & Staples,Rice,Staples,India Gate,5301,4116,2058,3379,WH-MUM-S05,2,kg,205,INR,True
+OID00000603,SKU00603,Bru Coffee Family Pack,Beverages,Soft Drinks,Cold Beverages,Bru,337,1095,121,614,WH-CBE-S01,10,bottle,205,INR,True
+OID00000604,SKU00604,Closeup Toothpaste 2kg,Personal Care,Bath & Body,Personal Care,Closeup,4102,3959,1657,3107,WH-CBE-S01,4,piece,145,INR,True
+OID00000605,SKU00605,24 Mantra Moong Dal 250ml,Pulses,Dal,Staples,24 Mantra,1608,1026,617,805,WH-HYD-S03,4,kg,171,INR,True
+OID00000606,SKU00606,Ariel Floor Cleaner 500g,Home Care,Cleaning,Household,Ariel,1155,2379,459,1659,WH-CBE-S01,8,bottle,587,INR,True
+OID00000607,SKU00607,Harvest Garlic Bread 250ml,Bakery,Bread,Bakery,Harvest,5155,3658,1886,2844,WH-BLR-S02,2,packet,191,INR,True
+OID00000608,SKU00608,Harvest Muffin 1L,Bakery,Bread,Bakery,Harvest,1938,1482,630,1181,WH-MUM-S05,8,packet,52,INR,True
+OID00000609,SKU00609,Amul Cream 1L,Dairy,Milk,Fresh Milk,Amul,4027,2572,1150,2014,WH-BLR-S02,6,packet,306,INR,True
+OID00000610,SKU00610,Aavin Cream 1L,Dairy,Milk,Fresh Milk,Aavin,788,4056,241,568,WH-CHE-S04,7,packet,205,INR,True
+OID00000611,SKU00611,Modern Buns 500g,Bakery,Bread,Bakery,Modern,6767,7828,2767,4119,WH-MUM-S05,9,packet,142,INR,True
+OID00000612,SKU00612,Colgate Toothpaste 100g,Personal Care,Bath & Body,Personal Care,Colgate,5146,3963,1773,2820,WH-CHE-S04,4,piece,283,INR,True
+OID00000613,SKU00613,Harpic Fabric Conditioner 100g,Home Care,Cleaning,Household,Harpic,1520,2478,657,767,WH-CBE-S01,8,bottle,576,INR,False
+OID00000614,SKU00614,Colgate Face Cream 1L,Personal Care,Bath & Body,Personal Care,Colgate,6933,4992,2839,3139,WH-BLR-S02,2,piece,601,INR,True
+OID00000615,SKU00615,India Gate Ponni Rice 100g,Rice & Staples,Rice,Staples,India Gate,3236,2797,1000,2426,WH-CHE-S04,5,kg,86,INR,True
+OID00000616,SKU00616,Vim Floor Cleaner 500ml,Home Care,Cleaning,Household,Vim,4026,5342,1379,1762,WH-BLR-S02,6,bottle,535,INR,True
+OID00000617,SKU00617,Nature Fresh Banana 100g,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,3452,4434,1479,2260,WH-HYD-S03,7,kg,178,INR,True
+OID00000618,SKU00618,Vim Fabric Conditioner 250ml,Home Care,Cleaning,Household,Vim,6808,4790,1984,2249,WH-CBE-S01,9,bottle,432,INR,True
+OID00000619,SKU00619,Green Basket Cabbage 500g,Fresh Produce,Vegetables,Vegetables,Green Basket,4112,3885,1537,2385,WH-MUM-S05,2,kg,163,INR,True
+OID00000620,SKU00620,Britannia Cake Premium,Bakery,Bread,Bakery,Britannia,2254,4194,806,2235,WH-BLR-S02,4,packet,189,INR,True
+OID00000621,SKU00621,Nescafe Fruit Juice 1L,Beverages,Soft Drinks,Cold Beverages,Nescafe,746,2855,195,1002,WH-MUM-S05,9,bottle,444,INR,True
+OID00000622,SKU00622,Himalaya Body Lotion 200g,Personal Care,Bath & Body,Personal Care,Himalaya,4002,6847,1497,2975,WH-BLR-S02,8,piece,119,INR,True
+OID00000623,SKU00623,Heritage Curd 500g,Dairy,Milk,Fresh Milk,Heritage,1195,3522,338,667,WH-CHE-S04,3,packet,239,INR,True
+OID00000624,SKU00624,FarmPick Papaya 250ml,Fresh Produce,Fruits,Fresh Fruits,FarmPick,5890,4421,2110,2480,WH-CHE-S04,8,kg,50,INR,True
+OID00000625,SKU00625,Fresh Farm Carrot 250ml,Fresh Produce,Vegetables,Vegetables,Fresh Farm,4556,5039,1726,2669,WH-HYD-S03,8,kg,171,INR,True
+OID00000626,SKU00626,Mamaearth Face Cream 2kg,Personal Care,Bath & Body,Personal Care,Mamaearth,4051,5308,1259,1629,WH-BLR-S02,5,piece,262,INR,True
+OID00000627,SKU00627,Coca-Cola Lemon Soda 500g,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,3192,3952,979,1419,WH-MUM-S05,5,bottle,113,INR,True
+OID00000628,SKU00628,Amul Butter 500g,Dairy,Milk,Fresh Milk,Amul,1257,3425,324,1072,WH-CHE-S04,5,packet,408,INR,True
+OID00000629,SKU00629,Himalaya Bath Soap 250ml,Personal Care,Bath & Body,Personal Care,Himalaya,5752,3211,1802,2606,WH-CHE-S04,9,piece,196,INR,True
+OID00000630,SKU00630,Fresh Farm Cauliflower 250ml,Fresh Produce,Vegetables,Vegetables,Fresh Farm,4391,6610,1772,2810,WH-BLR-S02,1,kg,159,INR,True
+OID00000631,SKU00631,Haldiram Popcorn 500g,Snacks,Chips,Packaged Snacks,Haldiram,2674,5192,1187,2461,WH-MUM-S05,8,packet,183,INR,True
+OID00000632,SKU00632,Aashirvaad Moong Dal 500ml,Pulses,Dal,Staples,Aashirvaad,5854,2939,2108,2838,WH-MUM-S05,4,kg,174,INR,True
+OID00000633,SKU00633,Lays Protein Bar 2kg,Snacks,Chips,Packaged Snacks,Lays,5553,3691,1604,2782,WH-BLR-S02,1,packet,52,INR,True
+OID00000634,SKU00634,Organic Tattva Toor Dal Premium,Pulses,Dal,Staples,Organic Tattva,4492,3882,1477,2581,WH-MUM-S05,9,kg,74,INR,True
+OID00000635,SKU00635,Parle Nachos 250ml,Snacks,Chips,Packaged Snacks,Parle,6165,5031,2593,3450,WH-CBE-S01,5,packet,186,INR,True
+OID00000636,SKU00636,Organic Tattva Toor Dal 500ml,Pulses,Dal,Staples,Organic Tattva,2066,4863,817,1826,WH-CHE-S04,5,kg,101,INR,True
+OID00000637,SKU00637,Aashirvaad Idli Rice 500g,Rice & Staples,Rice,Staples,Aashirvaad,1443,2277,601,1925,WH-BLR-S02,5,kg,166,INR,True
+OID00000638,SKU00638,Pears Shampoo 500ml,Personal Care,Bath & Body,Personal Care,Pears,5138,2369,2061,2342,WH-HYD-S03,7,piece,209,INR,True
+OID00000639,SKU00639,Harpic Toilet Cleaner 1L,Home Care,Cleaning,Household,Harpic,1823,3719,759,1451,WH-CBE-S01,5,bottle,659,INR,True
+OID00000640,SKU00640,Himalaya Face Cream 2kg,Personal Care,Bath & Body,Personal Care,Himalaya,2139,1281,546,651,WH-HYD-S03,8,piece,157,INR,True
+OID00000641,SKU00641,Nescafe Lemon Soda 100g,Beverages,Soft Drinks,Cold Beverages,Nescafe,4329,4289,1867,3287,WH-CBE-S01,5,bottle,272,INR,True
+OID00000642,SKU00642,FarmPick Cabbage 2kg,Fresh Produce,Vegetables,Vegetables,FarmPick,5060,6300,1751,2744,WH-CHE-S04,2,kg,115,INR,True
+OID00000643,SKU00643,Lizol Dishwash Liquid 1L,Home Care,Cleaning,Household,Lizol,1634,2306,598,997,WH-BLR-S02,6,bottle,227,INR,True
+OID00000644,SKU00644,Parle Cookies 200g,Snacks,Chips,Packaged Snacks,Parle,699,4016,215,1399,WH-MUM-S05,4,packet,331,INR,True
+OID00000645,SKU00645,FarmPick Onion 2kg,Fresh Produce,Vegetables,Vegetables,FarmPick,4754,5628,1495,2242,WH-HYD-S03,6,kg,44,INR,True
+OID00000646,SKU00646,Bingo Potato Chips 1L,Snacks,Chips,Packaged Snacks,Bingo,1421,4554,502,1365,WH-CHE-S04,6,packet,93,INR,True
+OID00000647,SKU00647,Amul Butter Family Pack,Dairy,Milk,Fresh Milk,Amul,6813,7105,2925,4281,WH-MUM-S05,9,packet,146,INR,True
+OID00000648,SKU00648,Fresh Farm Onion 250ml,Fresh Produce,Vegetables,Vegetables,Fresh Farm,442,3720,152,890,WH-BLR-S02,8,kg,172,INR,True
+OID00000649,SKU00649,Bingo Mixture 500g,Snacks,Chips,Packaged Snacks,Bingo,535,1465,213,555,WH-BLR-S02,4,packet,167,INR,True
+OID00000650,SKU00650,Aavin Ghee 100g,Dairy,Milk,Fresh Milk,Aavin,5959,3045,2399,2727,WH-CHE-S04,7,packet,73,INR,True
+OID00000651,SKU00651,Nature Fresh Watermelon 2kg,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,5159,5414,1350,1693,WH-CBE-S01,2,kg,194,INR,True
+OID00000652,SKU00652,Fresh Farm Spinach 250ml,Fresh Produce,Vegetables,Vegetables,Fresh Farm,1982,1993,728,1237,WH-CBE-S01,2,kg,57,INR,True
+OID00000653,SKU00653,Bru Iced Tea Family Pack,Beverages,Soft Drinks,Cold Beverages,Bru,1615,3024,679,2034,WH-MUM-S05,2,bottle,70,INR,True
+OID00000654,SKU00654,Nature Fresh Mango Family Pack,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,6163,3156,1776,2453,WH-CBE-S01,2,kg,149,INR,True
+OID00000655,SKU00655,24 Mantra Masoor Dal 250ml,Pulses,Dal,Staples,24 Mantra,1816,1672,613,932,WH-CHE-S04,7,kg,114,INR,True
+OID00000656,SKU00656,India Gate Sona Masoori 1L,Rice & Staples,Rice,Staples,India Gate,1312,2170,450,1614,WH-HYD-S03,5,kg,187,INR,True
+OID00000657,SKU00657,Green Basket Brinjal 2kg,Fresh Produce,Vegetables,Vegetables,Green Basket,1247,3901,407,1442,WH-CHE-S04,4,kg,161,INR,True
+OID00000658,SKU00658,India Gate Basmati Rice 500g,Rice & Staples,Rice,Staples,India Gate,6873,5367,2372,3862,WH-CBE-S01,8,kg,217,INR,True
+OID00000659,SKU00659,Organic Tattva Toor Dal Premium,Pulses,Dal,Staples,Organic Tattva,1276,4121,355,1275,WH-CBE-S01,3,kg,76,INR,True
+OID00000660,SKU00660,Modern Croissant 1kg,Bakery,Bread,Bakery,Modern,5173,3595,2166,3093,WH-CHE-S04,8,packet,167,INR,True
+OID00000661,SKU00661,Vim Dishwash Liquid 500ml,Home Care,Cleaning,Household,Vim,6495,7930,2649,4067,WH-HYD-S03,8,bottle,677,INR,True
+OID00000662,SKU00662,Organic Tattva Urad Dal 2kg,Pulses,Dal,Staples,Organic Tattva,1507,1429,608,929,WH-CHE-S04,8,kg,119,INR,True
+OID00000663,SKU00663,Aavin Curd 100g,Dairy,Milk,Fresh Milk,Aavin,6344,3932,1653,1892,WH-BLR-S02,7,packet,649,INR,True
+OID00000664,SKU00664,Heritage Cream Family Pack,Dairy,Milk,Fresh Milk,Heritage,5405,4418,1455,1711,WH-CHE-S04,8,packet,236,INR,True
+OID00000665,SKU00665,24 Mantra Masoor Dal 100g,Pulses,Dal,Staples,24 Mantra,2443,4320,875,2082,WH-CBE-S01,7,kg,90,INR,True
+OID00000666,SKU00666,Parle Popcorn 2kg,Snacks,Chips,Packaged Snacks,Parle,4065,3787,1045,1507,WH-BLR-S02,8,packet,230,INR,True
+OID00000667,SKU00667,Daawat Basmati Rice Family Pack,Rice & Staples,Rice,Staples,Daawat,4960,5628,1909,3360,WH-MUM-S05,8,kg,166,INR,True
+OID00000668,SKU00668,Aavin Ghee 250ml,Dairy,Milk,Fresh Milk,Aavin,2457,4256,857,1730,WH-HYD-S03,6,packet,92,INR,False
+OID00000669,SKU00669,Fresh Farm Pomegranate 250ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,3157,2705,1300,2595,WH-CHE-S04,2,kg,259,INR,True
+OID00000670,SKU00670,Parle Cookies 2kg,Snacks,Chips,Packaged Snacks,Parle,762,1859,291,898,WH-MUM-S05,2,packet,43,INR,True
+OID00000671,SKU00671,Green Basket Onion 500ml,Fresh Produce,Vegetables,Vegetables,Green Basket,461,2227,164,340,WH-MUM-S05,9,kg,127,INR,True
+OID00000672,SKU00672,Organic Tattva Toor Dal Premium,Pulses,Dal,Staples,Organic Tattva,2892,3160,941,1840,WH-CBE-S01,8,kg,85,INR,True
+OID00000673,SKU00673,Modern Garlic Bread 500g,Bakery,Bread,Bakery,Modern,4418,4677,1821,3287,WH-MUM-S05,5,packet,211,INR,True
+OID00000674,SKU00674,Modern White Bread 2kg,Bakery,Bread,Bakery,Modern,4689,2210,1373,2016,WH-MUM-S05,7,packet,140,INR,True
+OID00000675,SKU00675,FarmPick Spinach Premium,Fresh Produce,Vegetables,Vegetables,FarmPick,1076,1330,396,1055,WH-MUM-S05,8,kg,129,INR,True
+OID00000676,SKU00676,FarmPick Beans Family Pack,Fresh Produce,Vegetables,Vegetables,FarmPick,4434,5524,1821,2807,WH-HYD-S03,4,kg,126,INR,True
+OID00000677,SKU00677,Vim Detergent 100g,Home Care,Cleaning,Household,Vim,5801,6412,2335,2804,WH-MUM-S05,3,bottle,650,INR,True
+OID00000678,SKU00678,24 Mantra Masoor Dal Premium,Pulses,Dal,Staples,24 Mantra,6926,7398,2582,3570,WH-CBE-S01,9,kg,111,INR,True
+OID00000679,SKU00679,Amul Paneer 500ml,Dairy,Milk,Fresh Milk,Amul,6414,6653,2482,3196,WH-CHE-S04,6,packet,95,INR,True
+OID00000680,SKU00680,Daawat Sona Masoori 500ml,Rice & Staples,Rice,Staples,Daawat,5592,3875,1577,2908,WH-BLR-S02,2,kg,83,INR,True
+OID00000681,SKU00681,Modern Garlic Bread 100g,Bakery,Bread,Bakery,Modern,4276,4268,1547,2540,WH-BLR-S02,3,packet,164,INR,True
+OID00000682,SKU00682,Paper Boat Tea Powder 1L,Beverages,Soft Drinks,Cold Beverages,Paper Boat,1741,4792,659,845,WH-CBE-S01,1,bottle,62,INR,True
+OID00000683,SKU00683,Pepsi Coffee 500g,Beverages,Soft Drinks,Cold Beverages,Pepsi,3277,3168,1259,1543,WH-BLR-S02,2,bottle,312,INR,True
+OID00000684,SKU00684,FarmPick Spinach 200g,Fresh Produce,Vegetables,Vegetables,FarmPick,6649,5549,2901,3516,WH-BLR-S02,10,kg,51,INR,True
+OID00000685,SKU00685,Haldiram Protein Bar 500ml,Snacks,Chips,Packaged Snacks,Haldiram,6339,6493,2079,2662,WH-BLR-S02,3,packet,64,INR,True
+OID00000686,SKU00686,Tata Tea Coffee Family Pack,Beverages,Soft Drinks,Cold Beverages,Tata Tea,2383,3229,1007,1221,WH-HYD-S03,2,bottle,182,INR,True
+OID00000687,SKU00687,Organic Tattva Moong Dal 1L,Pulses,Dal,Staples,Organic Tattva,2575,2978,1096,1492,WH-HYD-S03,5,kg,65,INR,True
+OID00000688,SKU00688,Lizol Air Freshener 1kg,Home Care,Cleaning,Household,Lizol,5724,5385,2345,2556,WH-HYD-S03,9,bottle,453,INR,True
+OID00000689,SKU00689,Lays Namkeen 500ml,Snacks,Chips,Packaged Snacks,Lays,2236,1869,942,1837,WH-HYD-S03,5,packet,56,INR,True
+OID00000690,SKU00690,Modern Croissant 500ml,Bakery,Bread,Bakery,Modern,1612,3390,698,2091,WH-CBE-S01,5,packet,66,INR,True
+OID00000691,SKU00691,24 Mantra Chana Dal 500g,Pulses,Dal,Staples,24 Mantra,3025,4871,1190,1495,WH-HYD-S03,9,kg,76,INR,True
+OID00000692,SKU00692,Vim Air Freshener 100g,Home Care,Cleaning,Household,Vim,2976,4290,1013,1169,WH-BLR-S02,8,bottle,199,INR,False
+OID00000693,SKU00693,Harvest Rusk 1kg,Bakery,Bread,Bakery,Harvest,2870,2020,1048,1374,WH-MUM-S05,3,packet,235,INR,True
+OID00000694,SKU00694,Parle Popcorn Premium,Snacks,Chips,Packaged Snacks,Parle,6322,5019,1749,2204,WH-HYD-S03,5,packet,111,INR,True
+OID00000695,SKU00695,Bingo Biscuits 100g,Snacks,Chips,Packaged Snacks,Bingo,3391,3675,1488,2756,WH-CBE-S01,9,packet,341,INR,True
+OID00000696,SKU00696,Britannia Garlic Bread 500ml,Bakery,Bread,Bakery,Britannia,1924,1229,581,1026,WH-MUM-S05,7,packet,158,INR,True
+OID00000697,SKU00697,Bingo Protein Bar 1L,Snacks,Chips,Packaged Snacks,Bingo,1261,3276,318,1494,WH-CHE-S04,2,packet,124,INR,True
+OID00000698,SKU00698,Modern Rusk 1kg,Bakery,Bread,Bakery,Modern,6414,4369,2237,2603,WH-MUM-S05,4,packet,169,INR,True
+OID00000699,SKU00699,Modern Buns 2kg,Bakery,Bread,Bakery,Modern,3646,2835,1489,1647,WH-BLR-S02,10,packet,255,INR,True
+OID00000700,SKU00700,Balaji Popcorn 250ml,Snacks,Chips,Packaged Snacks,Balaji,1002,4193,252,624,WH-CHE-S04,4,packet,206,INR,True
+OID00000701,SKU00701,Surf Excel Floor Cleaner 1kg,Home Care,Cleaning,Household,Surf Excel,1080,1959,390,596,WH-CHE-S04,6,bottle,680,INR,True
+OID00000702,SKU00702,Lizol Floor Cleaner 500ml,Home Care,Cleaning,Household,Lizol,2377,2953,834,1714,WH-HYD-S03,3,bottle,632,INR,False
+OID00000703,SKU00703,Heritage Paneer 1L,Dairy,Milk,Fresh Milk,Heritage,4426,5931,1542,2336,WH-BLR-S02,2,packet,354,INR,True
+OID00000704,SKU00704,India Gate Sona Masoori 2kg,Rice & Staples,Rice,Staples,India Gate,1257,2798,393,754,WH-HYD-S03,7,kg,117,INR,True
+OID00000705,SKU00705,Paper Boat Tea Powder 1L,Beverages,Soft Drinks,Cold Beverages,Paper Boat,2864,2694,965,1402,WH-BLR-S02,9,bottle,356,INR,True
+OID00000706,SKU00706,Aashirvaad Moong Dal 1L,Pulses,Dal,Staples,Aashirvaad,1517,1016,395,870,WH-HYD-S03,3,kg,240,INR,True
+OID00000707,SKU00707,Green Basket Tomato 1L,Fresh Produce,Vegetables,Vegetables,Green Basket,3916,4493,1258,2506,WH-CHE-S04,2,kg,57,INR,True
+OID00000708,SKU00708,Fresh Farm Beans 2kg,Fresh Produce,Vegetables,Vegetables,Fresh Farm,1779,5251,741,1882,WH-MUM-S05,10,kg,74,INR,True
+OID00000709,SKU00709,Nature Fresh Kiwi 1L,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,1779,1857,592,849,WH-CBE-S01,6,kg,53,INR,True
+OID00000710,SKU00710,Green Basket Cabbage 250ml,Fresh Produce,Vegetables,Vegetables,Green Basket,5136,5983,2238,2555,WH-BLR-S02,1,kg,40,INR,True
+OID00000711,SKU00711,24 Mantra Urad Dal 100g,Pulses,Dal,Staples,24 Mantra,5167,6717,1971,2745,WH-MUM-S05,8,kg,143,INR,True
+OID00000712,SKU00712,Harpic Toilet Cleaner 100g,Home Care,Cleaning,Household,Harpic,698,2288,286,965,WH-CBE-S01,9,bottle,676,INR,True
+OID00000713,SKU00713,Daawat Ponni Rice 100g,Rice & Staples,Rice,Staples,Daawat,2266,2284,1003,1919,WH-BLR-S02,3,kg,144,INR,True
+OID00000714,SKU00714,Sprite Orange Soda 2kg,Beverages,Soft Drinks,Cold Beverages,Sprite,2745,4954,955,1940,WH-MUM-S05,3,bottle,203,INR,True
+OID00000715,SKU00715,Balaji Murukku 2kg,Snacks,Chips,Packaged Snacks,Balaji,4310,4306,1461,2355,WH-MUM-S05,10,packet,226,INR,True
+OID00000716,SKU00716,Daawat Jeera Rice 100g,Rice & Staples,Rice,Staples,Daawat,1826,1967,615,1587,WH-MUM-S05,6,kg,163,INR,True
+OID00000717,SKU00717,Milky Mist Lassi 1L,Dairy,Milk,Fresh Milk,Milky Mist,5457,3531,2070,2341,WH-CHE-S04,2,packet,519,INR,True
+OID00000718,SKU00718,Heritage Butter Family Pack,Dairy,Milk,Fresh Milk,Heritage,4585,2997,1538,2802,WH-CBE-S01,1,packet,555,INR,True
+OID00000719,SKU00719,Daawat Basmati Rice 2kg,Rice & Staples,Rice,Staples,Daawat,4106,6162,1569,2833,WH-HYD-S03,5,kg,194,INR,True
+OID00000720,SKU00720,Dove Shampoo 500g,Personal Care,Bath & Body,Personal Care,Dove,6366,6120,2433,2900,WH-CHE-S04,1,piece,115,INR,True
+OID00000721,SKU00721,Bru Mango Drink Premium,Beverages,Soft Drinks,Cold Beverages,Bru,6231,5438,2124,3596,WH-HYD-S03,6,bottle,434,INR,True
+OID00000722,SKU00722,Aavin Cream Family Pack,Dairy,Milk,Fresh Milk,Aavin,2424,3121,1028,1345,WH-CBE-S01,1,packet,434,INR,True
+OID00000723,SKU00723,Milky Mist Buttermilk Premium,Dairy,Milk,Fresh Milk,Milky Mist,5967,7377,1975,3422,WH-CHE-S04,5,packet,399,INR,True
+OID00000724,SKU00724,Daawat Basmati Rice 100g,Rice & Staples,Rice,Staples,Daawat,1324,1314,366,856,WH-BLR-S02,1,kg,98,INR,True
+OID00000725,SKU00725,Amul Ghee 200g,Dairy,Milk,Fresh Milk,Amul,5428,4272,2288,3491,WH-HYD-S03,8,packet,181,INR,True
+OID00000726,SKU00726,Fresh Farm Orange 1L,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,1548,5573,615,1626,WH-CHE-S04,1,kg,270,INR,True
+OID00000727,SKU00727,Modern Muffin 500ml,Bakery,Bread,Bakery,Modern,717,3119,227,537,WH-CHE-S04,8,packet,173,INR,False
+OID00000728,SKU00728,Daawat Jeera Rice 1L,Rice & Staples,Rice,Staples,Daawat,5141,7226,2030,3519,WH-BLR-S02,1,kg,180,INR,False
+OID00000729,SKU00729,Surf Excel Fabric Conditioner 1L,Home Care,Cleaning,Household,Surf Excel,820,3383,248,1675,WH-CBE-S01,8,bottle,697,INR,True
+OID00000730,SKU00730,Parle Biscuits 250ml,Snacks,Chips,Packaged Snacks,Parle,470,2547,132,625,WH-CHE-S04,4,packet,269,INR,True
+OID00000731,SKU00731,Balaji Popcorn 500ml,Snacks,Chips,Packaged Snacks,Balaji,1374,5416,586,1485,WH-HYD-S03,8,packet,92,INR,True
+OID00000732,SKU00732,Pepsi Green Tea 1L,Beverages,Soft Drinks,Cold Beverages,Pepsi,1357,3287,386,806,WH-CBE-S01,7,bottle,272,INR,True
+OID00000733,SKU00733,Harvest Brown Bread 500g,Bakery,Bread,Bakery,Harvest,448,2240,144,778,WH-BLR-S02,9,packet,41,INR,True
+OID00000734,SKU00734,Parle Banana Chips 1L,Snacks,Chips,Packaged Snacks,Parle,5359,3749,1582,2832,WH-HYD-S03,6,packet,191,INR,True
+OID00000735,SKU00735,Pears Face Wash 200g,Personal Care,Bath & Body,Personal Care,Pears,5953,6607,2528,3865,WH-CBE-S01,8,piece,498,INR,True
+OID00000736,SKU00736,Fresh Farm Spinach Family Pack,Fresh Produce,Vegetables,Vegetables,Fresh Farm,5294,5832,2151,2459,WH-CBE-S01,9,kg,46,INR,True
+OID00000737,SKU00737,Fresh Farm Cabbage Family Pack,Fresh Produce,Vegetables,Vegetables,Fresh Farm,1586,4752,627,1631,WH-CHE-S04,2,kg,59,INR,True
+OID00000738,SKU00738,Bingo Banana Chips 100g,Snacks,Chips,Packaged Snacks,Bingo,1953,4760,659,1610,WH-BLR-S02,8,packet,184,INR,True
+OID00000739,SKU00739,Aavin Cheese 1kg,Dairy,Milk,Fresh Milk,Aavin,3350,3742,1316,2265,WH-BLR-S02,9,packet,461,INR,True
+OID00000740,SKU00740,Milky Mist Ghee 250ml,Dairy,Milk,Fresh Milk,Milky Mist,3653,5980,1569,2726,WH-CBE-S01,8,packet,179,INR,True
+OID00000741,SKU00741,Dove Shampoo 100g,Personal Care,Bath & Body,Personal Care,Dove,3071,3174,961,1397,WH-CHE-S04,1,piece,184,INR,True
+OID00000742,SKU00742,Nature Fresh Watermelon Family Pack,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,2722,5272,908,2402,WH-HYD-S03,6,kg,216,INR,False
+OID00000743,SKU00743,Sprite Coffee Premium,Beverages,Soft Drinks,Cold Beverages,Sprite,3955,5269,1498,2712,WH-CHE-S04,6,bottle,435,INR,True
+OID00000744,SKU00744,India Gate Sona Masoori 500g,Rice & Staples,Rice,Staples,India Gate,990,2636,254,1039,WH-MUM-S05,9,kg,117,INR,True
+OID00000745,SKU00745,Closeup Body Lotion 100g,Personal Care,Bath & Body,Personal Care,Closeup,4570,3509,1453,2854,WH-CBE-S01,9,piece,636,INR,True
+OID00000746,SKU00746,Nescafe Tea Powder Family Pack,Beverages,Soft Drinks,Cold Beverages,Nescafe,1204,2403,477,1340,WH-HYD-S03,2,bottle,44,INR,True
+OID00000747,SKU00747,Green Basket Beans 1kg,Fresh Produce,Vegetables,Vegetables,Green Basket,4989,4398,1982,3010,WH-MUM-S05,10,kg,180,INR,True
+OID00000748,SKU00748,Harpic Dishwash Liquid 500g,Home Care,Cleaning,Household,Harpic,2751,4871,844,2117,WH-CHE-S04,9,bottle,313,INR,True
+OID00000749,SKU00749,Closeup Toothpaste 500ml,Personal Care,Bath & Body,Personal Care,Closeup,6677,3051,2151,2451,WH-CHE-S04,2,piece,124,INR,True
+OID00000750,SKU00750,Milky Mist Butter 500ml,Dairy,Milk,Fresh Milk,Milky Mist,3954,4691,1050,2536,WH-MUM-S05,9,packet,561,INR,True
+OID00000751,SKU00751,Tata Tea Coffee 500ml,Beverages,Soft Drinks,Cold Beverages,Tata Tea,3905,5613,1514,2616,WH-BLR-S02,3,bottle,278,INR,True
+OID00000752,SKU00752,Aashirvaad Masoor Dal 1L,Pulses,Dal,Staples,Aashirvaad,4634,3667,1267,1802,WH-CBE-S01,3,kg,203,INR,True
+OID00000753,SKU00753,FarmPick Cauliflower 100g,Fresh Produce,Vegetables,Vegetables,FarmPick,1203,2785,329,1599,WH-MUM-S05,3,kg,50,INR,True
+OID00000754,SKU00754,Haldiram Mixture Premium,Snacks,Chips,Packaged Snacks,Haldiram,4280,2067,1093,1485,WH-CHE-S04,1,packet,166,INR,True
+OID00000755,SKU00755,Britannia Garlic Bread 100g,Bakery,Bread,Bakery,Britannia,317,1177,87,901,WH-CHE-S04,8,packet,183,INR,True
+OID00000756,SKU00756,Parle Popcorn 500g,Snacks,Chips,Packaged Snacks,Parle,6198,6073,2582,2953,WH-MUM-S05,8,packet,240,INR,True
+OID00000757,SKU00757,Heritage Curd 500ml,Dairy,Milk,Fresh Milk,Heritage,6852,5623,2569,3946,WH-BLR-S02,7,packet,377,INR,True
+OID00000758,SKU00758,Organic Tattva Urad Dal 100g,Pulses,Dal,Staples,Organic Tattva,5591,4831,1496,1935,WH-MUM-S05,5,kg,203,INR,True
+OID00000759,SKU00759,Dove Toothpaste Premium,Personal Care,Bath & Body,Personal Care,Dove,5368,6052,1923,2131,WH-MUM-S05,4,piece,517,INR,True
+OID00000760,SKU00760,Fresh Farm Watermelon 1kg,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,1772,4669,784,1447,WH-BLR-S02,10,kg,267,INR,True
+OID00000761,SKU00761,Closeup Hand Wash 100g,Personal Care,Bath & Body,Personal Care,Closeup,3591,5956,1320,2426,WH-HYD-S03,7,piece,214,INR,True
+OID00000762,SKU00762,Pears Sanitary Pads 500g,Personal Care,Bath & Body,Personal Care,Pears,2406,3167,645,948,WH-HYD-S03,3,piece,217,INR,True
+OID00000763,SKU00763,Fresh Farm Beans 250ml,Fresh Produce,Vegetables,Vegetables,Fresh Farm,3636,4138,1402,1622,WH-BLR-S02,1,kg,34,INR,True
+OID00000764,SKU00764,Green Basket Onion 200g,Fresh Produce,Vegetables,Vegetables,Green Basket,3681,3743,1577,2205,WH-CBE-S01,4,kg,81,INR,True
+OID00000765,SKU00765,Harpic Detergent 200g,Home Care,Cleaning,Household,Harpic,4466,6564,1788,2676,WH-HYD-S03,1,bottle,385,INR,True
+OID00000766,SKU00766,India Gate Idli Rice 100g,Rice & Staples,Rice,Staples,India Gate,536,4497,177,755,WH-HYD-S03,9,kg,195,INR,True
+OID00000767,SKU00767,Harvest Buns Family Pack,Bakery,Bread,Bakery,Harvest,2795,2372,1016,2029,WH-BLR-S02,3,packet,216,INR,True
+OID00000768,SKU00768,Amul Lassi 100g,Dairy,Milk,Fresh Milk,Amul,3771,4753,1667,2903,WH-CBE-S01,8,packet,326,INR,True
+OID00000769,SKU00769,Aavin Milk 500ml,Dairy,Milk,Fresh Milk,Aavin,4250,5345,1294,1907,WH-HYD-S03,4,packet,629,INR,True
+OID00000770,SKU00770,Coca-Cola Lemon Soda 200g,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,6355,3741,2267,2510,WH-CHE-S04,2,bottle,445,INR,True
+OID00000771,SKU00771,Pears Sanitary Pads 250ml,Personal Care,Bath & Body,Personal Care,Pears,2027,5125,754,1505,WH-HYD-S03,8,piece,309,INR,True
+OID00000772,SKU00772,Haldiram Murukku 500g,Snacks,Chips,Packaged Snacks,Haldiram,4066,2633,1796,2568,WH-CBE-S01,10,packet,253,INR,False
+OID00000773,SKU00773,Nature Fresh Orange 500ml,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,3684,5554,1330,2431,WH-MUM-S05,2,kg,79,INR,True
+OID00000774,SKU00774,Organic Tattva Toor Dal Premium,Pulses,Dal,Staples,Organic Tattva,3191,5677,1418,2288,WH-HYD-S03,7,kg,105,INR,True
+OID00000775,SKU00775,Fresh Farm Guava 1kg,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,3334,2505,1457,2467,WH-CBE-S01,5,kg,223,INR,True
+OID00000776,SKU00776,Surf Excel Air Freshener 250ml,Home Care,Cleaning,Household,Surf Excel,2111,5699,626,1737,WH-CBE-S01,5,bottle,564,INR,True
+OID00000777,SKU00777,Harpic Floor Cleaner 200g,Home Care,Cleaning,Household,Harpic,1906,3880,851,2258,WH-HYD-S03,10,bottle,572,INR,True
+OID00000778,SKU00778,Lux Face Wash 2kg,Personal Care,Bath & Body,Personal Care,Lux,835,1060,306,539,WH-MUM-S05,4,piece,565,INR,True
+OID00000779,SKU00779,Real Cola Family Pack,Beverages,Soft Drinks,Cold Beverages,Real,5976,4697,2304,3662,WH-CHE-S04,1,bottle,238,INR,True
+OID00000780,SKU00780,FarmPick Papaya 1L,Fresh Produce,Fruits,Fresh Fruits,FarmPick,3633,4721,1107,2599,WH-CHE-S04,6,kg,304,INR,True
+OID00000781,SKU00781,Britannia Rusk 500ml,Bakery,Bread,Bakery,Britannia,3741,2101,1333,2080,WH-BLR-S02,6,packet,66,INR,True
+OID00000782,SKU00782,Nature Fresh Mango 1kg,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,5948,5999,1991,2243,WH-BLR-S02,3,kg,208,INR,True
+OID00000783,SKU00783,Fresh Farm Brinjal 250ml,Fresh Produce,Vegetables,Vegetables,Fresh Farm,3838,6157,1579,2892,WH-HYD-S03,4,kg,47,INR,True
+OID00000784,SKU00784,Lays Cookies Premium,Snacks,Chips,Packaged Snacks,Lays,4557,5289,1863,2112,WH-MUM-S05,8,packet,58,INR,True
+OID00000785,SKU00785,Lizol Floor Cleaner 200g,Home Care,Cleaning,Household,Lizol,797,2500,345,1217,WH-BLR-S02,1,bottle,512,INR,True
+OID00000786,SKU00786,Ariel Floor Cleaner 2kg,Home Care,Cleaning,Household,Ariel,1134,1895,437,1682,WH-CHE-S04,7,bottle,158,INR,True
+OID00000787,SKU00787,India Gate Jeera Rice 500ml,Rice & Staples,Rice,Staples,India Gate,6750,4556,2578,2699,WH-CHE-S04,7,kg,203,INR,True
+OID00000788,SKU00788,Lays Popcorn 200g,Snacks,Chips,Packaged Snacks,Lays,4537,2368,1432,1926,WH-CBE-S01,10,packet,44,INR,True
+OID00000789,SKU00789,Harvest Buns 1L,Bakery,Bread,Bakery,Harvest,5521,4493,1942,2769,WH-MUM-S05,8,packet,120,INR,True
+OID00000790,SKU00790,Fresh Farm Orange 250ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,2853,6127,1046,2196,WH-HYD-S03,10,kg,317,INR,True
+OID00000791,SKU00791,Milky Mist Cheese 100g,Dairy,Milk,Fresh Milk,Milky Mist,5242,6498,1669,2524,WH-MUM-S05,10,packet,178,INR,True
+OID00000792,SKU00792,Mamaearth Bath Soap 1kg,Personal Care,Bath & Body,Personal Care,Mamaearth,3757,4330,1197,1707,WH-CBE-S01,6,piece,223,INR,True
+OID00000793,SKU00793,Organic Tattva Urad Dal 2kg,Pulses,Dal,Staples,Organic Tattva,5038,5139,1829,2616,WH-CHE-S04,6,kg,101,INR,True
+OID00000794,SKU00794,FarmPick Mango Premium,Fresh Produce,Fruits,Fresh Fruits,FarmPick,330,2605,124,695,WH-BLR-S02,4,kg,286,INR,True
+OID00000795,SKU00795,Parle Murukku 100g,Snacks,Chips,Packaged Snacks,Parle,3579,2625,1026,1139,WH-CBE-S01,6,packet,25,INR,True
+OID00000796,SKU00796,Heritage Buttermilk 100g,Dairy,Milk,Fresh Milk,Heritage,1892,1727,711,1548,WH-BLR-S02,4,packet,320,INR,True
+OID00000797,SKU00797,Sprite Iced Tea 500g,Beverages,Soft Drinks,Cold Beverages,Sprite,4842,2037,1448,1949,WH-HYD-S03,2,bottle,30,INR,True
+OID00000798,SKU00798,Milky Mist Curd 1kg,Dairy,Milk,Fresh Milk,Milky Mist,3072,3935,1343,2067,WH-HYD-S03,6,packet,205,INR,True
+OID00000799,SKU00799,Ariel Air Freshener 1kg,Home Care,Cleaning,Household,Ariel,835,3850,228,595,WH-BLR-S02,9,bottle,447,INR,True
+OID00000800,SKU00800,Balaji Biscuits Premium,Snacks,Chips,Packaged Snacks,Balaji,5511,4966,1647,1841,WH-MUM-S05,4,packet,284,INR,True
+OID00000801,SKU00801,Heritage Butter 500g,Dairy,Milk,Fresh Milk,Heritage,736,4524,276,949,WH-MUM-S05,10,packet,530,INR,True
+OID00000802,SKU00802,Green Basket Spinach Family Pack,Fresh Produce,Vegetables,Vegetables,Green Basket,831,4206,235,1129,WH-HYD-S03,8,kg,152,INR,True
+OID00000803,SKU00803,Haldiram Namkeen 2kg,Snacks,Chips,Packaged Snacks,Haldiram,5989,5129,2076,3189,WH-MUM-S05,7,packet,336,INR,True
+OID00000804,SKU00804,Lizol Toilet Cleaner 1kg,Home Care,Cleaning,Household,Lizol,2098,5459,899,1924,WH-CHE-S04,4,bottle,373,INR,True
+OID00000805,SKU00805,Aashirvaad Ponni Rice 200g,Rice & Staples,Rice,Staples,Aashirvaad,3364,1835,1012,1285,WH-HYD-S03,8,kg,177,INR,True
+OID00000806,SKU00806,Lizol Detergent 1L,Home Care,Cleaning,Household,Lizol,4496,4501,1682,2654,WH-CHE-S04,7,bottle,436,INR,True
+OID00000807,SKU00807,Haldiram Biscuits 200g,Snacks,Chips,Packaged Snacks,Haldiram,502,1808,143,721,WH-HYD-S03,2,packet,160,INR,True
+OID00000808,SKU00808,Closeup Shampoo 200g,Personal Care,Bath & Body,Personal Care,Closeup,6737,3025,2056,2622,WH-CBE-S01,6,piece,69,INR,True
+OID00000809,SKU00809,Bingo Cookies 2kg,Snacks,Chips,Packaged Snacks,Bingo,2348,5690,729,2228,WH-BLR-S02,10,packet,80,INR,True
+OID00000810,SKU00810,Pears Bath Soap 500ml,Personal Care,Bath & Body,Personal Care,Pears,6608,6063,2047,2856,WH-CHE-S04,10,piece,42,INR,True
+OID00000811,SKU00811,Mamaearth Face Wash 1kg,Personal Care,Bath & Body,Personal Care,Mamaearth,3556,3522,1050,1579,WH-MUM-S05,10,piece,595,INR,True
+OID00000812,SKU00812,24 Mantra Toor Dal 500ml,Pulses,Dal,Staples,24 Mantra,2864,5332,1200,2178,WH-BLR-S02,8,kg,175,INR,True
+OID00000813,SKU00813,FarmPick Orange 100g,Fresh Produce,Fruits,Fresh Fruits,FarmPick,5030,6724,2136,2861,WH-CHE-S04,6,kg,213,INR,True
+OID00000814,SKU00814,Aashirvaad Idli Rice 250ml,Rice & Staples,Rice,Staples,Aashirvaad,6549,5085,2657,3858,WH-MUM-S05,1,kg,190,INR,True
+OID00000815,SKU00815,Amul Yogurt Premium,Dairy,Milk,Fresh Milk,Amul,4954,6938,1862,3196,WH-MUM-S05,7,packet,420,INR,True
+OID00000816,SKU00816,India Gate Jeera Rice Premium,Rice & Staples,Rice,Staples,India Gate,3465,2664,996,1318,WH-CHE-S04,5,kg,68,INR,True
+OID00000817,SKU00817,Lux Bath Soap 1kg,Personal Care,Bath & Body,Personal Care,Lux,5944,3121,2203,2357,WH-CBE-S01,7,piece,320,INR,True
+OID00000818,SKU00818,Pepsi Green Tea 250ml,Beverages,Soft Drinks,Cold Beverages,Pepsi,770,1074,249,371,WH-CHE-S04,7,bottle,100,INR,True
+OID00000819,SKU00819,Milky Mist Buttermilk 1kg,Dairy,Milk,Fresh Milk,Milky Mist,6387,2738,1684,2206,WH-HYD-S03,7,packet,516,INR,True
+OID00000820,SKU00820,Surf Excel Fabric Conditioner 1kg,Home Care,Cleaning,Household,Surf Excel,1962,2854,687,1726,WH-CBE-S01,3,bottle,516,INR,True
+OID00000821,SKU00821,Aashirvaad Ponni Rice 1L,Rice & Staples,Rice,Staples,Aashirvaad,4607,6320,1454,2719,WH-CHE-S04,8,kg,192,INR,False
+OID00000822,SKU00822,Green Basket Brinjal Premium,Fresh Produce,Vegetables,Vegetables,Green Basket,3140,3534,1224,1933,WH-BLR-S02,7,kg,83,INR,True
+OID00000823,SKU00823,Ariel Detergent Premium,Home Care,Cleaning,Household,Ariel,3451,4827,1491,1966,WH-CBE-S01,7,bottle,104,INR,True
+OID00000824,SKU00824,Heritage Lassi 1kg,Dairy,Milk,Fresh Milk,Heritage,2691,4126,1031,1267,WH-CHE-S04,7,packet,596,INR,True
+OID00000825,SKU00825,Lays Banana Chips 1L,Snacks,Chips,Packaged Snacks,Lays,4432,4233,1787,2554,WH-BLR-S02,5,packet,116,INR,True
+OID00000826,SKU00826,Aashirvaad Toor Dal 250ml,Pulses,Dal,Staples,Aashirvaad,5533,4757,2151,3196,WH-CHE-S04,4,kg,161,INR,False
+OID00000827,SKU00827,Pepsi Lemon Soda 1L,Beverages,Soft Drinks,Cold Beverages,Pepsi,2979,4179,1144,2194,WH-CBE-S01,2,bottle,300,INR,True
+OID00000828,SKU00828,Aashirvaad Chana Dal 100g,Pulses,Dal,Staples,Aashirvaad,2586,4964,1081,1530,WH-MUM-S05,2,kg,105,INR,True
+OID00000829,SKU00829,Himalaya Sanitary Pads 2kg,Personal Care,Bath & Body,Personal Care,Himalaya,1679,3341,445,567,WH-BLR-S02,8,piece,396,INR,True
+OID00000830,SKU00830,Nature Fresh Watermelon Family Pack,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,2070,4323,700,897,WH-CBE-S01,7,kg,197,INR,True
+OID00000831,SKU00831,Lizol Floor Cleaner 1kg,Home Care,Cleaning,Household,Lizol,6627,6473,2156,2669,WH-HYD-S03,4,bottle,264,INR,True
+OID00000832,SKU00832,India Gate Basmati Rice 200g,Rice & Staples,Rice,Staples,India Gate,3061,5499,1267,2759,WH-BLR-S02,2,kg,249,INR,True
+OID00000833,SKU00833,Amul Milk Family Pack,Dairy,Milk,Fresh Milk,Amul,3705,3396,1306,2075,WH-BLR-S02,10,packet,242,INR,True
+OID00000834,SKU00834,Daawat Basmati Rice 500g,Rice & Staples,Rice,Staples,Daawat,2203,2798,644,1474,WH-CBE-S01,7,kg,212,INR,True
+OID00000835,SKU00835,India Gate Idli Rice Premium,Rice & Staples,Rice,Staples,India Gate,2103,3885,553,1223,WH-HYD-S03,1,kg,62,INR,True
+OID00000836,SKU00836,Daawat Jeera Rice Family Pack,Rice & Staples,Rice,Staples,Daawat,4392,5187,1961,2269,WH-MUM-S05,3,kg,109,INR,True
+OID00000837,SKU00837,Surf Excel Air Freshener 500g,Home Care,Cleaning,Household,Surf Excel,6004,3699,1967,2339,WH-HYD-S03,8,bottle,129,INR,True
+OID00000838,SKU00838,Vim Detergent Premium,Home Care,Cleaning,Household,Vim,3432,3846,1208,1784,WH-CBE-S01,4,bottle,81,INR,True
+OID00000839,SKU00839,Green Basket Carrot 200g,Fresh Produce,Vegetables,Vegetables,Green Basket,6344,5265,2129,2727,WH-CBE-S01,3,kg,115,INR,True
+OID00000840,SKU00840,Britannia Muffin Premium,Bakery,Bread,Bakery,Britannia,1974,5115,746,1333,WH-CHE-S04,6,packet,93,INR,True
+OID00000841,SKU00841,Nature Fresh Papaya 250ml,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,5608,3399,2313,2461,WH-HYD-S03,4,kg,145,INR,True
+OID00000842,SKU00842,Harvest Croissant 500g,Bakery,Bread,Bakery,Harvest,5281,4726,2242,3409,WH-CHE-S04,1,packet,58,INR,True
+OID00000843,SKU00843,Fresh Farm Tomato 200g,Fresh Produce,Vegetables,Vegetables,Fresh Farm,5496,3496,2464,2982,WH-BLR-S02,10,kg,160,INR,True
+OID00000844,SKU00844,Britannia White Bread 1kg,Bakery,Bread,Bakery,Britannia,3791,2906,1497,2234,WH-BLR-S02,7,packet,115,INR,True
+OID00000845,SKU00845,Paper Boat Mango Drink 1L,Beverages,Soft Drinks,Cold Beverages,Paper Boat,3972,3386,1761,2273,WH-CBE-S01,6,bottle,223,INR,True
+OID00000846,SKU00846,24 Mantra Chana Dal 500g,Pulses,Dal,Staples,24 Mantra,4439,5751,1650,2637,WH-CHE-S04,1,kg,157,INR,True
+OID00000847,SKU00847,Green Basket Spinach 500ml,Fresh Produce,Vegetables,Vegetables,Green Basket,4700,2830,1318,1777,WH-CHE-S04,5,kg,136,INR,True
+OID00000848,SKU00848,Closeup Face Cream 500g,Personal Care,Bath & Body,Personal Care,Closeup,889,2143,281,1342,WH-BLR-S02,1,piece,43,INR,True
+OID00000849,SKU00849,Parle Biscuits 1L,Snacks,Chips,Packaged Snacks,Parle,3706,4060,1623,2487,WH-HYD-S03,10,packet,46,INR,True
+OID00000850,SKU00850,Fresh Farm Papaya 2kg,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,4933,6306,1393,2386,WH-HYD-S03,9,kg,290,INR,True
+OID00000851,SKU00851,Lays Biscuits 100g,Snacks,Chips,Packaged Snacks,Lays,3773,4050,1498,2094,WH-HYD-S03,1,packet,350,INR,True
+OID00000852,SKU00852,Tata Tea Lemon Soda 500g,Beverages,Soft Drinks,Cold Beverages,Tata Tea,2383,5895,713,1997,WH-CBE-S01,2,bottle,414,INR,True
+OID00000853,SKU00853,Daawat Raw Rice 1kg,Rice & Staples,Rice,Staples,Daawat,5101,4656,2269,2533,WH-CHE-S04,3,kg,154,INR,True
+OID00000854,SKU00854,Nescafe Mango Drink Premium,Beverages,Soft Drinks,Cold Beverages,Nescafe,2822,1848,1119,1401,WH-HYD-S03,3,bottle,157,INR,True
+OID00000855,SKU00855,Aashirvaad Sona Masoori 200g,Rice & Staples,Rice,Staples,Aashirvaad,352,1270,157,1264,WH-CBE-S01,7,kg,179,INR,True
+OID00000856,SKU00856,Nescafe Lemon Soda 1L,Beverages,Soft Drinks,Cold Beverages,Nescafe,1745,1753,567,942,WH-BLR-S02,9,bottle,76,INR,True
+OID00000857,SKU00857,Britannia Croissant 500ml,Bakery,Bread,Bakery,Britannia,783,1867,313,805,WH-CHE-S04,10,packet,80,INR,True
+OID00000858,SKU00858,Aavin Cheese 250ml,Dairy,Milk,Fresh Milk,Aavin,1002,1255,326,992,WH-CBE-S01,10,packet,270,INR,True
+OID00000859,SKU00859,Fresh Farm Tomato Premium,Fresh Produce,Vegetables,Vegetables,Fresh Farm,2479,3831,992,1106,WH-CBE-S01,2,kg,74,INR,True
+OID00000860,SKU00860,FarmPick Kiwi 1L,Fresh Produce,Fruits,Fresh Fruits,FarmPick,4560,6501,2040,2684,WH-CHE-S04,6,kg,349,INR,True
+OID00000861,SKU00861,Haldiram Cookies 500ml,Snacks,Chips,Packaged Snacks,Haldiram,6991,5645,2082,2921,WH-CHE-S04,10,packet,39,INR,True
+OID00000862,SKU00862,Lays Potato Chips 500g,Snacks,Chips,Packaged Snacks,Lays,4043,5606,1714,2636,WH-CBE-S01,10,packet,72,INR,True
+OID00000863,SKU00863,Real Iced Tea 1L,Beverages,Soft Drinks,Cold Beverages,Real,4002,6506,1495,2944,WH-MUM-S05,7,bottle,358,INR,True
+OID00000864,SKU00864,Lays Cookies 1L,Snacks,Chips,Packaged Snacks,Lays,674,3841,299,1065,WH-BLR-S02,10,packet,258,INR,True
+OID00000865,SKU00865,Lizol Dishwash Liquid 200g,Home Care,Cleaning,Household,Lizol,3805,5436,1665,2740,WH-CHE-S04,5,bottle,681,INR,True
+OID00000866,SKU00866,Aavin Paneer Family Pack,Dairy,Milk,Fresh Milk,Aavin,4379,5918,1792,2509,WH-CHE-S04,3,packet,486,INR,True
+OID00000867,SKU00867,Organic Tattva Masoor Dal 200g,Pulses,Dal,Staples,Organic Tattva,2273,4212,678,1127,WH-CBE-S01,7,kg,67,INR,True
+OID00000868,SKU00868,Parle Mixture 200g,Snacks,Chips,Packaged Snacks,Parle,2105,4242,829,2292,WH-BLR-S02,9,packet,334,INR,True
+OID00000869,SKU00869,FarmPick Cabbage 250ml,Fresh Produce,Vegetables,Vegetables,FarmPick,2133,2524,930,2260,WH-CHE-S04,7,kg,163,INR,True
+OID00000870,SKU00870,India Gate Ponni Rice 200g,Rice & Staples,Rice,Staples,India Gate,2422,1396,661,940,WH-HYD-S03,10,kg,93,INR,True
+OID00000871,SKU00871,FarmPick Cabbage 100g,Fresh Produce,Vegetables,Vegetables,FarmPick,1343,3805,564,1442,WH-HYD-S03,1,kg,171,INR,True
+OID00000872,SKU00872,Daawat Sona Masoori 500g,Rice & Staples,Rice,Staples,Daawat,6618,7453,2137,3628,WH-MUM-S05,10,kg,196,INR,True
+OID00000873,SKU00873,India Gate Jeera Rice 1kg,Rice & Staples,Rice,Staples,India Gate,4073,5411,1275,1982,WH-CHE-S04,8,kg,82,INR,True
+OID00000874,SKU00874,Aavin Cream Premium,Dairy,Milk,Fresh Milk,Aavin,2922,2383,911,1263,WH-CHE-S04,4,packet,536,INR,True
+OID00000875,SKU00875,India Gate Sona Masoori 1kg,Rice & Staples,Rice,Staples,India Gate,1550,4648,644,1175,WH-CBE-S01,3,kg,169,INR,True
+OID00000876,SKU00876,Sprite Cola 1L,Beverages,Soft Drinks,Cold Beverages,Sprite,4788,5313,1572,2537,WH-HYD-S03,7,bottle,220,INR,True
+OID00000877,SKU00877,Paper Boat Energy Drink 500g,Beverages,Soft Drinks,Cold Beverages,Paper Boat,6043,3849,2545,3451,WH-HYD-S03,10,bottle,432,INR,True
+OID00000878,SKU00878,Tata Tea Lemon Soda 500g,Beverages,Soft Drinks,Cold Beverages,Tata Tea,5028,3675,1395,2483,WH-BLR-S02,4,bottle,431,INR,True
+OID00000879,SKU00879,FarmPick Kiwi 500ml,Fresh Produce,Fruits,Fresh Fruits,FarmPick,1135,2381,437,839,WH-BLR-S02,1,kg,89,INR,True
+OID00000880,SKU00880,Aashirvaad Toor Dal Premium,Pulses,Dal,Staples,Aashirvaad,1261,3379,562,1993,WH-CHE-S04,3,kg,220,INR,True
+OID00000881,SKU00881,Britannia White Bread Premium,Bakery,Bread,Bakery,Britannia,2273,4284,748,1467,WH-BLR-S02,7,packet,70,INR,True
+OID00000882,SKU00882,Daawat Raw Rice 200g,Rice & Staples,Rice,Staples,Daawat,5650,2529,1915,2038,WH-CBE-S01,2,kg,170,INR,True
+OID00000883,SKU00883,Lux Bath Soap 2kg,Personal Care,Bath & Body,Personal Care,Lux,5107,5097,1861,3133,WH-CBE-S01,10,piece,215,INR,True
+OID00000884,SKU00884,Daawat Jeera Rice Family Pack,Rice & Staples,Rice,Staples,Daawat,1325,3510,357,587,WH-BLR-S02,7,kg,224,INR,False
+OID00000885,SKU00885,Mamaearth Face Cream 200g,Personal Care,Bath & Body,Personal Care,Mamaearth,823,3795,291,1588,WH-BLR-S02,2,piece,215,INR,True
+OID00000886,SKU00886,Aavin Lassi 500g,Dairy,Milk,Fresh Milk,Aavin,3963,2136,1625,1976,WH-MUM-S05,4,packet,195,INR,True
+OID00000887,SKU00887,Coca-Cola Orange Soda Family Pack,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,1321,5264,463,1307,WH-BLR-S02,7,bottle,356,INR,False
+OID00000888,SKU00888,Coca-Cola Tea Powder 500g,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,6712,5086,2071,3264,WH-MUM-S05,8,bottle,375,INR,True
+OID00000889,SKU00889,Balaji Namkeen 100g,Snacks,Chips,Packaged Snacks,Balaji,4482,4324,1308,1610,WH-BLR-S02,1,packet,106,INR,True
+OID00000890,SKU00890,Britannia Croissant Premium,Bakery,Bread,Bakery,Britannia,5147,5005,1656,2019,WH-CHE-S04,2,packet,155,INR,True
+OID00000891,SKU00891,Milky Mist Buttermilk 500g,Dairy,Milk,Fresh Milk,Milky Mist,982,3658,431,1916,WH-MUM-S05,4,packet,102,INR,True
+OID00000892,SKU00892,Real Iced Tea 500g,Beverages,Soft Drinks,Cold Beverages,Real,4917,5499,1875,3022,WH-CHE-S04,3,bottle,181,INR,True
+OID00000893,SKU00893,Daawat Basmati Rice Family Pack,Rice & Staples,Rice,Staples,Daawat,5244,2733,1570,2223,WH-CBE-S01,9,kg,149,INR,True
+OID00000894,SKU00894,Green Basket Cabbage 100g,Fresh Produce,Vegetables,Vegetables,Green Basket,6673,3714,2032,2594,WH-CBE-S01,7,kg,76,INR,True
+OID00000895,SKU00895,Fresh Farm Onion 1L,Fresh Produce,Vegetables,Vegetables,Fresh Farm,4612,4962,1824,2551,WH-CBE-S01,9,kg,109,INR,True
+OID00000896,SKU00896,Paper Boat Mango Drink 500ml,Beverages,Soft Drinks,Cold Beverages,Paper Boat,1111,2227,476,925,WH-BLR-S02,6,bottle,432,INR,True
+OID00000897,SKU00897,Closeup Sanitary Pads Family Pack,Personal Care,Bath & Body,Personal Care,Closeup,4206,2217,1549,2179,WH-BLR-S02,3,piece,176,INR,True
+OID00000898,SKU00898,Coca-Cola Iced Tea 500ml,Beverages,Soft Drinks,Cold Beverages,Coca-Cola,6095,6452,2471,3959,WH-CHE-S04,3,bottle,244,INR,True
+OID00000899,SKU00899,Organic Tattva Urad Dal 1kg,Pulses,Dal,Staples,Organic Tattva,2559,6150,1127,2293,WH-HYD-S03,2,kg,138,INR,True
+OID00000900,SKU00900,Lays Banana Chips Premium,Snacks,Chips,Packaged Snacks,Lays,928,1334,367,658,WH-CBE-S01,2,packet,156,INR,True
+OID00000901,SKU00901,Aashirvaad Chana Dal 1L,Pulses,Dal,Staples,Aashirvaad,5846,4399,2056,2435,WH-MUM-S05,9,kg,238,INR,True
+OID00000902,SKU00902,Nature Fresh Mango Family Pack,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,6410,5458,1611,2581,WH-HYD-S03,4,kg,310,INR,True
+OID00000903,SKU00903,Nature Fresh Guava 1kg,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,1680,5519,646,1818,WH-BLR-S02,2,kg,227,INR,True
+OID00000904,SKU00904,Pears Bath Soap 200g,Personal Care,Bath & Body,Personal Care,Pears,3762,3290,1313,1762,WH-HYD-S03,4,piece,582,INR,True
+OID00000905,SKU00905,Green Basket Beans Premium,Fresh Produce,Vegetables,Vegetables,Green Basket,4257,1859,1314,1850,WH-CHE-S04,4,kg,98,INR,True
+OID00000906,SKU00906,Mamaearth Bath Soap 250ml,Personal Care,Bath & Body,Personal Care,Mamaearth,4093,3087,1753,2852,WH-CBE-S01,10,piece,501,INR,True
+OID00000907,SKU00907,Lays Potato Chips 250ml,Snacks,Chips,Packaged Snacks,Lays,3164,3481,1354,1835,WH-CBE-S01,2,packet,230,INR,True
+OID00000908,SKU00908,FarmPick Okra 500g,Fresh Produce,Vegetables,Vegetables,FarmPick,1559,1643,517,1615,WH-HYD-S03,4,kg,140,INR,True
+OID00000909,SKU00909,Bru Coffee 1L,Beverages,Soft Drinks,Cold Beverages,Bru,1792,1736,640,1291,WH-CHE-S04,3,bottle,91,INR,True
+OID00000910,SKU00910,India Gate Sona Masoori 100g,Rice & Staples,Rice,Staples,India Gate,6109,3423,1769,2257,WH-BLR-S02,7,kg,152,INR,True
+OID00000911,SKU00911,Fresh Farm Mango 500ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,4226,2997,1867,2511,WH-CHE-S04,9,kg,293,INR,True
+OID00000912,SKU00912,Heritage Ghee 200g,Dairy,Milk,Fresh Milk,Heritage,4411,3177,1743,2639,WH-CBE-S01,1,packet,159,INR,True
+OID00000913,SKU00913,Dove Toothpaste Premium,Personal Care,Bath & Body,Personal Care,Dove,726,2838,279,1079,WH-CBE-S01,7,piece,521,INR,True
+OID00000914,SKU00914,Aashirvaad Chana Dal 1kg,Pulses,Dal,Staples,Aashirvaad,2329,2781,869,2016,WH-HYD-S03,2,kg,127,INR,True
+OID00000915,SKU00915,Harvest Muffin Family Pack,Bakery,Bread,Bakery,Harvest,1925,3845,663,974,WH-MUM-S05,3,packet,121,INR,True
+OID00000916,SKU00916,Harpic Toilet Cleaner 1kg,Home Care,Cleaning,Household,Harpic,1286,1654,355,533,WH-BLR-S02,7,bottle,78,INR,True
+OID00000917,SKU00917,Fresh Farm Cauliflower 1kg,Fresh Produce,Vegetables,Vegetables,Fresh Farm,3636,3634,1290,2687,WH-HYD-S03,7,kg,142,INR,True
+OID00000918,SKU00918,Aashirvaad Basmati Rice 250ml,Rice & Staples,Rice,Staples,Aashirvaad,2792,2752,759,1603,WH-CHE-S04,4,kg,126,INR,True
+OID00000919,SKU00919,Aavin Milk 2kg,Dairy,Milk,Fresh Milk,Aavin,727,1903,277,1035,WH-CHE-S04,5,packet,133,INR,True
+OID00000920,SKU00920,Tata Tea Iced Tea 100g,Beverages,Soft Drinks,Cold Beverages,Tata Tea,3038,3982,944,1242,WH-MUM-S05,3,bottle,189,INR,True
+OID00000921,SKU00921,Balaji Namkeen 1kg,Snacks,Chips,Packaged Snacks,Balaji,5253,4264,1703,3134,WH-MUM-S05,7,packet,54,INR,True
+OID00000922,SKU00922,Aavin Milk 1kg,Dairy,Milk,Fresh Milk,Aavin,5105,7052,2264,3704,WH-BLR-S02,8,packet,131,INR,True
+OID00000923,SKU00923,Closeup Hand Wash 500g,Personal Care,Bath & Body,Personal Care,Closeup,2769,3791,1093,1606,WH-CBE-S01,3,piece,226,INR,True
+OID00000924,SKU00924,Bru Iced Tea 500ml,Beverages,Soft Drinks,Cold Beverages,Bru,3973,5563,1493,1833,WH-CBE-S01,8,bottle,234,INR,True
+OID00000925,SKU00925,Mamaearth Bath Soap 100g,Personal Care,Bath & Body,Personal Care,Mamaearth,1667,2166,616,980,WH-MUM-S05,1,piece,224,INR,True
+OID00000926,SKU00926,Daawat Raw Rice 1L,Rice & Staples,Rice,Staples,Daawat,4661,2906,1976,2229,WH-MUM-S05,7,kg,188,INR,True
+OID00000927,SKU00927,Aashirvaad Sona Masoori 1kg,Rice & Staples,Rice,Staples,Aashirvaad,1995,3341,572,999,WH-MUM-S05,1,kg,247,INR,True
+OID00000928,SKU00928,Himalaya Body Lotion 2kg,Personal Care,Bath & Body,Personal Care,Himalaya,2785,4778,1171,1877,WH-MUM-S05,2,piece,205,INR,True
+OID00000929,SKU00929,Lux Body Lotion 500g,Personal Care,Bath & Body,Personal Care,Lux,620,4700,234,902,WH-HYD-S03,1,piece,284,INR,True
+OID00000930,SKU00930,Harvest White Bread 250ml,Bakery,Bread,Bakery,Harvest,311,3991,118,1513,WH-HYD-S03,2,packet,160,INR,True
+OID00000931,SKU00931,Aashirvaad Sona Masoori 100g,Rice & Staples,Rice,Staples,Aashirvaad,2959,6045,1322,2703,WH-HYD-S03,4,kg,232,INR,True
+OID00000932,SKU00932,Heritage Milk 500ml,Dairy,Milk,Fresh Milk,Heritage,4702,3522,1793,3087,WH-HYD-S03,10,packet,594,INR,True
+OID00000933,SKU00933,Aashirvaad Urad Dal 500ml,Pulses,Dal,Staples,Aashirvaad,2501,5424,727,2116,WH-BLR-S02,8,kg,119,INR,True
+OID00000934,SKU00934,Daawat Ponni Rice 500g,Rice & Staples,Rice,Staples,Daawat,4224,3487,1135,1606,WH-BLR-S02,4,kg,190,INR,True
+OID00000935,SKU00935,Heritage Milk 500ml,Dairy,Milk,Fresh Milk,Heritage,2840,4613,802,1265,WH-MUM-S05,4,packet,101,INR,True
+OID00000936,SKU00936,India Gate Idli Rice Family Pack,Rice & Staples,Rice,Staples,India Gate,5584,5750,2479,2784,WH-BLR-S02,1,kg,199,INR,True
+OID00000937,SKU00937,India Gate Basmati Rice 100g,Rice & Staples,Rice,Staples,India Gate,411,5412,165,1584,WH-BLR-S02,4,kg,242,INR,True
+OID00000938,SKU00938,Aavin Milk 200g,Dairy,Milk,Fresh Milk,Aavin,6785,6125,1840,2633,WH-BLR-S02,3,packet,521,INR,True
+OID00000939,SKU00939,Aashirvaad Urad Dal Family Pack,Pulses,Dal,Staples,Aashirvaad,3017,1870,1043,1642,WH-HYD-S03,9,kg,91,INR,False
+OID00000940,SKU00940,Fresh Farm Watermelon 100g,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,2730,2268,738,1688,WH-BLR-S02,1,kg,156,INR,True
+OID00000941,SKU00941,Heritage Cheese 200g,Dairy,Milk,Fresh Milk,Heritage,2150,4632,933,1820,WH-CHE-S04,3,packet,142,INR,True
+OID00000942,SKU00942,Bru Orange Soda 200g,Beverages,Soft Drinks,Cold Beverages,Bru,5343,6311,1692,2530,WH-CBE-S01,10,bottle,97,INR,True
+OID00000943,SKU00943,Pears Face Wash 2kg,Personal Care,Bath & Body,Personal Care,Pears,5865,6245,1965,3431,WH-MUM-S05,5,piece,386,INR,True
+OID00000944,SKU00944,Tata Tea Iced Tea 100g,Beverages,Soft Drinks,Cold Beverages,Tata Tea,2474,4506,1019,1275,WH-BLR-S02,3,bottle,183,INR,True
+OID00000945,SKU00945,Organic Tattva Chana Dal 2kg,Pulses,Dal,Staples,Organic Tattva,6973,4870,1837,3120,WH-BLR-S02,2,kg,142,INR,True
+OID00000946,SKU00946,Milky Mist Yogurt 500ml,Dairy,Milk,Fresh Milk,Milky Mist,2915,4941,1016,2101,WH-MUM-S05,6,packet,171,INR,True
+OID00000947,SKU00947,Modern Muffin Family Pack,Bakery,Bread,Bakery,Modern,4800,4887,1677,2870,WH-MUM-S05,4,packet,221,INR,True
+OID00000948,SKU00948,Aashirvaad Jeera Rice 200g,Rice & Staples,Rice,Staples,Aashirvaad,6661,6017,2589,3138,WH-BLR-S02,6,kg,45,INR,True
+OID00000949,SKU00949,FarmPick Watermelon 250ml,Fresh Produce,Fruits,Fresh Fruits,FarmPick,4182,2415,1846,2171,WH-HYD-S03,3,kg,190,INR,True
+OID00000950,SKU00950,Colgate Toothpaste 500g,Personal Care,Bath & Body,Personal Care,Colgate,2026,4114,841,1055,WH-CBE-S01,3,piece,416,INR,True
+OID00000951,SKU00951,Daawat Basmati Rice 1L,Rice & Staples,Rice,Staples,Daawat,6045,3232,1639,2930,WH-MUM-S05,3,kg,52,INR,True
+OID00000952,SKU00952,Aavin Butter 500g,Dairy,Milk,Fresh Milk,Aavin,931,1800,235,1187,WH-CHE-S04,3,packet,570,INR,True
+OID00000953,SKU00953,Tata Tea Coffee 100g,Beverages,Soft Drinks,Cold Beverages,Tata Tea,6219,6241,1974,3394,WH-HYD-S03,2,bottle,99,INR,True
+OID00000954,SKU00954,Nature Fresh Orange 500ml,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,4422,5568,1247,2158,WH-CHE-S04,9,kg,172,INR,True
+OID00000955,SKU00955,Pears Toothpaste 200g,Personal Care,Bath & Body,Personal Care,Pears,3770,6285,1644,2300,WH-MUM-S05,7,piece,158,INR,True
+OID00000956,SKU00956,Aashirvaad Basmati Rice 200g,Rice & Staples,Rice,Staples,Aashirvaad,2093,4410,687,1932,WH-CHE-S04,8,kg,125,INR,True
+OID00000957,SKU00957,Daawat Ponni Rice 1kg,Rice & Staples,Rice,Staples,Daawat,747,3467,306,1730,WH-HYD-S03,2,kg,71,INR,True
+OID00000958,SKU00958,Surf Excel Floor Cleaner 200g,Home Care,Cleaning,Household,Surf Excel,2262,2338,693,1902,WH-BLR-S02,10,bottle,71,INR,True
+OID00000959,SKU00959,Real Tea Powder 2kg,Beverages,Soft Drinks,Cold Beverages,Real,1952,1887,737,903,WH-CBE-S01,10,bottle,309,INR,False
+OID00000960,SKU00960,Aashirvaad Toor Dal 250ml,Pulses,Dal,Staples,Aashirvaad,2877,1538,772,1504,WH-HYD-S03,7,kg,188,INR,True
+OID00000961,SKU00961,Aashirvaad Sona Masoori 500ml,Rice & Staples,Rice,Staples,Aashirvaad,1361,2187,531,830,WH-MUM-S05,2,kg,173,INR,True
+OID00000962,SKU00962,Aavin Cream 100g,Dairy,Milk,Fresh Milk,Aavin,6821,7084,2226,3526,WH-HYD-S03,3,packet,185,INR,True
+OID00000963,SKU00963,FarmPick Potato 500g,Fresh Produce,Vegetables,Vegetables,FarmPick,6185,5680,1832,2373,WH-BLR-S02,9,kg,152,INR,True
+OID00000964,SKU00964,Vim Dishwash Liquid 250ml,Home Care,Cleaning,Household,Vim,3965,3599,1614,2408,WH-MUM-S05,7,bottle,100,INR,True
+OID00000965,SKU00965,India Gate Ponni Rice 1L,Rice & Staples,Rice,Staples,India Gate,5300,4702,1968,2380,WH-CBE-S01,1,kg,81,INR,True
+OID00000966,SKU00966,Pepsi Green Tea 2kg,Beverages,Soft Drinks,Cold Beverages,Pepsi,1070,4636,364,811,WH-BLR-S02,2,bottle,163,INR,True
+OID00000967,SKU00967,Lays Banana Chips 1L,Snacks,Chips,Packaged Snacks,Lays,1767,2791,692,1735,WH-HYD-S03,8,packet,342,INR,True
+OID00000968,SKU00968,FarmPick Brinjal 500ml,Fresh Produce,Vegetables,Vegetables,FarmPick,624,2530,201,888,WH-MUM-S05,3,kg,132,INR,True
+OID00000969,SKU00969,Surf Excel Dishwash Liquid 2kg,Home Care,Cleaning,Household,Surf Excel,983,3358,379,1515,WH-CBE-S01,10,bottle,118,INR,True
+OID00000970,SKU00970,Harvest Brown Bread 500g,Bakery,Bread,Bakery,Harvest,1566,2892,658,1353,WH-MUM-S05,7,packet,62,INR,True
+OID00000971,SKU00971,Organic Tattva Toor Dal 1L,Pulses,Dal,Staples,Organic Tattva,3158,4689,1083,2498,WH-CBE-S01,2,kg,106,INR,True
+OID00000972,SKU00972,Daawat Ponni Rice Premium,Rice & Staples,Rice,Staples,Daawat,3589,3284,1133,1882,WH-CHE-S04,4,kg,224,INR,True
+OID00000973,SKU00973,Green Basket Brinjal 1kg,Fresh Produce,Vegetables,Vegetables,Green Basket,613,1878,220,1282,WH-HYD-S03,10,kg,28,INR,True
+OID00000974,SKU00974,India Gate Sona Masoori 100g,Rice & Staples,Rice,Staples,India Gate,6768,4217,2274,3343,WH-BLR-S02,1,kg,239,INR,True
+OID00000975,SKU00975,Paper Boat Lemon Soda 200g,Beverages,Soft Drinks,Cold Beverages,Paper Boat,984,2592,273,933,WH-HYD-S03,8,bottle,234,INR,True
+OID00000976,SKU00976,Sprite Cola 2kg,Beverages,Soft Drinks,Cold Beverages,Sprite,1057,2830,453,1430,WH-BLR-S02,4,bottle,198,INR,True
+OID00000977,SKU00977,24 Mantra Masoor Dal Premium,Pulses,Dal,Staples,24 Mantra,5942,4863,2417,3411,WH-CHE-S04,1,kg,203,INR,True
+OID00000978,SKU00978,Harpic Floor Cleaner 250ml,Home Care,Cleaning,Household,Harpic,6220,4339,2385,3747,WH-HYD-S03,1,bottle,214,INR,True
+OID00000979,SKU00979,Milky Mist Yogurt 2kg,Dairy,Milk,Fresh Milk,Milky Mist,1230,3646,502,1982,WH-MUM-S05,1,packet,491,INR,True
+OID00000980,SKU00980,Milky Mist Cream Family Pack,Dairy,Milk,Fresh Milk,Milky Mist,1098,2487,282,766,WH-BLR-S02,10,packet,416,INR,True
+OID00000981,SKU00981,Britannia Brown Bread 2kg,Bakery,Bread,Bakery,Britannia,3333,2744,1375,1508,WH-MUM-S05,2,packet,280,INR,True
+OID00000982,SKU00982,24 Mantra Chana Dal Family Pack,Pulses,Dal,Staples,24 Mantra,3181,3973,1019,2229,WH-HYD-S03,2,kg,105,INR,True
+OID00000983,SKU00983,Bingo Namkeen 2kg,Snacks,Chips,Packaged Snacks,Bingo,5173,4015,1461,2453,WH-CHE-S04,5,packet,327,INR,True
+OID00000984,SKU00984,Fresh Farm Potato 500ml,Fresh Produce,Vegetables,Vegetables,Fresh Farm,1034,5573,392,1754,WH-CBE-S01,8,kg,179,INR,True
+OID00000985,SKU00985,FarmPick Brinjal 2kg,Fresh Produce,Vegetables,Vegetables,FarmPick,4423,4519,1619,1785,WH-CHE-S04,4,kg,77,INR,True
+OID00000986,SKU00986,Colgate Shampoo 1L,Personal Care,Bath & Body,Personal Care,Colgate,1902,2591,801,1155,WH-CHE-S04,7,piece,37,INR,True
+OID00000987,SKU00987,Harvest Rusk 500ml,Bakery,Bread,Bakery,Harvest,2492,2961,1061,1702,WH-BLR-S02,1,packet,237,INR,False
+OID00000988,SKU00988,Fresh Farm Pomegranate 250ml,Fresh Produce,Fruits,Fresh Fruits,Fresh Farm,6990,5101,2473,3801,WH-BLR-S02,10,kg,260,INR,True
+OID00000989,SKU00989,India Gate Jeera Rice Premium,Rice & Staples,Rice,Staples,India Gate,5579,5320,1833,2038,WH-CHE-S04,3,kg,207,INR,True
+OID00000990,SKU00990,Milky Mist Yogurt 500g,Dairy,Milk,Fresh Milk,Milky Mist,4537,2258,1278,1851,WH-MUM-S05,2,packet,620,INR,True
+OID00000991,SKU00991,Sprite Iced Tea 100g,Beverages,Soft Drinks,Cold Beverages,Sprite,1969,2471,528,680,WH-MUM-S05,3,bottle,34,INR,True
+OID00000992,SKU00992,Dove Sanitary Pads 250ml,Personal Care,Bath & Body,Personal Care,Dove,507,2427,202,569,WH-BLR-S02,4,piece,257,INR,True
+OID00000993,SKU00993,Mamaearth Toothpaste 2kg,Personal Care,Bath & Body,Personal Care,Mamaearth,6249,6566,2537,3411,WH-CBE-S01,5,piece,114,INR,True
+OID00000994,SKU00994,Nature Fresh Kiwi 200g,Fresh Produce,Fruits,Fresh Fruits,Nature Fresh,1147,2134,312,1632,WH-BLR-S02,5,kg,174,INR,True
+OID00000995,SKU00995,Fresh Farm Brinjal 200g,Fresh Produce,Vegetables,Vegetables,Fresh Farm,3260,3535,1410,1935,WH-CHE-S04,1,kg,125,INR,True
+OID00000996,SKU00996,Fresh Farm Cauliflower 1L,Fresh Produce,Vegetables,Vegetables,Fresh Farm,3374,6560,1443,2840,WH-BLR-S02,3,kg,96,INR,False
+OID00000997,SKU00997,Aavin Curd Premium,Dairy,Milk,Fresh Milk,Aavin,3108,4999,1394,2485,WH-MUM-S05,1,packet,192,INR,True
+OID00000998,SKU00998,Pepsi Energy Drink Family Pack,Beverages,Soft Drinks,Cold Beverages,Pepsi,5265,3615,1347,1494,WH-BLR-S02,4,bottle,206,INR,True
+OID00000999,SKU00999,Britannia Cake 2kg,Bakery,Bread,Bakery,Britannia,1435,1876,421,780,WH-CHE-S04,4,packet,72,INR,True
+OID00001000,SKU01000,Himalaya Body Lotion Family Pack,Personal Care,Bath & Body,Personal Care,Himalaya,4126,4547,1646,2761,WH-CHE-S04,4,piece,286,INR,True

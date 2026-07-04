@@ -1,11 +1,12 @@
 import { useState, useMemo } from "react";
-import { LayoutDashboard, Compass, Lightbulb } from "lucide-react";
+import { Compass, LayoutDashboard, Lightbulb, PackageSearch } from "lucide-react";
 import DashboardHeader/*, { ExecutiveSummaryCard } */ from "./DashboardHeader";
 import KPICardsGrid from "./KPICardsGrid";
 // import ProductFilterFunnel from "./ProductFilterFunnel";
 // import TrendIntelligenceOverview from "./TrendIntelligenceOverview";
 import InventoryRiskAnalytics from "./InventoryRiskAnalytics";
 import ProductIntelligenceExplorer from "./ProductIntelligenceExplorer";
+import ProductCatalog from "./ProductCatalog";
 // import SupplyChainActionCenter from "./SupplyChainActionCenter";
 import {
   BusinessInsightsSection,
@@ -13,7 +14,7 @@ import {
 } from "./InsightsAndActions";
 
 export default function DemandIntelligenceDashboard({ data, onReset }) {
-  const [activeMainTab, setActiveMainTab] = useState("overview");
+  const [activeMainTab, setActiveMainTab] = useState("catalog");
 
   const {
     kpis,
@@ -64,6 +65,15 @@ export default function DemandIntelligenceDashboard({ data, onReset }) {
         <div className="main-tab-bar">
           <div
             role="button"
+            onClick={() => setActiveMainTab("catalog")}
+            className={`main-tab-item ${activeMainTab === "catalog" ? "is-active" : ""}`}
+          >
+            <PackageSearch className="h-4 w-4" />
+            <span>Product Catalog</span>
+          </div>
+
+          <div
+            role="button"
             onClick={() => setActiveMainTab("overview")}
             className={`main-tab-item ${activeMainTab === "overview" ? "is-active" : ""}`}
           >
@@ -92,6 +102,8 @@ export default function DemandIntelligenceDashboard({ data, onReset }) {
       </div>
 
       {/* 3. Tab Contents */}
+      {activeMainTab === "catalog" && <ProductCatalog />}
+
       {activeMainTab === "overview" && (
         <div className="space-y-6 animate-fadeIn">
           {/* KPI Cards Grid */}

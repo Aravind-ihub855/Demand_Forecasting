@@ -16,11 +16,11 @@ const KPI_ACCENTS = [
 ];
 
 const KPI_ITEMS = [
-  { key: "total_products_analyzed", label: "Total Products Analyzed", icon: Package },
-  { key: "validated_products", label: "Validated Products", icon: CheckCircle2 },
-  { key: "new_product_opportunities", label: "New Opportunities", icon: Lightbulb },
-  { key: "top_priority_products", label: "Top Priority Products", icon: Star },
-  { key: "critical_products", label: "Critical Products", icon: AlertTriangle, isCritical: true },
+  // { key: "total_products_analyzed", label: "Total Products Analyzed", icon: Package },
+  // { key: "validated_products", label: "Validated Products", icon: CheckCircle2 },
+  // { key: "new_product_opportunities", label: "New Opportunities", icon: Lightbulb },
+  // { key: "top_priority_products", label: "Top Priority Products", icon: Star },
+  // { key: "critical_products", label: "Critical Products", icon: AlertTriangle, isCritical: true },
 ];
 
 export default function KPICardsGrid({ kpis }) {
