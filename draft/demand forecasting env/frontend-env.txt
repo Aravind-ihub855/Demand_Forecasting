@@ -1,0 +1,6 @@
+# VITE_API_URL=https://k52vrrsp-5000.inc1.devtunnels.ms/api
+CLIENT_URL=http://localhost:5000/api
+
+VITE_AI_FESTIVAL_FORECAST_URL=https://api.agents.snsihub.ai/webhook/ai-festival-forecasting //old-flow
+VITE_DEMAND_INTEL_FILTERS_URL=https://api.agents.snsihub.ai/webhook/9a0b471a-a890-481e-b519-4b0bf5b8b923 //frontpage-dropdown
+VITE_DEMAND_INTEL_WEBHOOK_URL = https://api.agents.snsihub.ai/webhook/ai-demand-forecasting //current-flow

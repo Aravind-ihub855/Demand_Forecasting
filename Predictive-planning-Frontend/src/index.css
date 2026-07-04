@@ -1,0 +1,1150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ── Design tokens: Strict Light-First Monochrome theme ── */
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-soft: #f4f4f5;
+  --text: #111111;
+  --subtle: #71717a;
+  --border: #e4e4e7;
+  --brand: #111111;
+  --brand-soft: #111111;
+  --accent: #52525b;
+  --danger: #ef4444;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+body[data-theme="light"],
+body[data-theme="dark"] {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-soft: #f4f4f5;
+  --text: #111111;
+  --subtle: #71717a;
+  --border: #e4e4e7;
+  --brand: #111111;
+  --brand-soft: #111111;
+  --accent: #52525b;
+  --danger: #ef4444;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* ── Reset & Global Overrides ─────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Global typography & letter spacing */
+* {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+  letter-spacing: -0.015em !important;
+}
+
+body {
+  margin: 0;
+  background: #ffffff !important;
+  color: #111111 !important;
+  transition: none !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e4e4e7;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Page Backgrounds & Global layout */
+.di-scope,
+.main-content,
+.bg-slate-50,
+.dark\:bg-\[\#071021\],
+.min-h-full,
+.min-h-screen,
+#root,
+.shell,
+.auth-page {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+/* Style cards, panels, and dashboard widgets cleanly with premium borders and radius */
+/* Crucial: overflow is set to visible so absolute components (like datepicker) don't get clipped! */
+.panel,
+.card,
+.inv-outlet-card,
+.actionCard,
+.riskCard,
+[class*="card"],
+[class*="panel"],
+[class*="cardElevated"],
+.auth-card {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
+  padding: 24px !important;
+  overflow: visible !important;
+}
+
+/* Header container gradient overrides - make them soft gray */
+.bg-gradient-to-br,
+[class*="bg-gradient"] {
+  background-image: none !important;
+  background-color: #f4f4f5 !important;
+  color: #111111 !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 14px !important;
+}
+
+/* Any inline text inside the header should be visible and black */
+[class*="bg-gradient"] *,
+[class*="bg-gradient"] h1,
+[class*="bg-gradient"] p,
+[class*="bg-gradient"] span,
+[class*="bg-gradient"] div {
+  color: #111111 !important;
+}
+
+/* Highly specific class selector to beat Tailwind's !important text utility classes in form header */
+body .\!text-white,
+body .text-white,
+body .\!text-indigo-100,
+body .text-indigo-100,
+body .\!text-slate-100,
+body .text-slate-100,
+body .text-indigo-200,
+body .\!text-indigo-200 {
+  color: #111111 !important;
+}
+
+body p.\!text-indigo-100,
+body p.text-indigo-100,
+body p.\!text-slate-100,
+body p.text-slate-100,
+body p.text-indigo-200,
+body p.\!text-indigo-200 {
+  color: #52525b !important;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background: #ffffff !important;
+  border-right: 1px solid #e4e4e7 !important;
+  padding: 24px 16px !important;
+}
+
+.sidebar-brand {
+  border-bottom: 1px solid #e4e4e7 !important;
+  color: #111111 !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  padding: 0 0 16px 0 !important;
+  margin-bottom: 24px !important;
+  background-color: #ffffff !important;
+}
+
+.sidebar-link {
+  color: #71717a !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border: 1px solid transparent;
+  background-color: transparent !important;
+  border-radius: 10px !important;
+  padding: 10px 14px !important;
+  margin-bottom: 4px !important;
+}
+
+.sidebar-link:hover {
+  background-color: #f4f4f5 !important;
+  color: #111111 !important;
+}
+
+.sidebar-link.is-active {
+  background-color: #f4f4f5 !important;
+  color: #111111 !important;
+  font-weight: 600 !important;
+}
+
+.sidebar-footer {
+  border-top: 1px solid #e4e4e7 !important;
+  background-color: #ffffff !important;
+  padding-top: 16px !important;
+}
+
+.sidebar-logout {
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 10px !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #111111 !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 14px !important;
+  padding: 10px 14px !important;
+}
+
+.sidebar-logout:hover {
+  background-color: #f4f4f5 !important;
+  color: #111111 !important;
+  border-color: #d4d4d8 !important;
+}
+
+/* Typography Overrides */
+h1 {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  line-height: 120% !important;
+  color: #111111 !important;
+}
+
+/* Hero Title - if page has a large hero header */
+.hero-title,
+.bg-gradient-to-br h1 {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  line-height: 120% !important;
+  color: #111111 !important;
+}
+
+h2 {
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  color: #111111 !important;
+}
+
+h3,
+[class*="card-title"] {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: #111111 !important;
+}
+
+p,
+.subtle,
+[class*="textMuted"],
+[class*="textBody"] {
+  font-size: 16px !important;
+  color: #52525b !important;
+}
+
+small,
+.caption,
+[class*="text-xs"],
+[class*="textLabel"],
+[class*="caption"] {
+  font-size: 14px !important;
+  color: #71717a !important;
+}
+
+/* Form controls */
+input,
+select,
+textarea,
+.form input,
+.form select {
+  height: 48px !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 10px !important;
+  color: #111111 !important;
+  padding: 10px 16px !important;
+  font-size: 14px !important;
+}
+
+input:focus,
+select:focus {
+  border-color: #111111 !important;
+  outline: 1px solid #111111 !important;
+}
+
+/* Labels */
+label,
+[class*="textLabel"] {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #18181b !important;
+  margin-bottom: 8px !important;
+  display: inline-block !important;
+}
+
+/* Calendar Date Pickers */
+[class*="Calendar"],
+[class*="calendar"],
+[class*="popover"],
+[class*="Popover"],
+.absolute.z-40 {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Days inside datepicker */
+[class*="calendar"] button,
+[class*="Calendar"] button,
+.absolute.z-40 button {
+  background-color: transparent !important;
+  color: #111111 !important;
+  border-radius: 10px !important;
+  border: none !important;
+}
+
+[class*="calendar"] button:hover,
+[class*="Calendar"] button:hover,
+.absolute.z-40 button:hover {
+  background-color: #f4f4f5 !important;
+  color: #000000 !important;
+}
+
+/* Selected active day in datepicker */
+[class*="calendar"] button[class*="bg-indigo-600"],
+[class*="Calendar"] button[class*="bg-indigo-600"],
+.absolute.z-40 button[class*="bg-indigo-600"],
+[class*="calendar"] button.isSelected,
+.absolute.z-40 button[class*="isSelected"] {
+  background-color: #111111 !important;
+  background: #111111 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+.fi-primary-btn,
+.btnPrimary,
+.soft-btn {
+  background: #111111 !important;
+  background-color: #111111 !important;
+  color: #ffffff !important;
+  border: 1px solid #111111 !important;
+  border-radius: 10px !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 12px 24px !important;
+  cursor: pointer;
+  transition: all 150ms ease-in-out !important;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.fi-primary-btn:hover,
+.btnPrimary:hover {
+  background: #000000 !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+}
+
+/* Secondary Button style */
+.btnSecondary,
+.soft-btn,
+[class*="btnSecondary"] {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid #e4e4e7 !important;
+}
+
+.btnSecondary:hover,
+.soft-btn:hover,
+[class*="btnSecondary"]:hover {
+  background-color: #f4f4f5 !important;
+  border-color: #d4d4d8 !important;
+}
+
+/* Ghost Button style */
+.ghost-btn,
+[class*="ghost-btn"] {
+  background: transparent !important;
+  color: #52525b !important;
+  border: none !important;
+}
+
+.ghost-btn:hover,
+[class*="ghost-btn"]:hover {
+  background-color: #f4f4f5 !important;
+  color: #111111 !important;
+}
+
+/* Icons inside primary buttons should be white */
+button.btnPrimary svg,
+button[type="submit"] svg,
+.fi-primary-btn svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Icons inside all other buttons (including pagination, calendar, tabs, secondary buttons) should be black */
+button:not(.btnPrimary):not([type="submit"]):not(.fi-primary-btn) svg,
+button.btnSecondary svg,
+.soft-btn svg,
+[class*="btnSecondary"] svg,
+.ghost-btn svg {
+  color: #111111 !important;
+  stroke: #111111 !important;
+}
+
+/* Tabs */
+.inv-tab-btn,
+[class*="tab-btn"],
+[class*="inv-tab"] {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+  color: #52525b !important;
+  padding: 10px 16px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border-radius: 10px !important;
+}
+
+.inv-tab-btn.is-active,
+[class*="tab-btn"].is-active,
+[class*="tabActive"] {
+  background: #111111 !important;
+  background-color: #111111 !important;
+  color: #ffffff !important;
+  border-color: #111111 !important;
+}
+
+/* Tables */
+table,
+.fi-table,
+.inv-table {
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+}
+
+th,
+td,
+.fi-table th,
+.fi-table td,
+.inv-table th,
+.inv-table td {
+  border-bottom: 1px solid #e4e4e7 !important;
+  border-right: 1px solid #e4e4e7 !important;
+  color: #111111 !important;
+  padding: 14px 18px !important;
+  font-size: 14px !important;
+}
+
+th:last-child,
+td:last-child {
+  border-right: none !important;
+}
+
+tr:last-child td {
+  border-bottom: none !important;
+}
+
+th,
+.fi-table th,
+.inv-table th {
+  background: #fafafa !important;
+  background-color: #fafafa !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  color: #18181b !important;
+}
+
+tr:hover td {
+  background-color: #fafafa !important;
+}
+
+/* Badges / Pills */
+.fi-pill,
+.badge,
+[class*="pill"],
+[class*="badge"] {
+  border: 1px solid #e4e4e7 !important;
+  background: #fafafa !important;
+  background-color: #fafafa !important;
+  color: #52525b !important;
+  border-radius: 10px !important;
+  padding: 4px 10px !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+/* Highlighted badges / pills */
+.fi-pill-high,
+[class*="pill-high"],
+.fi-pill-medium,
+[class*="pill-medium"] {
+  background: #111111 !important;
+  background-color: #111111 !important;
+  color: #ffffff !important;
+  border-color: #111111 !important;
+}
+
+.fi-pill-high svg,
+[class*="pill-high"] svg,
+.fi-pill-medium svg,
+[class*="pill-medium"] svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Icon box wrappers */
+[class*="iconBox"],
+[class*="actionIconBox"],
+[class*="iconColor"] {
+  background-color: #f4f4f5 !important;
+  color: #111111 !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 10px !important;
+  padding: 8px !important;
+}
+
+/* Spacing helpers to guarantee a clean 8-point system */
+.space-y-6>*+* {
+  margin-top: 24px !important;
+}
+
+.space-y-8>*+* {
+  margin-top: 32px !important;
+}
+
+.gap-4 {
+  gap: 16px !important;
+}
+
+.gap-6 {
+  gap: 24px !important;
+}
+
+.p-6 {
+  padding: 24px !important;
+}
+
+/* Override any inline gradients or text colors */
+[class*="text-indigo"],
+[class*="text-violet"],
+[class*="text-emerald"],
+[class*="text-blue"],
+[class*="text-red"],
+[class*="text-orange"] {
+  color: #111111 !important;
+}
+
+[class*="bg-indigo"],
+[class*="bg-violet"],
+[class*="bg-emerald"],
+[class*="bg-blue"],
+[class*="bg-red"],
+[class*="bg-orange"] {
+  background: #f4f4f5 !important;
+  background-color: #f4f4f5 !important;
+}
+
+/* Override Lucide / custom icons globally to display as black */
+svg,
+svg.lucide {
+  color: #111111 !important;
+  stroke: #111111 !important;
+}
+
+/* Disable all dark backgrounds, gradients, and custom tailwind color overrides */
+[class*="bg-[#"],
+[class*="bg-slate-"],
+[class*="bg-zinc-"],
+[class*="bg-gray--"],
+[class*="bg-indigo-"],
+[class*="bg-violet-"] {
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+/* Ensure header headers and muted backgrounds still use gray */
+.bg-gradient-to-br,
+[class*="bg-gradient"],
+[class*="bg-slate-50"],
+[class*="bg-slate-100"],
+[class*="bg-gray-50"],
+[class*="bg-gray-100"],
+[class*="bg-zinc-50"],
+[class*="bg-zinc-100"] {
+  background-color: #f4f4f5 !important;
+  background-image: none !important;
+}
+
+/* Style active items and primary buttons black */
+button.btnPrimary,
+button[type="submit"],
+.fi-primary-btn,
+.sidebar-link.is-active,
+.inv-tab-btn.is-active,
+[class*="tab-btn"].is-active {
+  background-color: #111111 !important;
+  background: #111111 !important;
+  color: #ffffff !important;
+}
+
+/* Reset all text colors */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+td,
+label,
+select,
+input,
+[class*="text-[#"],
+[class*="text-slate-"],
+[class*="text-zinc-"],
+[class*="text-gray-"],
+[class*="text-indigo-"],
+[class*="text-violet-"] {
+  color: #111111 !important;
+}
+
+/* Muted text should be gray 500 */
+p,
+.subtle,
+[class*="text-slate-500"],
+[class*="text-slate-600"],
+[class*="text-zinc-500"],
+[class*="text-gray-500"],
+[class*="text-gray-600"] {
+  color: #71717a !important;
+}
+
+/* Soft colored status badges */
+.text-red-800,
+[class*="text-red-"] {
+  color: #991b1b !important;
+}
+
+.bg-red-100,
+[class*="bg-red-"] {
+  background-color: #fef2f2 !important;
+  background: #fef2f2 !important;
+  border-color: #fee2e2 !important;
+}
+
+.text-orange-800,
+[class*="text-orange-"] {
+  color: #c2410c !important;
+}
+
+.bg-orange-100,
+[class*="bg-orange-"] {
+  background-color: #fff7ed !important;
+  background: #fff7ed !important;
+  border-color: #ffedd5 !important;
+}
+
+.text-emerald-800,
+[class*="text-emerald-"] {
+  color: #166534 !important;
+}
+
+.bg-emerald-100,
+[class*="bg-emerald-"] {
+  background-color: #f0fdf4 !important;
+  background: #f0fdf4 !important;
+  border-color: #dcfce7 !important;
+}
+
+.text-yellow-800,
+[class*="text-yellow-"] {
+  color: #854d0e !important;
+}
+
+.bg-yellow-100,
+[class*="bg-yellow-"] {
+  background-color: #fef9c3 !important;
+  background: #fef9c3 !important;
+  border-color: #fef08a !important;
+}
+
+/* Custom Warehouse Operations Actions badges */
+body span.warehouse-badge-critical,
+body .warehouse-badge-critical {
+  background-color: #111111 !important;
+  background: #111111 !important;
+  color: #ffffff !important;
+  border: 1px solid #111111 !important;
+  display: inline-block !important;
+  opacity: 1 !important;
+}
+
+body span.warehouse-badge-normal,
+body .warehouse-badge-normal {
+  background-color: #f4f4f5 !important;
+  background: #f4f4f5 !important;
+  color: #111111 !important;
+  border: 1px solid #e4e4e7 !important;
+  display: inline-block !important;
+  opacity: 1 !important;
+}
+
+/* Pagination buttons visual elevation and icon visibility */
+.inline-flex.h-8.w-8.items-center.justify-center.rounded-lg.border {
+  background-color: #ffffff !important;
+  border: 1px solid #e4e4e7 !important;
+}
+
+.inline-flex.h-8.w-8.items-center.justify-center.rounded-lg.border:hover:not(:disabled) {
+  background-color: #f4f4f5 !important;
+}
+
+/* Specific chevron rules for pagination buttons */
+button.inline-flex.h-8.w-8 svg,
+button.inline-flex.h-8.w-8.items-center svg,
+.inline-flex.gap-1\.5 button svg,
+[title="Previous Page"] svg,
+[title="Next Page"] svg {
+  color: #111111 !important;
+  stroke: #111111 !important;
+  fill: none !important;
+  display: block !important;
+  width: 16px !important;
+  height: 16px !important;
+  opacity: 1 !important;
+}
+
+/* ── Top Header Styling ── */
+.shell-vertical {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  background: #ffffff !important;
+  border-bottom: 1px solid #e4e4e7 !important;
+  padding: 0 24px !important;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header-brand {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #111111 !important;
+  letter-spacing: -0.02em !important;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-link {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #71717a !important;
+  border: 1px solid transparent;
+  background-color: transparent !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  transition: all 150ms ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.header-link:hover {
+  background-color: #f4f4f5 !important;
+  color: #111111 !important;
+}
+
+.header-link.is-active {
+  background-color: #f4f4f5 !important;
+  color: #111111 !important;
+  font-weight: 600 !important;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-logout {
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #111111 !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 14px !important;
+  padding: 8px 16px !important;
+  cursor: pointer;
+  transition: all 150ms ease-in-out !important;
+}
+
+.header-logout:hover {
+  background-color: #fef2f2 !important;
+  color: #991b1b !important;
+  border-color: #fee2e2 !important;
+}
+
+/* ── Explorer Tabs & Sub-tabs Styling ── */
+.explorer-tab {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  border-radius: 12px !important;
+  padding: 10px 16px !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  border: 1px solid #e4e4e7 !important;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #71717a !important;
+  cursor: pointer !important;
+  transition: all 150ms ease-in-out !important;
+}
+
+.explorer-tab:hover {
+  background-color: #f4f4f5 !important;
+  background: #f4f4f5 !important;
+  color: #111111 !important;
+}
+
+.explorer-tab.is-active {
+  background-color: #111111 !important;
+  background: #111111 !important;
+  color: #ffffff !important;
+  border-color: #111111 !important;
+}
+
+.explorer-tab-badge {
+  border-radius: 9999px !important;
+  padding: 2px 8px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  background-color: #f4f4f5 !important;
+  color: #71717a !important;
+  transition: all 150ms ease-in-out !important;
+}
+
+.explorer-tab.is-active .explorer-tab-badge {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.explorer-subtab-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 12px !important;
+  /* Space between sub-tabs as requested */
+  padding: 6px !important;
+  background-color: #f4f4f5 !important;
+  background: #f4f4f5 !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 12px !important;
+  max-width: max-content !important;
+  margin-bottom: 8px !important;
+}
+
+.explorer-subtab {
+  border-radius: 8px !important;
+  padding: 6px 14px !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  border: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  color: #71717a !important;
+  cursor: pointer !important;
+  transition: all 150ms ease-in-out !important;
+}
+
+.explorer-subtab:hover {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  background: rgba(0, 0, 0, 0.05) !important;
+  color: #111111 !important;
+}
+
+.explorer-subtab.is-active {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #111111 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Fix search icon text overlap */
+.relative input[type="search"],
+.relative input[placeholder*="Search"] {
+  padding-left: 38px !important;
+}
+
+/* Table Pagination Buttons Styling Override */
+.inline-flex.gap-1\.5 button[title="Previous Page"],
+.inline-flex.gap-1\.5 button[title="Next Page"],
+.inline-flex button[title="Previous Page"],
+.inline-flex button[title="Next Page"],
+button.h-8.w-8 {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px !important;
+  max-width: 32px !important;
+  min-height: 32px !important;
+  max-height: 32px !important;
+  padding: 0 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid #e4e4e7 !important;
+  border-radius: 8px !important;
+  transition: all 150ms ease-in-out !important;
+}
+
+.inline-flex.gap-1\.5 button[title="Previous Page"]:hover:not(:disabled),
+.inline-flex.gap-1\.5 button[title="Next Page"]:hover:not(:disabled),
+button.h-8.w-8:hover:not(:disabled) {
+  background-color: #f4f4f5 !important;
+  background: #f4f4f5 !important;
+  border-color: #d4d4d8 !important;
+}
+
+.inline-flex.gap-1\.5 button[title="Previous Page"]:disabled,
+.inline-flex.gap-1\.5 button[title="Next Page"]:disabled,
+button.h-8.w-8:disabled {
+  opacity: 0.4 !important;
+  cursor: not-allowed !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: #e4e4e7 !important;
+}
+
+/* Ensure the SVG icons inside pagination buttons are colored correctly */
+.inline-flex.gap-1\.5 button[title="Previous Page"] svg,
+.inline-flex.gap-1\.5 button[title="Next Page"] svg,
+button.h-8.w-8 svg {
+  color: #111111 !important;
+  stroke: #111111 !important;
+  fill: none !important;
+  width: 16px !important;
+  height: 16px !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* Action Cards Typography Alignment */
+.action-card-title {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 14.5px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  color: #111111 !important;
+}
+
+.action-card-desc {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  font-size: 12.5px !important;
+  line-height: 1.5 !important;
+  color: #52525b !important;
+}
+
+/* Custom Border Styles for Insights and Actions */
+.insights-outer-card {
+  border: 1px solid #cbd5e1 !important;
+  /* higher opacity border slate-300 */
+  box-shadow: none !important;
+}
+
+.dark .insights-outer-card {
+  border: 1px solid #334155 !important;
+  /* slate-700 */
+}
+
+.insights-outer-card>div.border-b {
+  border-bottom: 1px solid #cbd5e1 !important;
+}
+
+.dark .insights-outer-card>div.border-b {
+  border-bottom: 1px solid #334155 !important;
+}
+
+.insights-inner-item-card {
+  border: 1px solid #e2e8f0 !important;
+  /* higher opacity border slate-200 */
+  box-shadow: none !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+}
+
+.dark .insights-inner-item-card {
+  border: 1px solid #1e293b !important;
+  /* slate-800 */
+  background: #0f172a !important;
+  background-color: #0f172a !important;
+}
+
+.insights-inner-item-card:hover {
+  border-color: #94a3b8 !important;
+  /* higher opacity border slate-400 */
+  box-shadow: none !important;
+}
+
+.dark .insights-inner-item-card:hover {
+  border-color: #475569 !important;
+  /* slate-600 */
+}
+
+/* Dashboard Main Tabs System */
+.main-tab-bar {
+  display: inline-flex;
+  padding: 6px !important;
+  background-color: #f1f5f9 !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px !important;
+  gap: 4px !important;
+}
+
+.main-tab-item {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 10px 20px !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+  cursor: pointer;
+  transition: all 200ms ease-in-out !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.main-tab-item:hover {
+  color: #0f172a !important;
+  background-color: #e2e8f0 !important;
+}
+
+.main-tab-item.is-active {
+  background-color: #ffffff !important;
+  background: #ffffff !important;
+  color: #4f46e5 !important;
+  /* indigo-600 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Dark Mode support */
+.dark .main-tab-bar {
+  background-color: #0f2344 !important;
+  border-color: #19345f !important;
+}
+
+.dark .main-tab-item {
+  color: #94a3b8 !important;
+}
+
+.dark .main-tab-item:hover {
+  color: #f8fafc !important;
+  background-color: #152a4d !important;
+}
+
+.dark .main-tab-item.is-active {
+  background-color: #0c1a33 !important;
+  background: #0c1a33 !important;
+  color: #818cf8 !important;
+  /* indigo-400 */
+}
+
+/* Fade In Animation for Tab Switching */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 220ms ease-out forwards;
+}
+
+/* Calendar Header Dropdown Selectors */
+select.calendar-header-select {
+  width: auto !important;
+  height: 28px !important;
+  padding: 2px 6px !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+  display: inline-block !important;
+}
+
+.dark select.calendar-header-select {
+  border-color: #19345f !important;
+  background-color: #0c1a33 !important;
+  color: #eef5ff !important;
+}

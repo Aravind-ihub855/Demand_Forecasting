@@ -1,0 +1,22 @@
+from_collection,from_column,to_collection,to_column,relationship_type,notes
+products,category_id,productcategories,category_id,many-to-one,logical FK
+products,supplier_id,suppliers,supplier_id,many-to-one,logical FK
+stores,warehouse_id,warehouses,warehouse_id,many-to-one,default mapped warehouse
+storeinventories,store_id,stores,store_id,many-to-one,logical FK
+storeinventories,sku_id,products,sku_id,many-to-one,logical FK
+warehouseinventories,warehouse_id,warehouses,warehouse_id,many-to-one,logical FK
+warehouseinventories,sku_id,products,sku_id,many-to-one,logical FK
+stockpatterns,sku_id,products,sku_id,one-to-one,unique sku_id in stockpatterns
+skuwarehousemappings,sku_id,products,sku_id,many-to-one,logical FK
+skuwarehousemappings,warehouse_id,warehouses,warehouse_id,many-to-one,logical FK
+warehousestorerelationships,warehouse_id,warehouses,warehouse_id,many-to-one,logical FK
+warehousestorerelationships,store_id,stores,store_id,many-to-one,logical FK
+productdistributions,sku_id,products,sku_id,many-to-one,logical FK
+productdistributions,store_id,stores,store_id,many-to-one,logical FK
+productcategorydistributions,category_id,productcategories,category_id,many-to-one,logical FK
+salestransactions,store_id,stores,store_id,many-to-one,logical FK
+salestransactions,warehouse_id,warehouses,warehouse_id,many-to-one,logical FK
+salestransactions,sku_id,products,sku_id,many-to-one,logical FK
+salestransactions,category_id,productcategories,category_id,many-to-one,logical FK
+salestransactions,supplier_id,suppliers,supplier_id,many-to-one,logical FK
+salestransactions,inventory_state,inventorystates,state_name,many-to-one,string match logical FK

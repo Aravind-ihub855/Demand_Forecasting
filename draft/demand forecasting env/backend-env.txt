@@ -1,0 +1,11 @@
+PORT=5000
+# MONGO_URI=mongodb://localhost:27017/predictive-planning
+MONGO_URI=mongodb+srv://vikramsihub_db_user:JPxGO7nD8775ZLGH@cluster0.gv5eyhq.mongodb.net/predictive-planning
+NODE_ENV=development
+JWT_SECRET=sadasdasfqwer12weASE12WEASdsadsdf
+JWT_EXPIRES_IN=3d
+JWT_ISSUER=predictive-planning-backend
+JWT_AUDIENCE=predictive-planning-client
+CLIENT_URL=http://localhost:5173
+# CLIENT_URL=https://k52vrrsp-5173.inc1.devtunnels.ms
+GEMINI_API_KEY=AIzaSyDi_Dw4mP4zyA_VQbQdNJhpNtaCfzW-W0A

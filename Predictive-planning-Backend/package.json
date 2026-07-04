@@ -1,0 +1,30 @@
+{
+  "name": "predictive-planning-backend",
+  "version": "1.0.0",
+  "description": "Predictive Planning Backend - Demand Forecasting & Inventory Intelligence",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "import:datasets": "node src/scripts/importDatasets.js",
+    "import:sales": "node src/scripts/importSalesFromCsvOrganized.js",
+    "build:retail-pulse": "node src/scripts/buildRetailPulseCache.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.6.1",
+    "morgan": "^1.10.1",
+    "parquetjs": "^0.11.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
