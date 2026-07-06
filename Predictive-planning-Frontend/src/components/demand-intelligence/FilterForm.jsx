@@ -57,13 +57,27 @@ export default function FilterForm({
     );
   };
 
+  const isPastDate = (dateStr) => {
+    if (!isValidDate(dateStr)) return false;
+    const [day, month, year] = dateStr.split("/").map(Number);
+    const dateObj = new Date(year, month - 1, day);
+    dateObj.setHours(0, 0, 0, 0);
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return dateObj < today;
+  };
+
   const dateLength = planningDate?.length ?? 0;
   const isDateInvalid = dateLength === 10 && !isValidDate(planningDate);
+  const isDateInPast = dateLength === 10 && isValidDate(planningDate) && isPastDate(planningDate);
+
   const canSubmit =
     selectedFestival &&
     selectedStore &&
     planningDate &&
     isValidDate(planningDate) &&
+    !isPastDate(planningDate) &&
     !loading &&
     !loadingFilters;
 
@@ -87,7 +101,17 @@ export default function FilterForm({
   const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
   const startDayOfWeek = new Date(viewYear, viewMonth, 1).getDay();
 
+  const todayObj = new Date();
+  todayObj.setHours(0, 0, 0, 0);
+
+  const isPrevMonthDisabled = (() => {
+    const prevMonthEnd = new Date(viewYear, viewMonth, 0);
+    prevMonthEnd.setHours(0, 0, 0, 0);
+    return prevMonthEnd < todayObj;
+  })();
+
   const handlePrevMonth = () => {
+    if (isPrevMonthDisabled) return;
     setViewDate(new Date(viewYear, viewMonth - 1, 1));
   };
 
@@ -96,6 +120,10 @@ export default function FilterForm({
   };
 
   const selectDay = (dayNum) => {
+    const cellDate = new Date(viewYear, viewMonth, dayNum);
+    cellDate.setHours(0, 0, 0, 0);
+    if (cellDate < todayObj) return; // Prevent selecting past dates
+
     const formattedDay = String(dayNum).padStart(2, "0");
     const formattedMonth = String(viewMonth + 1).padStart(2, "0");
     const selectedStr = `${formattedDay}/${formattedMonth}/${viewYear}`;
@@ -288,6 +316,10 @@ export default function FilterForm({
                           return <div key={`empty-${idx}`} className="w-8 h-8" />;
                         }
 
+                        const cellDate = new Date(viewYear, viewMonth, day);
+                        cellDate.setHours(0, 0, 0, 0);
+                        const isPast = cellDate < todayObj;
+
                         const isSelected = (() => {
                           if (!planningDate) return false;
                           const [d, m, y] = planningDate.split("/").map(Number);
@@ -303,13 +335,17 @@ export default function FilterForm({
                           <button
                             key={`day-${day}`}
                             type="button"
+                            disabled={isPast}
                             onClick={() => selectDay(day)}
-                            className={`w-8 h-8 rounded-lg flex items-center justify-center text-xs font-medium cursor-pointer transition-all duration-150 p-0 m-0 border-0 outline-none focus:outline-none ${isSelected
-                                ? "bg-indigo-600 text-white font-bold shadow-md shadow-indigo-600/30 dark:bg-indigo-500 dark:shadow-indigo-500/25"
-                                : isToday
-                                  ? "bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 font-semibold border border-indigo-200 dark:border-indigo-850 hover:bg-indigo-100/50 dark:hover:bg-indigo-900/30"
-                                  : "bg-transparent text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-[#c5d0e6] dark:hover:bg-[#152a4d] dark:hover:text-[#eef5ff]"
-                              }`}
+                            className={`w-8 h-8 rounded-lg flex items-center justify-center text-xs font-medium transition-all duration-150 p-0 m-0 border-0 outline-none focus:outline-none ${
+                              isPast
+                                ? "text-slate-300 dark:text-slate-600 opacity-40 cursor-not-allowed pointer-events-none"
+                                : isSelected
+                                  ? "bg-indigo-600 text-white font-bold shadow-md shadow-indigo-600/30 dark:bg-indigo-500 dark:shadow-indigo-500/25"
+                                  : isToday
+                                    ? "bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 font-semibold border border-indigo-200 dark:border-indigo-850 hover:bg-indigo-100/50 dark:hover:bg-indigo-900/30 cursor-pointer"
+                                    : "bg-transparent text-slate-700 hover:bg-slate-100 hover:text-slate-900 dark:text-[#c5d0e6] dark:hover:bg-[#152a4d] dark:hover:text-[#eef5ff] cursor-pointer"
+                            }`}
                           >
                             {day}
                           </button>
@@ -324,6 +360,13 @@ export default function FilterForm({
                 <p className="text-xs font-semibold text-red-500 dark:text-red-400 mt-1.5 flex items-center gap-1.5 animate-pulse">
                   <AlertCircle className="h-3.5 w-3.5 shrink-0" />
                   Please enter a valid calendar date (DD/MM/YYYY).
+                </p>
+              )}
+
+              {isDateInPast && (
+                <p className="text-xs font-semibold text-red-500 dark:text-red-400 mt-1.5 flex items-center gap-1.5 animate-pulse">
+                  <AlertCircle className="h-3.5 w-3.5 shrink-0" />
+                  Planning date cannot be in the past. Please select today or a future date.
                 </p>
               )}
             </div>

@@ -33,14 +33,18 @@ import {
 
 const COLORS = ["#6366f1", "#0284c7", "#10b981", "#ef4444"];
 
-export default function ProductDemandStoryModal({ product, onClose }) {
+export default function ProductDemandStoryModal({ product, onClose, festivalDate, planningDate }) {
   if (!product) return null;
 
   const math = calculateNetReorderQty(product);
   const story = generateDemandStory(product);
   const velocity = generateTimePhasedForecast(product);
   const bounds = generateConfidenceBounds(product);
-  const timeline = calculateRefillTimeline(product);
+  const timeline = calculateRefillTimeline(
+    product,
+    festivalDate || product.festival_date,
+    planningDate || product.planning_date
+  );
 
   const productName = product.product_name || product.sku_name || "Product";
   const category = product.category || "General";
@@ -140,14 +144,6 @@ export default function ProductDemandStoryModal({ product, onClose }) {
               <span className="text-[10px] text-slate-500">Current Stock</span>
             </div>
 
-            {/* <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60">
-              <span className="text-xs font-medium text-slate-600 dark:text-slate-400">In-Transit Stock</span>
-              <p className="text-lg font-bold text-cyan-600 dark:text-cyan-400 mt-1">
-                -{formatNumber(math.inTransit)}
-              </p>
-              <span className="text-[10px] text-slate-500">En-route POs</span>
-            </div> */}
-
             <div className="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-500/40 col-span-2 sm:col-span-1">
               <span className="text-xs text-emerald-800 dark:text-emerald-400 font-semibold">Net PO Units</span>
               <p className="text-lg font-extrabold text-emerald-700 dark:text-emerald-300 mt-1">
@@ -206,7 +202,7 @@ export default function ProductDemandStoryModal({ product, onClose }) {
         </div>
 
         {/* Section 3: Replenishment Timeline & Calendar Milestones */}
-        <div className="mt-6">
+        {/* <div className="mt-6">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
@@ -246,19 +242,19 @@ export default function ProductDemandStoryModal({ product, onClose }) {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Grid Section 4 & 5: Time Phased Schedule & Confidence Bounds */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
           {/* Time Phased Schedule (2 cols) */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-3">
-              <BarChart2 className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-              <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-200 uppercase tracking-wider">
+              {/* <BarChart2 className="w-4 h-4 text-indigo-600 dark:text-indigo-400" /> */}
+              {/* <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-200 uppercase tracking-wider">
                 4. Time-Phased Demand Velocity
-              </h3>
+              </h3> */}
             </div>
-
+{/* 
             <div className="p-4 rounded-xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/60 h-56">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={velocity} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
@@ -276,19 +272,19 @@ export default function ProductDemandStoryModal({ product, onClose }) {
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>
-            </div>
+            </div> */}
           </div>
 
           {/* Confidence Bounds (1 col) */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <Layers className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
-              <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-200 uppercase tracking-wider">
+              {/* <Layers className="w-4 h-4 text-indigo-600 dark:text-indigo-400" /> */}
+              {/* <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-200 uppercase tracking-wider">
                 5. Forecast Risk Bounds
-              </h3>
+              </h3> */}
             </div>
 
-            <div className="space-y-2.5">
+            {/* <div className="space-y-2.5">
               <div className="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700/60 flex items-center justify-between">
                 <div>
                   <span className="text-xs font-medium text-slate-600 dark:text-slate-400">P10 (Pessimistic)</span>
@@ -318,7 +314,7 @@ export default function ProductDemandStoryModal({ product, onClose }) {
                   {formatNumber(bounds.p90)} units
                 </span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

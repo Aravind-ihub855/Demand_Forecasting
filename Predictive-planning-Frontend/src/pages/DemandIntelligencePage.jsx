@@ -3,6 +3,8 @@ import {
   fetchDemandIntelFilters,
   generateDemandIntelligence,
 } from "../api/demandIntelligenceApi";
+import productCsv from "../../data/department_store_products_1000.csv?raw";
+import { generate50SkuDemandPredictions } from "../components/demand-intelligence/utils";
 import { MOCK_DEMAND_INTELLIGENCE } from "../components/demand-intelligence/mockData";
 import FilterForm from "../components/demand-intelligence/FilterForm";
 import DemandIntelligenceDashboard from "../components/demand-intelligence/DemandIntelligenceDashboard";
@@ -11,12 +13,40 @@ import EmptyState from "../components/demand-intelligence/EmptyState";
 import { pageBg } from "../components/demand-intelligence/themeClasses";
 import "../styles/demand-intelligence.css";
 
+function parseProductsCsv(text) {
+  const lines = text.split(/\r?\n/).filter((line) => line.trim() !== "");
+  if (!lines.length) return [];
+  const [headerLine, ...dataLines] = lines;
+  const headers = headerLine.split(",").map((h) => h.trim().replace(/^"|"$/g, ""));
+
+  return dataLines.map((line) => {
+    const values = line.split(",").map((v) => v.trim().replace(/^"|"$/g, ""));
+    const obj = {};
+    headers.forEach((h, i) => {
+      const val = values[i] ?? "";
+      obj[h] = !isNaN(Number(val)) && val !== "" ? Number(val) : val;
+    });
+    return obj;
+  });
+}
+
+const parsedCsvProducts = parseProductsCsv(productCsv);
+
 export default function DemandIntelligencePage() {
   const [festivals, setFestivals] = useState([]);
   const [stores, setStores] = useState([]);
   const [selectedFestival, setSelectedFestival] = useState("");
   const [selectedStore, setSelectedStore] = useState("");
-  const [planningDate, setPlanningDate] = useState("15/11/2025");
+
+  const getTodayFormatted = () => {
+    const today = new Date();
+    const day = String(today.getDate()).padStart(2, "0");
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const year = today.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
+
+  const [planningDate, setPlanningDate] = useState(getTodayFormatted);
 
   const [loadingFilters, setLoadingFilters] = useState(true);
   const [loadingDashboard, setLoadingDashboard] = useState(false);
@@ -28,13 +58,25 @@ export default function DemandIntelligencePage() {
     const cached = localStorage.getItem("last_demand_intel_data");
     if (cached) {
       try {
-        return JSON.parse(cached);
+        const parsed = JSON.parse(cached);
+        if (parsed?.kpis) return parsed;
       } catch (e) {
         console.error("Failed to parse cached demand intel data:", e);
-        return null;
       }
     }
-    return null;
+    const dynamicData = generate50SkuDemandPredictions(parsedCsvProducts, 50);
+    return {
+      ...dynamicData,
+      executive_summary: {
+        festival: "Pongal",
+        store: "D-Mart Saravanampatti",
+        planning_date: "2025-11-15",
+        confidence_score: 95.8,
+        summary_text: "Seasonal demand intelligence analyzed 50 products from department_store_products_1000.csv.",
+      },
+      business_insights: MOCK_DEMAND_INTELLIGENCE.business_insights,
+      recommended_actions: MOCK_DEMAND_INTELLIGENCE.recommended_actions,
+    };
   });
 
   useEffect(() => {
@@ -146,14 +188,19 @@ export default function DemandIntelligencePage() {
         const [day, month, year] = planningDate.split("/");
         const formattedDate = `${year}-${month}-${day}`;
 
+        const base50Data = generate50SkuDemandPredictions(parsedCsvProducts, 50);
+
         const devData = {
-          ...MOCK_DEMAND_INTELLIGENCE,
+          ...base50Data,
           executive_summary: {
             ...MOCK_DEMAND_INTELLIGENCE.executive_summary,
             festival: festivalName,
             store: storeName,
             planning_date: formattedDate,
+            summary_text: `AI Demand Intelligence engine analyzed 50 SKUs from department_store_products_1000.csv for ${festivalName} at ${storeName}.`,
           },
+          business_insights: MOCK_DEMAND_INTELLIGENCE.business_insights,
+          recommended_actions: MOCK_DEMAND_INTELLIGENCE.recommended_actions,
         };
 
         setPendingData(devData);
