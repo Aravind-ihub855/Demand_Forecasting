@@ -5,7 +5,7 @@ module.exports = {
   mongoUri: process.env.MONGO_URI || "",
   nodeEnv: process.env.NODE_ENV || "development",
 
-  jwtSecret: process.env.JWT_SECRET || "",
+  jwtSecret: process.env.JWT_SECRET || "default_super_secret_key_dev_only",
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || "3d",
   jwtIssuer: process.env.JWT_ISSUER || "predictive-planning-backend",
   jwtAudience: process.env.JWT_AUDIENCE || "predictive-planning-client",

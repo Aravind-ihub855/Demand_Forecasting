@@ -28,10 +28,10 @@ import {
 } from "./themeClasses";
 
 const STORE_DETAILS = {
-  "D-Mart Gandhipuram": {
+  "Store 1": {
     store_id: "DM-GDP-01",
-    store_name: "D-Mart Gandhipuram",
-    location: "Gandhipuram",
+    store_name: "Store 1",
+    location: "Location 1",
     store_type: "Urban Retail Store",
     size_sqft: 35000,
     avg_daily_footfall: 3500,
@@ -52,10 +52,10 @@ const STORE_DETAILS = {
     lat: 11.0168,
     lon: 76.9558
   },
-  "D-Mart Singanallur": {
+  "Store 2": {
     store_id: "DM-SGL-01",
-    store_name: "D-Mart Singanallur",
-    location: "Singanallur",
+    store_name: "Store 2",
+    location: "Location 2",
     store_type: "Residential Store",
     size_sqft: 25000,
     avg_daily_footfall: 2500,
@@ -76,10 +76,10 @@ const STORE_DETAILS = {
     lat: 11.0072,
     lon: 77.0366
   },
-  "D-Mart RS Puram": {
+  "Store 3": {
     store_id: "DM-RSP-01",
-    store_name: "D-Mart RS Puram",
-    location: "RS Puram",
+    store_name: "Store 3",
+    location: "Location 3",
     store_type: "Premium Residential Store",
     size_sqft: 28000,
     avg_daily_footfall: 2800,
@@ -100,10 +100,10 @@ const STORE_DETAILS = {
     lat: 11.0021,
     lon: 76.9526
   },
-  "D-Mart Pollachi": {
+  "Store 4": {
     store_id: "DM-PLC-01",
-    store_name: "D-Mart Pollachi",
-    location: "Pollachi",
+    store_name: "Store 4",
+    location: "Location 4",
     store_type: "Semi-Urban Store",
     size_sqft: 22000,
     avg_daily_footfall: 1800,
@@ -124,10 +124,10 @@ const STORE_DETAILS = {
     lat: 10.6594,
     lon: 77.0172
   },
-  "D-Mart Saravanampatti": {
+  "Store 5": {
     store_id: "DM-SVP-01",
-    store_name: "D-Mart Saravanampatti",
-    location: "Saravanampatti",
+    store_name: "Store 5",
+    location: "Location 5",
     store_type: "IT Corridor Store",
     size_sqft: 40000,
     avg_daily_footfall: 4000,

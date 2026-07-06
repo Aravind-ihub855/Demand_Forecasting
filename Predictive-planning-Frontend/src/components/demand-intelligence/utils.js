@@ -1,3 +1,23 @@
+export function parseDateInput(input) {
+  if (!input) return null;
+  if (input instanceof Date && !isNaN(input.getTime())) return new Date(input);
+  const str = String(input).trim();
+  if (str.includes("/")) {
+    const parts = str.split("/").map(Number);
+    if (parts.length === 3 && parts.every((n) => !isNaN(n))) {
+      return new Date(parts[2], parts[1] - 1, parts[0]);
+    }
+  }
+  if (str.includes("-")) {
+    const parts = str.split("-").map(Number);
+    if (parts.length === 3 && parts.every((n) => !isNaN(n))) {
+      return new Date(parts[0], parts[1] - 1, parts[2]);
+    }
+  }
+  const d = new Date(str);
+  return isNaN(d.getTime()) ? null : d;
+}
+
 export function getFunnelStages(kpis = {}) {
   const total = kpis.total_products_analyzed ?? kpis.festival_products ?? 0;
   const seasonOmitted = kpis.season_omitted_products ?? 0;
@@ -155,27 +175,6 @@ export function generateConfidenceBounds(product = {}) {
 export function calculateRefillTimeline(product = {}, festDateStr = null, planningDateStr = null) {
   const math = calculateNetReorderQty(product);
 
-  // Helper date parser for DD/MM/YYYY or YYYY-MM-DD or Date object
-  const parseDateInput = (input) => {
-    if (!input) return null;
-    if (input instanceof Date && !isNaN(input.getTime())) return new Date(input);
-    const str = String(input).trim();
-    if (str.includes("/")) {
-      const parts = str.split("/").map(Number);
-      if (parts.length === 3 && parts.every((n) => !isNaN(n))) {
-        return new Date(parts[2], parts[1] - 1, parts[0]);
-      }
-    }
-    if (str.includes("-")) {
-      const parts = str.split("-").map(Number);
-      if (parts.length === 3 && parts.every((n) => !isNaN(n))) {
-        return new Date(parts[0], parts[1] - 1, parts[2]);
-      }
-    }
-    const d = new Date(str);
-    return isNaN(d.getTime()) ? null : d;
-  };
-
   // Parse Planning Date
   let planDate = parseDateInput(planningDateStr) || parseDateInput(festDateStr) || new Date();
   planDate.setHours(0, 0, 0, 0);
@@ -239,8 +238,11 @@ export function calculateRefillTimeline(product = {}, festDateStr = null, planni
  * Samples 50 products evenly across department_store_products_1000.csv and generates
  * end-to-end seasonal demand predictions, inventory math, and refill timelines.
  */
-export function generate50SkuDemandPredictions(csvProducts = [], count = 50) {
+export function generate50SkuDemandPredictions(csvProducts = [], count = 50, planningDateStr = null) {
   if (!csvProducts || !csvProducts.length) return null;
+
+  const planDate = parseDateInput(planningDateStr) || new Date();
+  planDate.setHours(0, 0, 0, 0);
 
   // Select 50 products evenly spaced across 1,000 items
   const step = Math.max(1, Math.floor(csvProducts.length / count));

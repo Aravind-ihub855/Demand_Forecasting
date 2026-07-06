@@ -64,7 +64,7 @@ export default function DemandIntelligencePage() {
         console.error("Failed to parse cached demand intel data:", e);
       }
     }
-    const dynamicData = generate50SkuDemandPredictions(parsedCsvProducts, 50);
+    const dynamicData = generate50SkuDemandPredictions(parsedCsvProducts, 50, planningDate);
     return {
       ...dynamicData,
       executive_summary: {
@@ -91,7 +91,14 @@ export default function DemandIntelligencePage() {
         }
 
         const fetchedFestivals = data.festivals || [];
-        const fetchedStores = data.stores || [];
+        const fetchedStores = (data.stores || []).map(s => {
+          if (s.store_id === "DM-GDP-01") return { ...s, store_name: "Store 1" };
+          if (s.store_id === "DM-SGL-01") return { ...s, store_name: "Store 2" };
+          if (s.store_id === "DM-RSP-01") return { ...s, store_name: "Store 3" };
+          if (s.store_id === "DM-PLC-01") return { ...s, store_name: "Store 4" };
+          if (s.store_id === "DM-SVP-01") return { ...s, store_name: "Store 5" };
+          return s;
+        });
 
         setFestivals(fetchedFestivals);
         setStores(fetchedStores);
@@ -188,7 +195,7 @@ export default function DemandIntelligencePage() {
         const [day, month, year] = planningDate.split("/");
         const formattedDate = `${year}-${month}-${day}`;
 
-        const base50Data = generate50SkuDemandPredictions(parsedCsvProducts, 50);
+        const base50Data = generate50SkuDemandPredictions(parsedCsvProducts, 50, formattedDate);
 
         const devData = {
           ...base50Data,

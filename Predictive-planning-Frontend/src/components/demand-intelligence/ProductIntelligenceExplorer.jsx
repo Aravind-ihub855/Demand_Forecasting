@@ -434,15 +434,10 @@ export default function ProductIntelligenceExplorer({ data = {} }) {
     { key: "product_name", header: "Product", render: (val) => <span className={textStrong}>{val}</span>, width: "15%" },
     { key: "warehouse", header: "Warehouse", render: (val) => val || "WH-CBE-S01", width: "12%" },
     { key: "current_stock", header: "Current Stock", render: (val) => formatNumber(val ?? 0), width: "10%" },
-    { key: "expected_demand", header: "Expected Demand", render: (val, row) => formatNumber(val || row.peak_sales || row.normal_sales || 0), width: "12%" },
-    { key: "coverage_percentage", header: "Coverage %", render: (val, row) => {
-        const exp = row.expected_demand || row.peak_sales || 0;
-        const cov = val != null ? val : (exp > 0 ? Math.round(((row.current_stock || 0) / exp) * 100) : 0);
-        return `${cov}%`;
-      }, width: "10%"
-    },
-    { key: "priority", header: "Priority", render: (val, row) => <span className={`${badge} ${getPriorityBadgeClass(val || row.stocking_priority || row.procurement_urgency || "High")}`}>{val || row.stocking_priority || row.procurement_urgency || "High"}</span>, width: "10%" },
-    { key: "recommended_action", header: "Recommended Action", render: (val, row) => (typeof val === "string" && isNaN(Number(val)) ? val : row.recommendation || row.procurement_strategy || (row.replenishment_quantity ? `Issue PO for ${formatNumber(row.replenishment_quantity)} units` : "Issue PO immediately")), width: "31%" },
+    { key: "expected_demand", header: "Expected Demand", render: (val) => formatNumber(val ?? 0), width: "10%" },
+    { key: "coverage_percentage", header: "Coverage %", render: (val) => val != null ? `${val}%` : "—", width: "10%" },
+    { key: "priority", header: "Priority", render: (val, row) => <span className={`${badge} ${getPriorityBadgeClass(val || row.procurement_urgency)}`}>{val || row.procurement_urgency}</span>, width: "10%" },
+    { key: "recommended_action", header: "Recommended Action", render: (val, row) => val || row.replenishment_quantity || "—", width: "30%" },
   ];
 
   const colsEmergency = [

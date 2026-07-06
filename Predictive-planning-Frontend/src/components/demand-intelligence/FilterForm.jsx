@@ -389,7 +389,7 @@ export default function FilterForm({
               className={`flex items-center justify-center gap-1.5 text-center text-xs ${textMuted}`}
             >
               <MapPin className="h-3 w-3" />
-              Tailored intelligence for Coimbatore D-Mart locations
+              Tailored intelligence for retail store locations
             </p>
           </form>
         </div>
