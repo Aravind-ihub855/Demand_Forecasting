@@ -9,9 +9,11 @@ import {
   Warehouse,
   TrendingUp,
   ShieldAlert,
+  FileText,
 } from "lucide-react";
 import EnterpriseTable from "./EnterpriseTable";
 import { SectionCard } from "./SectionCard";
+import ProductDemandStoryModal from "./ProductDemandStoryModal";
 import {
   badge,
   tabActive,
@@ -24,6 +26,8 @@ import {
   demandLevelBadgeClass,
   formatNumber,
   spikeHighlightClass,
+  calculateNetReorderQty,
+  calculateRefillTimeline,
 } from "./utils";
 
 // Generator helper for Inventory Planning items (if missing from raw API response)
@@ -138,6 +142,32 @@ export default function ProductIntelligenceExplorer({ data = {} }) {
   const [validationSubTab, setValidationSubTab] = useState("all");
   const [inventorySubTab, setInventorySubTab] = useState("validated");
   const [supplyChainSubTab, setSupplyChainSubTab] = useState("critical");
+  const [selectedStoryProduct, setSelectedStoryProduct] = useState(null);
+
+  const renderStoryButton = (row) => {
+    const math = calculateNetReorderQty(row);
+    const timeline = calculateRefillTimeline(row);
+    return (
+      <div className="flex items-center justify-start gap-2.5 whitespace-nowrap py-1">
+        <div className="flex flex-col text-left shrink-0">
+          <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-500/40">
+            PO: {formatNumber(math.netPO)}
+          </span>
+          <span className="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 font-medium whitespace-nowrap">
+            Cut-off: {timeline.refillCutoffDateFormatted}
+          </span>
+        </div>
+        <button
+          type="button"
+          onClick={() => setSelectedStoryProduct(row)}
+          className="px-3 py-1.5 text-xs font-semibold rounded-lg bg-indigo-50 text-indigo-700 hover:bg-indigo-100 dark:bg-indigo-950/60 dark:text-indigo-300 dark:hover:bg-indigo-900/60 transition-colors flex items-center gap-1.5 border border-indigo-200 dark:border-indigo-800 shrink-0 whitespace-nowrap shadow-2xs"
+        >
+          <FileText className="w-3.5 h-3.5 shrink-0" />
+          <span>Story & PO</span>
+        </button>
+      </div>
+    );
+  };
 
   // ── 1. Fetching raw lists ──────────────────────────────────────────────────
   const historicalProducts = data.historical_data_layer?.historical_products || [];
@@ -271,6 +301,7 @@ export default function ProductIntelligenceExplorer({ data = {} }) {
     { key: "peak_sales", header: "Peak Sales", render: (val) => formatNumber(val) },
     { key: "spike_percentage", header: "Spike %", render: (val) => <span className={spikeHighlightClass(val)}>{val}%</span> },
     { key: "driver_type", header: "Driver Type", render: (val) => <span className="capitalize">{val}</span> },
+    { key: "demand_story_action", header: "Net PO & Story", width: "250px", render: (_, row) => renderStoryButton(row) },
   ];
 
   const colsFestivalAI = [
@@ -345,6 +376,7 @@ export default function ProductIntelligenceExplorer({ data = {} }) {
     { key: "spike_percentage", header: "Spike %", render: (val) => <span className={spikeHighlightClass(val)}>{val}%</span> },
     { key: "expected_demand_level", header: "Expected Demand Level", render: (val) => <span className={`${badge} ${demandLevelBadgeClass(val)}`}>{val}</span> },
     { key: "driver_type", header: "Driver Type", render: (val) => <span className="capitalize">{val}</span> },
+    { key: "demand_story_action", header: "Net PO & Story", width: "250px", render: (_, row) => renderStoryButton(row) },
   ];
 
   const colsNewOpportunities = [
@@ -363,7 +395,7 @@ export default function ProductIntelligenceExplorer({ data = {} }) {
 
   // Inventory Planning columns
   const colsInventoryAll = [
-    { key: "product_name", header: "Product Name", render: (val, row) => <span className={textStrong}>{val || row.sku_name}</span>, width: "20%" },
+    { key: "product_name", header: "Product Name", render: (val, row) => <span className={textStrong}>{val || row.sku_name}</span>, width: "18%" },
     { key: "plan_source", header: "Source", render: (val) => {
         let badgeColor = "bg-emerald-100 text-emerald-800 ring-emerald-200 dark:bg-emerald-950/40 dark:text-emerald-300 dark:ring-emerald-850";
         if (val === "New Opportunities") {
@@ -378,20 +410,20 @@ export default function ProductIntelligenceExplorer({ data = {} }) {
     },
     { key: "stock_type", header: "Stock Type" },
     { key: "stocking_priority", header: "Priority", render: (val) => <span className={`${badge} ${getPriorityBadgeClass(val)}`}>{val}</span> },
-    { key: "stocking_window", header: "Window" },
     { key: "risk_level", header: "Risk", render: (val) => <span className={`${badge} ${getRiskBadgeClass(val)}`}>{val}</span> },
     { key: "procurement_strategy", header: "Strategy" },
-    { key: "recommendation", header: "Recommendation", width: "22%" },
+    { key: "recommendation", header: "Recommendation", width: "18%" },
+    { key: "demand_story_action", header: "Net PO & Story", width: "250px", render: (_, row) => renderStoryButton(row) },
   ];
 
   const colsInventoryPlanning = [
-    { key: "product_name", header: "Product Name", render: (val, row) => <span className={textStrong}>{val || row.sku_name}</span>, width: "20%" },
+    { key: "product_name", header: "Product Name", render: (val, row) => <span className={textStrong}>{val || row.sku_name}</span>, width: "18%" },
     { key: "stock_type", header: "Stock Type" },
     { key: "stocking_priority", header: "Priority", render: (val) => <span className={`${badge} ${getPriorityBadgeClass(val)}`}>{val}</span> },
-    { key: "stocking_window", header: "Window" },
     { key: "risk_level", header: "Risk", render: (val) => <span className={`${badge} ${getRiskBadgeClass(val)}`}>{val}</span> },
     { key: "procurement_strategy", header: "Strategy" },
-    { key: "recommendation", header: "Recommendation", width: "25%" },
+    { key: "recommendation", header: "Recommendation", width: "20%" },
+    { key: "demand_story_action", header: "Net PO & Story", width: "250px", render: (_, row) => renderStoryButton(row) },
   ];
 
   const colsCritical = [
@@ -929,6 +961,13 @@ export default function ProductIntelligenceExplorer({ data = {} }) {
           </div>
         )}
       </div>
+
+      {selectedStoryProduct && (
+        <ProductDemandStoryModal
+          product={selectedStoryProduct}
+          onClose={() => setSelectedStoryProduct(null)}
+        />
+      )}
     </SectionCard>
   );
 }

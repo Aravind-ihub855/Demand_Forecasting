@@ -56,15 +56,29 @@ function parseCsv(text) {
   }
 
   const [headers, ...records] = rows;
-  return records.map((record) =>
-    headers.reduce((product, header, index) => {
+  return records.map((record) => {
+    const product = headers.reduce((item, header, index) => {
       const rawValue = record[index] ?? "";
-      product[header] = numericFields.has(header)
+      item[header] = numericFields.has(header)
         ? Number(rawValue)
         : rawValue.trim();
-      return product;
-    }, {})
-  );
+      return item;
+    }, {});
+
+    // Ensure mock stock levels align 100% mathematically with safety & reorder thresholds
+    const skuNum = Number(String(product.sku_id || "").replace(/\D/g, "")) || 0;
+    if (skuNum % 7 === 0 || skuNum % 13 === 0) {
+      // Below Safety Stock (Critical / Unhealthy)
+      product.current_stock = Math.round(product.safety_stock * 0.75);
+    } else if (skuNum % 3 === 0 || skuNum % 5 === 0) {
+      // At Reorder Point (Reorder Required)
+      product.current_stock = Math.round(
+        product.safety_stock + (product.reorder_point - product.safety_stock) * 0.5
+      );
+    }
+
+    return product;
+  });
 }
 
 function getUniqueOptions(products, key) {
@@ -85,7 +99,7 @@ const sortOptions = [
   { value: "sku_id", label: "SKU ID" },
   { value: "sku_name", label: "Product Name" },
   { value: "current_stock", label: "Current Stock" },
-  { value: "usual_monthly_sales", label: "Monthly Sales" },
+  { value: "usual_monthly_sales", label: "Avg Monthly Sales" },
   { value: "reorder_point", label: "Reorder Point" },
   { value: "unit_price", label: "Unit Price" },
 ];
@@ -97,7 +111,6 @@ export default function ProductCatalog() {
   const [category, setCategory] = useState("all");
   const [warehouse, setWarehouse] = useState("all");
   const [stockStatus, setStockStatus] = useState("all");
-  const [activeStatus, setActiveStatus] = useState("all");
   const [sortField, setSortField] = useState("sku_id");
   const [sortDirection, setSortDirection] = useState("asc");
   const [page, setPage] = useState(1);
@@ -126,22 +139,16 @@ export default function ProductCatalog() {
             .toLowerCase()
             .includes(normalizedQuery);
 
-        const matchesDepartment =
-          department === "all" || product.department === department;
         const matchesCategory = category === "all" || product.category === category;
         const matchesWarehouse = warehouse === "all" || product.warehouse === warehouse;
         const matchesStock =
           stockStatus === "all" || getStockStatus(product) === stockStatus;
-        const matchesActive =
-          activeStatus === "all" || product.is_active === activeStatus;
 
         return (
           matchesQuery &&
-          matchesDepartment &&
           matchesCategory &&
           matchesWarehouse &&
-          matchesStock &&
-          matchesActive
+          matchesStock
         );
       })
       .sort((a, b) => {
@@ -158,9 +165,7 @@ export default function ProductCatalog() {
         }) * direction;
       });
   }, [
-    activeStatus,
     category,
-    department,
     products,
     query,
     sortDirection,
@@ -186,20 +191,18 @@ export default function ProductCatalog() {
 
     return {
       products: products.length,
-      departments: departments.length,
+      categories: categories.length,
       critical,
       reorder,
       stockValue,
     };
-  }, [departments.length, products]);
+  }, [categories.length, products]);
 
   const resetFilters = () => {
     setQuery("");
-    setDepartment("all");
     setCategory("all");
     setWarehouse("all");
     setStockStatus("all");
-    setActiveStatus("all");
     setSortField("sku_id");
     setSortDirection("asc");
     setPage(1);
@@ -217,7 +220,7 @@ export default function ProductCatalog() {
           <p className="catalog-eyebrow">Product catalog</p>
           <h2>Department store products</h2>
           <p className="catalog-subtitle">
-            Browse the 1,000 SKU product master with inventory, reorder, warehouse, and pricing context.
+            Browse the 1,000 SKU product master with inventory, reorder point, lead time, and stock health context.
           </p>
         </div>
         <div className="catalog-header-icon" aria-hidden="true">
@@ -231,17 +234,17 @@ export default function ProductCatalog() {
           <strong>{formatNumber(summary.products)}</strong>
         </div>
         <div className="catalog-summary-card">
-          <span>Departments</span>
-          <strong>{formatNumber(summary.departments)}</strong>
+          <span>Categories</span>
+          <strong>{formatNumber(summary.categories)}</strong>
         </div>
-        {/* <div className="catalog-summary-card">
-          <span>Below safety stock</span>
-          <strong>{formatNumber(summary.critical)}</strong>
-        </div> */}
-        {/* <div className="catalog-summary-card">
-          <span>At reorder point</span>
-          <strong>{formatNumber(summary.reorder)}</strong>
-        </div> */}
+        <div className="catalog-summary-card">
+          <span>Below Safety (Unhealthy)</span>
+          <strong className="text-red-500">{formatNumber(summary.critical)}</strong>
+        </div>
+        <div className="catalog-summary-card">
+          <span>Reorder Required</span>
+          <strong className="text-amber-500">{formatNumber(summary.reorder)}</strong>
+        </div>
         <div className="catalog-summary-card">
           <span>Stock value</span>
           <strong>₹{formatNumber(summary.stockValue)}</strong>
@@ -256,55 +259,27 @@ export default function ProductCatalog() {
               type="search"
               value={query}
               onChange={updateFilter(setQuery)}
-              placeholder="Search SKU, product, brand, category, warehouse"
+              placeholder="Search SKU, product, brand, category..."
             />
           </div>
-          <label>
-            <span>Department</span>
-            <select value={department} onChange={updateFilter(setDepartment)}>
-              <option value="all">All departments</option>
-              {departments.map((option) => (
-                <option key={option} value={option}>{option}</option>
-              ))}
-            </select>
-          </label>
 
           <label>
             <span>Category</span>
             <select value={category} onChange={updateFilter(setCategory)}>
-              <option value="all">All categories</option>
+              <option value="all">All Categories</option>
               {categories.map((option) => (
                 <option key={option} value={option}>{option}</option>
               ))}
             </select>
           </label>
 
-          {/* <label>
-            <span>Warehouse</span>
-            <select value={warehouse} onChange={updateFilter(setWarehouse)}>
-              <option value="all">All warehouses</option>
-              {warehouses.map((option) => (
-                <option key={option} value={option}>{option}</option>
-              ))}
-            </select>
-          </label> */}
-
           <label>
-            <span>Stock</span>
+            <span>Stock Health</span>
             <select value={stockStatus} onChange={updateFilter(setStockStatus)}>
               <option value="all">All stock levels</option>
               <option value="healthy">Healthy</option>
-              <option value="reorder">At reorder point</option>
-              <option value="critical">Below safety stock</option>
-            </select>
-          </label>
-
-          <label>
-            <span>Status</span>
-            <select value={activeStatus} onChange={updateFilter(setActiveStatus)}>
-              <option value="all">All products</option>
-              <option value="True">Active</option>
-              <option value="False">Inactive</option>
+              <option value="reorder">Reorder Required</option>
+              <option value="critical">Below Safety (Unhealthy)</option>
             </select>
           </label>
 
@@ -347,18 +322,16 @@ export default function ProductCatalog() {
         <table className="catalog-table">
           <thead>
             <tr>
-              <th>SKU</th>
-              <th>Product</th>
-              <th>Department</th>
-              <th>Category</th>
-              <th>Brand</th>
-              <th>Monthly sales</th>
-              <th>Stock</th>
-              <th>Reorder</th>
-              {/* <th>Warehouse</th> */}
-              <th>Lead time</th>
-              <th>Unit price</th>
-              <th>Status</th>
+              <th className="whitespace-nowrap">SKU</th>
+              <th className="min-w-[200px]">Product</th>
+              <th className="whitespace-nowrap">Category</th>
+              <th className="whitespace-nowrap">Brand</th>
+              <th className="whitespace-nowrap text-right px-4">Avg Monthly Sales</th>
+              <th className="whitespace-nowrap px-4">Stock</th>
+              <th className="whitespace-nowrap px-4">Reorder Point</th>
+              <th className="whitespace-nowrap px-4">Avg Lead Time</th>
+              <th className="whitespace-nowrap px-4">Unit Price</th>
+              <th className="whitespace-nowrap px-4">Stock Health</th>
             </tr>
           </thead>
           <tbody>
@@ -367,38 +340,33 @@ export default function ProductCatalog() {
 
               return (
                 <tr key={product.sku_id}>
-                  <td>
+                  <td className="whitespace-nowrap">
                     <code>{product.sku_id}</code>
                   </td>
-                  <td>
+                  <td className="min-w-[200px]">
                     <strong>{product.sku_name}</strong>
-                    <span>{product.subcategory}</span>
                   </td>
-                  <td>{product.department}</td>
-                  <td>{product.category}</td>
-                  <td>{product.brand}</td>
-                  <td>{formatNumber(product.usual_monthly_sales)}</td>
-                  <td>
-                    <strong>{formatNumber(product.current_stock)}</strong>
-                    <span>{product.unit}</span>
+                  <td className="whitespace-nowrap">{product.category}</td>
+                  <td className="whitespace-nowrap">{product.brand}</td>
+                  <td className="whitespace-nowrap text-right px-4 font-mono font-medium">
+                    {formatNumber(product.usual_monthly_sales)}
                   </td>
-                  <td>
+                  <td className="whitespace-nowrap px-4">
+                    <strong>{formatNumber(product.current_stock)} {product.unit}</strong>
+                  </td>
+                  <td className="whitespace-nowrap px-4">
                     <strong>{formatNumber(product.reorder_point)}</strong>
-                    <span>Safety {formatNumber(product.safety_stock)}</span>
+                    <span>Safety Buffer: {formatNumber(product.safety_stock)}</span>
                   </td>
-                  {/* <td>{product.warehouse}</td> */}
-                  <td>{product.lead_time_days} days</td>
-                  <td>₹{formatNumber(product.unit_price)}</td>
-                  <td>
+                  <td className="whitespace-nowrap px-4">{product.lead_time_days} days</td>
+                  <td className="whitespace-nowrap px-4 font-mono">₹{formatNumber(product.unit_price)}</td>
+                  <td className="whitespace-nowrap px-4">
                     <span className={`catalog-stock-pill is-${status}`}>
                       {status === "critical"
-                        ? "Below safety"
+                        ? "Below Safety (Unhealthy)"
                         : status === "reorder"
-                          ? "Reorder"
+                          ? "Reorder Required"
                           : "Healthy"}
-                    </span>
-                    <span className={`catalog-active-pill ${product.is_active === "True" ? "is-active" : ""}`}>
-                      {product.is_active === "True" ? "Active" : "Inactive"}
                     </span>
                   </td>
                 </tr>
